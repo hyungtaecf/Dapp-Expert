@@ -1,0 +1,334 @@
+.navbar {
+  background-image: linear-gradient(89.7deg, rgba(203, 199, 255, 0.2) 0.43%, rgba(122, 120, 220, 0.2) 99.99%);
+  height: 62px;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.navbar .dropdown-menu {
+  background-color: #fff;
+}
+
+.navbar img {
+  margin-right: 1rem;
+}
+
+.navbar #submitDappBtn {
+  background: #6F75D7;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  border-radius: 11px;
+  color: #fff;
+  padding-left: 2rem;
+  padding-right: 2rem;
+  margin-right: 43px;
+}
+
+.has-search .form-control {
+  padding-left: 2.375rem;
+  background: #FFFFFF;
+  border: 1px solid #D9D8E9;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  border-radius: 117px;
+  width: 253px;
+  margin-right: 19px;
+  font-family: "Roboto";
+  font-style: italic;
+}
+
+.has-search .form-control-feedback {
+  position: absolute;
+  z-index: 2;
+  display: block;
+  width: 2.375rem;
+  height: 2.375rem;
+  line-height: 2.375rem;
+  text-align: center;
+  pointer-events: none;
+  color: #C6C6C6;
+}
+
+#footer {
+  border-top: 1px solid #99ACC6;
+}
+
+#footer .follow-us {
+  padding-top: 90px;
+  margin-top: 3rem;
+}
+
+#footer .follow-us h2 {
+  padding: 1.5rem;
+}
+
+#footer .follow-us a {
+  padding: 10px;
+}
+
+#footer .links a {
+  font-family: "Open Sans";
+  font-size: 16px;
+  text-align: center;
+  color: #2A3749;
+  padding-left: 22px;
+  padding-right: 22px;
+  border-right: thin solid #6F75D7;
+}
+
+#footer .links :last-child a {
+  border-right: none;
+}
+
+#footer .copyright {
+  margin-top: 85px;
+}
+
+#footer .copyright p {
+  font-family: "Open Sans";
+  font-size: 15px;
+  text-align: center;
+  color: #686868;
+}
+
+.no-padding {
+  padding: 0;
+}
+
+#blockchains-list {
+  margin-top: 85px;
+  margin-bottom: 1rem;
+}
+
+#blockchains-list .label h1 {
+  font-family: "Open Sans";
+  font-weight: bolder;
+  font-size: 36px;
+  color: #6F75D7;
+}
+
+#blockchains-list .label #blockchain-select button.btn {
+  font-family: "Open Sans";
+  font-size: 20px;
+  border-radius: 11px;
+}
+
+#blockchains-list .label #blockchain-select button.btn:not(.active) {
+  color: #2A3749;
+}
+
+#blockchains-list .label #blockchain-select button.btn:hover {
+  -webkit-text-decoration-line: none;
+          text-decoration-line: none;
+  color: #6F75D7;
+}
+
+#blockchains-list .label #blockchain-select button.btn.active {
+  width: 6.5rem;
+  height: 2.5rem;
+  color: #fff;
+  -webkit-text-decoration-line: none;
+          text-decoration-line: none;
+}
+
+#blockchains-list .label #blockchain-select button.btn.active#allBtn {
+  background-image: linear-gradient(69.3deg, #94F9FF 0%, #5855D6 63.34%, #9DD3DF 100%);
+}
+
+#blockchains-list .label #blockchain-select button.btn.active#ethBtn {
+  background-image: linear-gradient(69.3deg, #9C94FF 0%, #7C4EFE 0.01%, #E28181 63.34%, #DE9DDF 100%);
+}
+
+#blockchains-list #coming-soon {
+  margin-right: .2rem;
+}
+
+#blockchains-list #coming-soon p {
+  font-size: 11px;
+  font-family: "Open Sans";
+  position: absolute;
+  text-align: center;
+  left: 50%;
+  margin-left: -34px;
+  bottom: 70%;
+}
+
+#blockchains-list #coming-soon a {
+  position: relative;
+  text-align: center;
+  font-size: 20px;
+  color: #C6C6C6;
+  text-decoration: none;
+  pointer-events: none;
+}
+
+#categories-list {
+  margin-bottom: 3rem;
+  background: #F0F1F6;
+  border-radius: 18px;
+}
+
+#categories-list h4 {
+  padding: 1.5rem;
+  margin-bottom: 0;
+}
+
+#categories-list #category-select {
+  position: relative;
+}
+
+#categories-list #category-select .d-inline-flex {
+  padding-left: 1rem;
+  padding-right: 1rem;
+}
+
+#categories-list #category-select .nav-link {
+  padding: 0;
+  color: #7D8591;
+}
+
+#categories-list #category-select .nav-link.active {
+  color: #2A3749;
+  border-bottom: 1px solid #6F75D7;
+}
+
+.table td th {
+  text-align: right;
+  font-size: 16px;
+  color: #2A3749;
+  position: relative;
+}
+
+.table .balance {
+  position: relative;
+  top: 1rem;
+  right: 2rem;
+  font-family: "Open Sans";
+  font-size: 11px;
+  text-align: right;
+}
+
+.table .negative {
+  color: #EE6C6C;
+}
+
+.table .positive {
+  color: #43C150;
+}
+
+.table .name img {
+  margin-left: 1rem;
+  margin-right: 1rem;
+}
+
+.table #period-select {
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.table #period-select button.btn {
+  font-family: "Open Sans";
+  font-size: 16px;
+  border-radius: 11px;
+  width: 90px;
+  border: 1px solid #A29DF6;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+.table #period-select button.btn:not(.active) {
+  color: #2A3749;
+}
+
+.table #period-select button.btn:hover {
+  -webkit-text-decoration-line: none;
+          text-decoration-line: none;
+  color: #6F75D7;
+}
+
+.table #period-select button.btn.active {
+  color: #fff;
+  -webkit-text-decoration-line: none;
+          text-decoration-line: none;
+}
+
+.table #period-select button.btn.active#_24hBtn {
+  background-image: linear-gradient(89.36deg, #FB9B9B 0.07%, #9C94FF 67.5%, #767CE2 99.66%);
+}
+
+.table #period-select button.btn.active#_7DaysBtn {
+  background-image: -webkit-gradient(linear, left top, right top, from(#9C94FF), color-stop(0.01%, #B094FF), color-stop(59.37%, #47D6B3), to(#9BD8FB));
+  background-image: linear-gradient(90deg, #9C94FF 0%, #B094FF 0.01%, #47D6B3 59.37%, #9BD8FB 100%);
+}
+
+#seeMore {
+  font-family: "Open Sans";
+  font-size: 14px;
+  -webkit-text-decoration-line: underline;
+          text-decoration-line: underline;
+  color: #8A80FF;
+}
+
+.totals {
+  padding: 3rem;
+}
+
+.totals p {
+  color: #2A3749;
+}
+
+#lineChartSection {
+  background-color: #F0F1F6;
+  max-width: 1950px;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+#lineChartSection h1 {
+  width: 235px;
+  color: #6F75D7;
+  font-size: 36px;
+  font-weight: bold;
+  padding: 37px;
+}
+
+#lineChartSection .kind {
+  padding-top: 98px;
+  font-family: "Open Sans";
+  font-size: 13px;
+  text-align: center;
+}
+
+#lineChartSection .kind a {
+  font-family: "Open Sans";
+  font-size: 16px;
+  text-align: center;
+  color: #2A3749;
+  padding-left: 22px;
+  padding-right: 22px;
+  padding-bottom: 4px;
+}
+
+#lineChartSection .kind a:hover {
+  -webkit-text-decoration-line: none;
+          text-decoration-line: none;
+  color: #6F75D7;
+}
+
+#lineChartSection .kind a:not(.active) {
+  color: #9B9B9B;
+  border-bottom: 1px solid #CFCFCF;
+}
+
+#lineChartSection .kind .active a {
+  color: #2A3749;
+  border-bottom: 1px solid #6F75D7;
+}
+
+#lineChartSection #lineChart {
+  width: 100%;
+}
+/*# sourceMappingURL=index-style.css.map */

@@ -1,0 +1,479 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" />
+    <link rel="stylesheet" href="styles/index-style.css" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans|Roboto&display=swap" rel="stylesheet">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js" integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous"></script>
+    <title>Dapp Expert</title>
+</head>
+
+<body>
+    <header class="block">
+        <!-- Navbar -->
+        <nav class="navbar navbar-dark navbar-expand-lg">
+            <div class="container align-items-center">
+                <div class="navbar-logo">
+                    <a class="navbar-brand" href="./index.html">
+                        <img src="img/Logo_Dapp_Expert.svg" alt="">
+                    </a>
+                </div>
+                <ul class="nav navbar-nav navbar-right collapse">
+                    <li>
+                        <div class="navbar-form has-search">
+                            <span class="fa fa-search form-control-feedback"></span>
+                            <input type="text" class="form-control" placeholder="Search...">
+                        </div>
+                    </li>
+                    <li>
+                        <a href="./submit-dapp.html"><button class="btn btn-md my-2 my-sm-0 ml-3" type="button" id="submitDappBtn">Submit DAPP</button></a>
+                    </li>
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle language" data-toggle="dropdown" href="#" role="button" aria-haspopup="true" aria-expanded="false">
+                            <img src="img/en.png" alt="language" height="28" />
+                        </a>
+                        <div class="dropdown-menu">
+                            <a class="dropdown-item" href="#">
+                                <div class="d-flex align-items-center">
+                                    <div class="d-flex justify-content-start">
+                                        <img src="img/en.png" alt="language" height="28" />
+                                    </div>
+                                    <div class="d-flex justify-content-end">
+                                        English
+                                    </div>
+                                </div>
+                            </a>
+                            <div class="dropdown-divider"></div>
+                            <a class="dropdown-item" href="#">
+                                <div class="d-flex align-items-center">
+                                    <div class="d-flex justify-content-start">
+                                        <img src="img/ru.png" alt="language" height="28" />
+                                    </div>
+                                    <div class="d-flex justify-content-end">
+                                        Russian
+                                    </div>
+                                </div>
+                            </a>
+                            <div class="dropdown-divider"></div>
+                            <a class="dropdown-item" href="#">
+                                <div class="d-flex align-items-center">
+                                    <div class="d-flex justify-content-start">
+                                        <img src="img/jp.png" alt="language" height="28" />
+                                    </div>
+                                    <div class="d-flex justify-content-end">
+                                        Japanese
+                                    </div>
+                                </div>
+                            </a>
+                        </div>
+                    </li>
+                </ul>
+            </div>
+        </nav>
+    </header>
+    <section id="head-text">
+        <div class="container">
+            <!--Blockchains-->
+            <div id="blockchains-list" class="container-fluid no-padding">
+                <div class="row">
+                    <div class="col col-lg-6">
+                        <div class="d-flex label justify-content-between my-auto">
+                            <div class="d-flex my-auto">
+                                <h1>BLOCKCHAINS:</h1>
+                            </div>
+                            <div id="blockchain-select" class="d-inline-flex my-auto">
+                                <button id="allBtn" class="btn btn-link toggle active">ALL</button>
+                                <button id="ethBtn" class="btn btn-link toggle">ETH</button>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col col-lg-6 my-auto">
+                        <div id="coming-soon" class="row">
+                            <div class="d-flex mx-auto">
+                                <p>Coming Soon</p>
+                            </div>
+                            <div class="d-inline-flex">
+                                <div class="container-fluid">
+                                    <a href="#">TRON</a>
+                                </div>
+                                <img src="img/vertical-line.svg" alt="">
+                                <div class="container-fluid">
+                                    <a href="#">EOS</a>
+                                </div>
+                                <img src="img/vertical-line.svg" alt="">
+                                <div class="container-fluid">
+                                    <a href="#">IOST</a>
+                                </div>
+                                <img src="img/vertical-line.svg" alt="">
+                                <div class="container-fluid">
+                                    <a href="#">LOOM</a>
+                                </div>
+                                <img src="img/vertical-line.svg" alt="">
+                                <div class="container-fluid">
+                                    <a href="#">NEO</a>
+                                </div>
+                                <img src="img/vertical-line.svg" alt="">
+                                <div class="container-fluid">
+                                    <a href="#">VeChain</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!--Categories-->
+            <div id="categories-list" class="container-fluid">
+                <div class="row">
+                    <div class="col-3 my-auto">
+                        <h4>CATEGORIES:</h1>
+                    </div>
+                    <div class="col-9 my-auto">
+                        <ul id="category-select" class="nav">
+                            <li class="nav-item">
+                                <div class="d-inline-flex"><a class="nav-link toggle active" href="#">Games</a></div>
+                            </li>
+                            <li class="nav-item">
+                                <div class="d-inline-flex"><a class="nav-link toggle" href="#">Exchanges</a></div>
+                            </li>
+                            <li class="nav-item">
+                                <div class="d-inline-flex"><a class="nav-link toggle" href="#">Collectibles</a></div>
+                            </li>
+                            <li class="nav-item">
+                                <div class="d-inline-flex"><a class="nav-link toggle" href="#">Gambling</a></div>
+                            </li>
+                            <li class="nav-item">
+                                <div class="d-inline-flex"><a class="nav-link toggle" href="#">High-Risk</a></div>
+                            </li>
+                            <li class="nav-item">
+                                <div class="d-inline-flex"><a class="nav-link toggle" href="#">Marketplaces</a></div>
+                            </li>
+                            <li class="nav-item">
+                                <div class="d-inline-flex"><a class="nav-link toggle" href="#">Other</a></div>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+
+            <!--Table-->
+            <table class="table table-hover" id="tab">
+                <thead>
+                    <tr>
+                        <th scope="col">
+                            <div id="period-select" class="d-inline-block text-center">
+                                <button id="_24hBtn" class="btn btn-link toggle active">24H</button>
+                                <button id="_7DaysBtn" class="btn btn-link toggle">7Days</button>
+                            </div>
+                        </th>
+                        <th scope="col">Chain</th>
+                        <th scope="col">Category</th>
+                        <th scope="col"><span data-toggle="tooltip" data-placement="top" title="About Balance">?</span>Balance</th>
+                        <th scope="col">Users</th>
+                        <th scope="col">
+                            <span data-toggle="tooltip" data-placement="top" title="About Volume">?</span>Volume
+                        </th>
+                        <th scope="col">
+                            <span data-toggle="tooltip" data-placement="top" title="About TXS">?</span>TXS
+                        </th>
+                        <th scope="col">Dapp.Expert Score</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <th scope="row">
+                            <div class="d-flex align-items-center name">
+                                <p>1</p>
+                                <img class="rounded-circle" src="img/fallout4.png" alt="">
+                                <h5>Fallout4</h5>
+                            </div>
+                        </th>
+                        <td>EOS</td>
+                        <td>Games</td>
+                        <td>1.85</td>
+                        <td>
+                            <p>61<span class="balance negative">-4.69%</span></p>
+                        </td>
+                        <td>$100.00k</td>
+                        <td>100.00k</td>
+                        <td>100</td>
+                    </tr>
+                    <tr>
+                        <th scope="row">
+                            <div class="d-flex align-items-center name">
+                                <p>2</p>
+                                <img class="rounded-circle" src="img/watch.png" alt="">
+                                <h5>Watch</h5>
+                            </div>
+                        </th>
+                        <td>EOS</td>
+                        <td>Games</td>
+                        <td>1.85</td>
+                        <td>
+                            <p>61<span class="balance positive">14.34%</span></p>
+                        </td>
+                        <td>$100.00k</td>
+                        <td>100.00k</td>
+                        <td>100</td>
+                    </tr>
+                    <tr>
+                        <th scope="row">
+                            <div class="d-flex align-items-center name">
+                                <p>3</p>
+                                <img class="rounded-circle" src="img/fallout4.png" alt="">
+                                <h5>Fallout4</h5>
+                            </div>
+                        </th>
+                        <td>EOS</td>
+                        <td>Games</td>
+                        <td>1.85</td>
+                        <td>
+                            <p>61<span class="balance positive">10.19%</span></p>
+                        </td>
+                        <td>$100.00k</td>
+                        <td>100.00k</td>
+                        <td>100</td>
+                    </tr>
+                    <tr>
+                        <th scope="row">
+                            <div class="d-flex align-items-center name">
+                                <p>4</p>
+                                <img class="rounded-circle" src="img/watch.png" alt="">
+                                <h5>Watch</h5>
+                            </div>
+                        </th>
+                        <td>EOS</td>
+                        <td>Games</td>
+                        <td>1.85</td>
+                        <td>
+                            <p>61<span class="balance negative">-2.40%</span></p>
+                        </td>
+                        <td>$100.00k</td>
+                        <td>100.00k</td>
+                        <td>100</td>
+                    </tr>
+                    <tr>
+                        <th scope="row">
+                            <div class="d-flex align-items-center name">
+                                <p>5</p>
+                                <img class="rounded-circle" src="img/fallout4.png" alt="">
+                                <h5>Fallout4</h5>
+                            </div>
+                        </th>
+                        <td>EOS</td>
+                        <td>Games</td>
+                        <td>1.85</td>
+                        <td>
+                            <p>61<span class="balance positive">10.23%</span></p>
+                        </td>
+                        <td>$100.00k</td>
+                        <td>100.00k</td>
+                        <td>100</td>
+                    </tr>
+                    <tr>
+                        <th scope="row">
+                            <div class="d-flex align-items-center name">
+                                <p>6</p>
+                                <img class="rounded-circle" src="img/watch.png" alt="">
+                                <h5>Watch</h5>
+                            </div>
+                        </th>
+                        <td>EOS</td>
+                        <td>Games</td>
+                        <td>1.85</td>
+                        <td>
+                            <p>61<span class="balance positive">14.34%</span></p>
+                        </td>
+                        <td>$100.00k</td>
+                        <td>100.00k</td>
+                        <td>100</td>
+                    </tr>
+                    <tr>
+                        <th scope="row">
+                            <div class="d-flex align-items-center name">
+                                <p>7</p>
+                                <img class="rounded-circle" src="img/fallout4.png" alt="">
+                                <h5>Fallout4</h5>
+                            </div>
+                        </th>
+                        <td>EOS</td>
+                        <td>Games</td>
+                        <td>1.85</td>
+                        <td>
+                            <p>61<span class="balance positive">10.19%</span></p>
+                        </td>
+                        <td>$100.00k</td>
+                        <td>100.00k</td>
+                        <td>100</td>
+                    </tr>
+                    <tr>
+                        <th scope="row">
+                            <div class="d-flex align-items-center name">
+                                <p>8</p>
+                                <img class="rounded-circle" src="img/watch.png" alt="">
+                                <h5>Watch</h5>
+                            </div>
+                        </th>
+                        <td>EOS</td>
+                        <td>Games</td>
+                        <td>1.85</td>
+                        <td>
+                            <p>61<span class="balance negative">-2.40%</span></p>
+                        </td>
+                        <td>$100.00k</td>
+                        <td>100.00k</td>
+                        <td>100</td>
+                    </tr>
+                    <tr>
+                        <th scope="row">
+                            <div class="d-flex align-items-center name">
+                                <p>9</p>
+                                <img class="rounded-circle" src="img/fallout4.png" alt="">
+                                <h5>Fallout4</h5>
+                            </div>
+                        </th>
+                        <td>EOS</td>
+                        <td>Games</td>
+                        <td>1.85</td>
+                        <td>
+                            <p>61<span class="balance positive">10.23%</span></p>
+                        </td>
+                        <td>$100.00k</td>
+                        <td>100.00k</td>
+                        <td>100</td>
+                    </tr>
+                    <tr>
+                        <th scope="row">
+                            <div class="d-flex align-items-center name">
+                                <p>10</p>
+                                <img class="rounded-circle" src="img/watch.png" alt="">
+                                <h5>Watch</h5>
+                            </div>
+                        </th>
+                        <td>EOS</td>
+                        <td>Games</td>
+                        <td>1.85</td>
+                        <td>
+                            <p>61<span class="balance positive">17.13%</span></p>
+                        </td>
+                        <td>$100.00k</td>
+                        <td>100.00k</td>
+                        <td>100</td>
+                    </tr>
+                </tbody>
+            </table>
+
+            <!--See more-->
+            <div class="d-flex flex-row-reverse">
+                <a href="#" id="seeMore">See more...</a>
+            </div>
+        </div>
+    </section>
+
+    <section>
+        <!--Totals-->
+        <div class="container">
+            <div class="row totals">
+                <div class="col">
+                    <p>Total Dapps</p>
+                    <p class="font-weight-bold">3000</p>
+                </div>
+                <div class="col">
+                    <p>Smart Contracts</p>
+                    <p class="font-weight-bold">20 000</p>
+                </div>
+                <div class="col">
+                    <p>24Hr Users</p>
+                    <p class="font-weight-bold">200 000</p>
+                </div>
+                <div class="col">
+                    <p>24Hr Transactions</p>
+                    <p class="font-weight-bold">40 000 000</p>
+                </div>
+                <div class="col">
+                    <p>24Hr Volume</p>
+                    <p class="font-weight-bold">40 000 000</p>
+                </div>
+            </div>
+    </section>
+
+    <section id="lineChartSection" class="container">
+        <!--Graphic-->
+        <div class="container">
+            <div class="container-fluid">
+                <div class="row">
+                    <div class="col-lg-6">
+                        <h1>Blockchain's Data Info</h1>
+                    </div>
+                    <div id="chart-select" class="col-lg-6">
+                        <div class="nav justify-content-end kind">
+                            <div class="nav-item toggle active">
+                                <a href="#">Volume</a>
+                            </div>
+                            <div class="nav-item toggle">
+                                <a href="#">DAU</a>
+                            </div>
+                            <div class="nav-item toggle">
+                                <a href="#">Transactions</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <canvas id="lineChart"></canvas>
+        </div>
+        </div>
+    </section>
+
+    <!--FOOTER-->
+    <footer id="footer" class="block">
+        <!--Follow us-->
+        <div class="container follow-us">
+            <div class="row justify-content-center align-items-center">
+                <div class="d-flex justify-content-end">
+                    <h2>Follow us</h2>
+                </div>
+                <div class="d-flex justify-content-start">
+                    <a href="#"><img src="img/LinkedIn.svg" alt=""></a>
+                    <a href="#"><img src="img/Facebook.svg" alt=""></a>
+                    <a href="#"><img src="img/Twitter.svg" alt=""></a>
+                    <a href="#"><img src="img/Instagram.svg" alt=""></a>
+                    <a href="#"><img src="img/Youtube.svg" alt=""></a>
+                </div>
+            </div>
+        </div>
+
+        <!--Links-->
+        <div class="container text-center">
+            <div class="nav justify-content-center links">
+                <div class="nav-item">
+                    <a href="./submit-dapp.html">Submit Dapp</a>
+                </div>
+                <div class="nav-item">
+                    <a href="#">Privacy Policy</a>
+                </div>
+                <div class="nav-item">
+                    <a href="#">Terms of Use</a>
+                </div>
+                <div class="nav-item">
+                    <a href="#">Cookie Policy</a>
+                </div>
+            </div>
+
+            <p class="copyright">Copyright © 2020 Dapp.expert</p>
+        </div>
+
+    </footer>
+
+
+</body>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.4.0/Chart.min.js"></script>
+<script src="scripts/index-script.js"></script>
+
+</html>

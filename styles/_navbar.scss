@@ -1,0 +1,44 @@
+.navbar {
+    background-image: $gradient1;
+    height: 62px;
+    justify-content: center;
+    .dropdown-menu {
+        background-color: $light-color3;
+    }
+    img {
+        margin-right: 1rem;
+    }
+    #submitDappBtn {
+        background: $dark-color2;
+        box-sizing: border-box;
+        border-radius: 11px;
+        color: $light-color3;
+        padding-left: 2rem;
+        padding-right: 2rem;
+        margin-right: 43px;
+    }
+}
+
+.has-search .form-control {
+    padding-left: 2.375rem;
+    background: #FFFFFF;
+    border: 1px solid #D9D8E9;
+    box-sizing: border-box;
+    border-radius: 117px;
+    width: 253px;
+    margin-right: 19px;
+    font-family: $font2;
+    font-style: italic;
+}
+
+.has-search .form-control-feedback {
+    position: absolute;
+    z-index: 2;
+    display: block;
+    width: 2.375rem;
+    height: 2.375rem;
+    line-height: 2.375rem;
+    text-align: center;
+    pointer-events: none;
+    color: $light-color2;
+}

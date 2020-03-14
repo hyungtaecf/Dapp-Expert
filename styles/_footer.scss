@@ -1,0 +1,36 @@
+#footer {
+    border-top: 1px solid #99ACC6;
+    .follow-us {
+        padding-top: 90px;
+        margin-top: 3rem;
+        h2 {
+            padding: 1.5rem;
+        }
+        a {
+            padding: 10px;
+        }
+    }
+    .links {
+        a {
+            font-family: $font1;
+            font-size: 16px;
+            text-align: center;
+            color: $dark-color1;
+            padding-left: 22px;
+            padding-right: 22px;
+            border-right: thin solid $dark-color2;
+        }
+         :last-child a {
+            border-right: none;
+        }
+    }
+    .copyright {
+        margin-top: 85px;
+        p {
+            font-family: $font1;
+            font-size: 15px;
+            text-align: center;
+            color: $middle-color2;
+        }
+    }
+}

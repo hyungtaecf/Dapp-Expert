@@ -1,0 +1,77 @@
+@import './variables';
+@import './navbar';
+@import './footer';
+@mixin headText {
+    h1 {
+        font-weight: bold;
+        font-size: 36px;
+    }
+    p {
+        color: #6A7C96;
+    }
+}
+
+@mixin dappForm {
+    .field {
+        border: 2px solid #1E46D4;
+        box-sizing: border-box;
+        border-radius: 34px;
+        font-family: $font2;
+        font-style: italic;
+        font-weight: 300;
+        font-size: 14px;
+    }
+    input.field,
+    select.field {
+        height: 150%;
+        color: $middle-color1;
+    }
+    select {
+        width: 100%;
+    }
+    label {
+        font-family: Roboto;
+        font-size: 14px;
+        color: #000;
+    }
+    p {
+        color: #636363;
+        font-family: $font2;
+        font-size: 14px;
+    }
+    .form-label-left {
+        margin-left: 2rem;
+    }
+}
+
+.no-padding {
+    padding: 0;
+}
+
+#title {
+    @include headText;
+    margin-top: $margin-top-title;
+}
+
+#dappInfo {
+    @include dappForm;
+}
+
+#socialMedia {
+    @include dappForm;
+    background: #FAFBFC;
+}
+
+#contactDetails {
+    @include dappForm;
+}
+
+#screenshots {
+    @include headText;
+    label {
+        position: absolute;
+        font-family: Roboto;
+        font-size: 14px;
+        color: #000;
+    }
+}
