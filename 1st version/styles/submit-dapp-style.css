@@ -92,6 +92,10 @@
   color: #686868;
 }
 
+body {
+  font-family: "Open Sans";
+}
+
 .no-padding {
   padding: 0;
 }
@@ -110,11 +114,11 @@
 }
 
 #dappInfo .field {
+  font-family: "Roboto";
   border: 2px solid #1E46D4;
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
   border-radius: 34px;
-  font-family: "Roboto";
   font-style: italic;
   font-weight: 300;
   font-size: 14px;
@@ -131,14 +135,13 @@
 }
 
 #dappInfo label {
-  font-family: Roboto;
+  font-family: "Roboto";
   font-size: 14px;
   color: #000;
 }
 
 #dappInfo p {
   color: #636363;
-  font-family: "Roboto";
   font-size: 14px;
 }
 
@@ -151,11 +154,11 @@
 }
 
 #socialMedia .field {
+  font-family: "Roboto";
   border: 2px solid #1E46D4;
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
   border-radius: 34px;
-  font-family: "Roboto";
   font-style: italic;
   font-weight: 300;
   font-size: 14px;
@@ -172,14 +175,13 @@
 }
 
 #socialMedia label {
-  font-family: Roboto;
+  font-family: "Roboto";
   font-size: 14px;
   color: #000;
 }
 
 #socialMedia p {
   color: #636363;
-  font-family: "Roboto";
   font-size: 14px;
 }
 
@@ -188,11 +190,11 @@
 }
 
 #contactDetails .field {
+  font-family: "Roboto";
   border: 2px solid #1E46D4;
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
   border-radius: 34px;
-  font-family: "Roboto";
   font-style: italic;
   font-weight: 300;
   font-size: 14px;
@@ -209,14 +211,13 @@
 }
 
 #contactDetails label {
-  font-family: Roboto;
+  font-family: "Roboto";
   font-size: 14px;
   color: #000;
 }
 
 #contactDetails p {
   color: #636363;
-  font-family: "Roboto";
   font-size: 14px;
 }
 

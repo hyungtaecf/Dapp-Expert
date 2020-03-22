@@ -1,0 +1,558 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/animate.css">
+    <title key="index_page_title">Dapp Expert</title>
+</head>
+
+<body>
+    <div class="mobile-overley"></div>
+    <header>
+        <div class="header">
+            <div class="container">
+                <div class="header__wrapper">
+                    <div class="logo">
+                        <a href="index.html">
+                            <img src="images/logo.svg" alt="logo">
+                        </a>
+                    </div>
+                    <div class="header__wrapper-inf">
+                        <form action="" class="header__form">
+                            <div class="search-input">
+                                <input key="search_placeholder" type="text" class="header__search" name="header__search" placeholder="Search...">
+                            </div>
+
+                            <a key="submit_dapp_btn" href="index2.html" class="header__button">Submit DAPP</a>
+                        </form>
+                        <div class="language-select">
+                            <button class="language-btn" disabled>
+                                <img id="current_language" src="images/language-en.svg" alt="EN" height="28" />
+                            </button>
+                            <div class="dropdown-language">
+                                <a class="translate" id="en" href="">
+                                    <img src="images/language-en.svg" alt="EN" height="28" />
+                                </a>
+                                <a class="translate" id="ru" href="">
+                                    <img src="images/language-ru.svg" alt="RU" height="28" />
+                                </a>
+                                <a class="translate" id="jp" href="">
+                                    <img src="images/language-jp.svg" alt="JP" height="28" />
+                                </a>
+                                <a class="translate" id="es" href="">
+                                    <img src="images/language-es.svg" alt="ES" height="28" />
+                                </a>
+                                <a class="translate" id="fr" href="">
+                                    <img src="images/language-fr.svg" alt="FR" height="28" />
+                                </a>
+                                <a class="translate" id="id" href="">
+                                    <img src="images/language-id.svg" alt="ID" height="28" />
+                                </a>
+                                <a class="translate" id="ko" href="">
+                                    <img src="images/language-ko.svg" alt="KO" height="28" />
+                                </a>
+                                <a class="translate" id="pt" href="">
+                                    <img src="images/language-pt.svg" alt="PT" height="28" />
+                                </a>
+                                <a class="translate" id="zh" href="">
+                                    <img src="images/language-zh.svg" alt="ZH" height="28" />
+                                </a>
+                                <a class="translate" id="tw" href="">
+                                    <img src="images/language-tw.svg" alt="TW" height="28" />
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="mobile-header">
+            <div class="logo">
+                <a href="index.html">
+                    <img src="images/logo.svg" alt="logo">
+                </a>
+            </div>
+            <div class="mobile-header__wrapper">
+                <div class="header__language"></div>
+            </div>
+        </div>
+        <div class="search-input mobile-search-input">
+            <input key="search_placeholder" type="text" class="header__search mobile-header__search-input" name="header__search" placeholder="Search...">
+
+        </div>
+        <a key="submit_dapp_btn" href="index2.html" class="header__button mobile-header__button">Submit DAPP</a>
+
+    </header>
+
+    <main>
+        <div class="container">
+            <section class="blockchains">
+                <div class="wrapper-blockchains fadeInUp wow">
+                    <div class="blockchains-title">
+                        <h2 key="blockchains_colon">blockchains:</h2>
+                    </div>
+                    <div class="blockchains__section-list ">
+                        <button key="all" class="blockchains-button blockchains-button-all">ALL</button>
+                        <button class="blockchains-button blockchains-button-eth blockchains-button-active">ETH</button>
+                        <ul class="blockchains-cut__list">
+                            <li class="blockchains-cut__item">TRON</li>
+                            <li class="blockchains-cut__item">EOS</li>
+                            <li class="blockchains-cut__item">IOST</li>
+                            <li class="blockchains-cut__item">LOOM</li>
+                            <li class="blockchains-cut__item">NEO</li>
+                            <li class="blockchains-cut__item">VeChain</li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="blockchains__list fadeInUp wow">
+                    <div class="blockchains__list-title">
+                        <h3 key="categories_colon">CATEGORIES:</h3>
+                    </div>
+                    <div class="blockchains__section-list">
+                        <ul class="blockchains__sub-list">
+                            <li key="games" class="blockchains__sub-item blockchains__sub-item-active">Games</li>
+                            <li key="exchanges" class="blockchains__sub-item">Exchanges</li>
+                            <li key="collectibles" class="blockchains__sub-item">Collectibles</li>
+                            <li key="gambling" class="blockchains__sub-item">Gambling</li>
+                            <li key="high_risk" class="blockchains__sub-item">High-Risk</li>
+                            <li key="marketplaces" class="blockchains__sub-item">Marketplaces</li>
+                            <li key="other" class="blockchains__sub-item">Other</li>
+                        </ul>
+                    </div>
+                </div>
+
+            </section>
+            <div class="blockchains-table">
+                <div class="blockchains-table__header">
+                    <div class="blockchains-table__header-wrapper blockchains__section-list">
+                        <button key="_24hr" class="blockchains-table__button blockchains-table__button-24h">24Hr</button>
+                        <button key="_7days" class="blockchains-table__button blockchains-table__button-7d blockchains-table__button-active">7Days</button>
+                    </div>
+                    <div class="blockchains__section-list">
+                        <div key="chain" class="blockchains-table__header-text">Chain</div>
+                        <div key="category" class="blockchains-table__header-text">Category</div>
+                        <div class="blockchains-table__header-text "> <span key="balance" class="blockchains-table__header-text-inf"> Balance</span></div>
+                        <div key="users" class="blockchains-table__header-text ">Users</div>
+                        <div class="blockchains-table__header-text "><span key="volume" class="blockchains-table__header-text-inf">Volume</span></div>
+                        <div class="blockchains-table__header-text "><span key="txs" class="blockchains-table__header-text-inf">TXS</span></div>
+                        <div key="score" class="blockchains-table__header-text">Dapp. <br> Expert <br> Score</div>
+                    </div>
+                </div>
+                <div class="blockchains-table-contant">
+                    <div class="blockchains-table__header-wrapper">
+                        <a href="wink.html" class="blockchains-table__header-wrapper-link">
+                            <div class="blockchains-table__number">1</div>
+                            <div class="blockchains-table__img">
+                                <img src="images/fallout-4.png" alt="">
+                            </div>
+                            <div class="blockchains-table__game-name">Fallout4</div>
+                            <div class="blockchains-table__item blockchains-table__item-no-visible">EOS</div>
+                            <div class="blockchains-table__item blockchains-table__item-no-visible">Games</div>
+                            <div class="blockchains-table__item blockchains-table__item-no-visible">1.85</div>
+                            <div class="blockchains-table__item">61
+                                <p class="blockchains-rating blockchains-rating_plus">14.34%</p>
+                            </div>
+                            <div class="blockchains-table__item blockchains-table__item-no-visible">$100.00k</div>
+                            <div class="blockchains-table__item blockchains-table__item-no-visible">$100.00k</div>
+                            <div class="blockchains-table__item ">100</div>
+                        </a>
+                    </div>
+                    <div class="blockchains-table__header-wrapper">
+                        <a href="wink.html" class="blockchains-table__header-wrapper-link">
+                            <div class="blockchains-table__number">2</div>
+                            <div class="blockchains-table__img">
+                                <img src="images/american-football.png" alt="">
+                            </div>
+                            <div class="blockchains-table__game-name ">Fallout4</div>
+                            <div class="blockchains-table__item blockchains-table__item-no-visible">EOS</div>
+                            <div class="blockchains-table__item blockchains-table__item-no-visible">Games</div>
+                            <div class="blockchains-table__item blockchains-table__item-no-visible">1.85</div>
+                            <div class="blockchains-table__item">61
+                                <p class="blockchains-rating blockchains-rating_negative">33</p>
+                            </div>
+                            <div class="blockchains-table__item blockchains-table__item-no-visible">$100.00k</div>
+                            <div class="blockchains-table__item blockchains-table__item-no-visible">$100.00k</div>
+                            <div class="blockchains-table__item">100</div>
+                        </a>
+                    </div>
+                    <div class="blockchains-table__header-wrapper">
+                        <a href="wink.html" class="blockchains-table__header-wrapper-link">
+                            <div class="blockchains-table__number">3</div>
+                            <div class="blockchains-table__img">
+                                <img src="images/fallout-4.png" alt="">
+                            </div>
+                            <div class="blockchains-table__game-name">Fallout4</div>
+                            <div class="blockchains-table__item blockchains-table__item-no-visible">EOS</div>
+                            <div class="blockchains-table__item blockchains-table__item-no-visible">Games</div>
+                            <div class="blockchains-table__item blockchains-table__item-no-visible">1.85</div>
+                            <div class="blockchains-table__item">61</div>
+                            <div class="blockchains-table__item blockchains-table__item-no-visible">$100.00k</div>
+                            <div class="blockchains-table__item blockchains-table__item-no-visible">$100.00k</div>
+                            <div class="blockchains-table__item">100</div>
+                        </a>
+                    </div>
+                    <div class="blockchains-table__header-wrapper">
+                        <a href="wink.html" class="blockchains-table__header-wrapper-link">
+                            <div class="blockchains-table__number">4</div>
+                            <div class="blockchains-table__img">
+                                <img src="images/american-football.png" alt="">
+                            </div>
+                            <div class="blockchains-table__game-name">Fallout4</div>
+                            <div class="blockchains-table__item blockchains-table__item-no-visible">EOS</div>
+                            <div class="blockchains-table__item blockchains-table__item-no-visible">Games</div>
+                            <div class="blockchains-table__item blockchains-table__item-no-visible">1.85</div>
+                            <div class="blockchains-table__item">61</div>
+                            <div class="blockchains-table__item blockchains-table__item-no-visible">$100.00k</div>
+                            <div class="blockchains-table__item blockchains-table__item-no-visible">$100.00k</div>
+                            <div class="blockchains-table__item">100</div>
+                        </a>
+                    </div>
+                    <div class="blockchains-table__header-wrapper">
+                        <a href="wink.html" class="blockchains-table__header-wrapper-link">
+                            <div class="blockchains-table__number">5</div>
+                            <div class="blockchains-table__img">
+                                <img src="images/fallout-4.png" alt="">
+                            </div>
+                            <div class="blockchains-table__game-name">Fallout4</div>
+                            <div class="blockchains-table__item blockchains-table__item-no-visible">EOS</div>
+                            <div class="blockchains-table__item blockchains-table__item-no-visible">Games</div>
+                            <div class="blockchains-table__item blockchains-table__item-no-visible">1.85</div>
+                            <div class="blockchains-table__item">61</div>
+                            <div class="blockchains-table__item blockchains-table__item-no-visible">$100.00k</div>
+                            <div class="blockchains-table__item blockchains-table__item-no-visible">$100.00k</div>
+                            <div class="blockchains-table__item">100</div>
+                        </a>
+                    </div>
+                    <div class="blockchains-table__header-wrapper">
+                        <a href="wink.html" class="blockchains-table__header-wrapper-link">
+                            <div class="blockchains-table__number">6</div>
+                            <div class="blockchains-table__img">
+                                <img src="images/american-football.png" alt="">
+                            </div>
+                            <div class="blockchains-table__game-name">Fallout4</div>
+                            <div class="blockchains-table__item blockchains-table__item-no-visible">EOS</div>
+                            <div class="blockchains-table__item blockchains-table__item-no-visible">Games</div>
+                            <div class="blockchains-table__item blockchains-table__item-no-visible">1.85</div>
+                            <div class="blockchains-table__item">61</div>
+                            <div class="blockchains-table__item blockchains-table__item-no-visible">$100.00k</div>
+                            <div class="blockchains-table__item blockchains-table__item-no-visible">$100.00k</div>
+                            <div class="blockchains-table__item">100</div>
+                        </a>
+                    </div>
+                    <div class="blockchains-table__header-wrapper">
+                        <a href="wink.html" class="blockchains-table__header-wrapper-link">
+                            <div class="blockchains-table__number">7</div>
+                            <div class="blockchains-table__img">
+                                <img src="images/fallout-4.png" alt="">
+                            </div>
+                            <div class="blockchains-table__game-name">Fallout4</div>
+                            <div class="blockchains-table__item blockchains-table__item-no-visible">EOS</div>
+                            <div class="blockchains-table__item blockchains-table__item-no-visible">Games</div>
+                            <div class="blockchains-table__item blockchains-table__item-no-visible">1.85</div>
+                            <div class="blockchains-table__item">61</div>
+                            <div class="blockchains-table__item blockchains-table__item-no-visible">$100.00k</div>
+                            <div class="blockchains-table__item blockchains-table__item-no-visible">$100.00k</div>
+                            <div class="blockchains-table__item">100</div>
+                        </a>
+                    </div>
+                    <div class="blockchains-table__header-wrapper">
+                        <a href="wink.html" class="blockchains-table__header-wrapper-link">
+                            <div class="blockchains-table__number">8</div>
+                            <div class="blockchains-table__img">
+                                <img src="images/american-football.png" alt="">
+                            </div>
+                            <div class="blockchains-table__game-name">Fallout4</div>
+                            <div class="blockchains-table__item blockchains-table__item-no-visible">EOS</div>
+                            <div class="blockchains-table__item blockchains-table__item-no-visible">Games</div>
+                            <div class="blockchains-table__item blockchains-table__item-no-visible">1.85</div>
+                            <div class="blockchains-table__item">61</div>
+                            <div class="blockchains-table__item blockchains-table__item-no-visible">$100.00k</div>
+                            <div class="blockchains-table__item blockchains-table__item-no-visible">$100.00k</div>
+                            <div class="blockchains-table__item">100</div>
+                        </a>
+                    </div>
+                    <div class="blockchains-table__header-wrapper">
+                        <a href="wink.html" class="blockchains-table__header-wrapper-link">
+                            <div class="blockchains-table__number">9</div>
+                            <div class="blockchains-table__img">
+                                <img src="images/fallout-4.png" alt="">
+                            </div>
+                            <div class="blockchains-table__game-name">Fallout4</div>
+                            <div class="blockchains-table__item blockchains-table__item-no-visible">EOS</div>
+                            <div class="blockchains-table__item blockchains-table__item-no-visible">Games</div>
+                            <div class="blockchains-table__item blockchains-table__item-no-visible">1.85</div>
+                            <div class="blockchains-table__item">61</div>
+                            <div class="blockchains-table__item blockchains-table__item-no-visible">$100.00k</div>
+                            <div class="blockchains-table__item blockchains-table__item-no-visible">$100.00k</div>
+                            <div class="blockchains-table__item">100</div>
+                        </a>
+                    </div>
+                    <div class="blockchains-table__header-wrapper blockchains-table__header-wrapper-last">
+                        <a href="wink.html" class="blockchains-table__header-wrapper-link">
+                            <div class="blockchains-table__number">10</div>
+                            <div class="blockchains-table__img">
+                                <img src="images/american-football.png" alt="">
+                            </div>
+                            <div class="blockchains-table__game-name">Fallout4</div>
+                            <div class="blockchains-table__item blockchains-table__item-no-visible">EOS</div>
+                            <div class="blockchains-table__item blockchains-table__item-no-visible">Games</div>
+                            <div class="blockchains-table__item blockchains-table__item-no-visible">1.85</div>
+                            <div class="blockchains-table__item">61</div>
+                            <div class="blockchains-table__item blockchains-table__item-no-visible">$100.00k</div>
+                            <div class="blockchains-table__item blockchains-table__item-no-visible">$100.00k</div>
+                            <div class="blockchains-table__item">100</div>
+                        </a>
+                    </div>
+                    <a key="see_more" href="#" class="see-more"> See more</a>
+                </div>
+                <div class="blockchains-table-contant blockchains-table-contant-disable">
+                    <div class="blockchains-table__header-wrapper">
+                        <a href="wink.html" class="blockchains-table__header-wrapper-link">
+                            <div class="blockchains-table__number">1</div>
+                            <div class="blockchains-table__img">
+                                <img src="images/fallout-4.png" alt="">
+                            </div>
+                            <div class="blockchains-table__game-name">Fallout4</div>
+                            <div class="blockchains-table__item blockchains-table__item-no-visible">EOS</div>
+                            <div class="blockchains-table__item blockchains-table__item-no-visible">Games</div>
+                            <div class="blockchains-table__item blockchains-table__item-no-visible">1.85</div>
+                            <div class="blockchains-table__item">61
+                                <p class="blockchains-rating blockchains-rating_plus">14.34%</p>
+                            </div>
+                            <div class="blockchains-table__item blockchains-table__item-no-visible">$100.00k</div>
+                            <div class="blockchains-table__item blockchains-table__item-no-visible">$100.00k</div>
+                            <div class="blockchains-table__item ">100</div>
+                        </a>
+                    </div>
+                    <div class="blockchains-table__header-wrapper">
+                        <div class="blockchains-table__number">2</div>
+                        <a href="wink.html" class="blockchains-table__header-wrapper-link">
+                            <div class="blockchains-table__img">
+                                <img src="images/american-football.png" alt="">
+                            </div>
+                            <div class="blockchains-table__game-name ">Fallout4</div>
+                            <div class="blockchains-table__item blockchains-table__item-no-visible">EOS</div>
+                            <div class="blockchains-table__item blockchains-table__item-no-visible">Games</div>
+                            <div class="blockchains-table__item blockchains-table__item-no-visible">1.85</div>
+                            <div class="blockchains-table__item">61
+                                <p class="blockchains-rating blockchains-rating_negative">33</p>
+                            </div>
+                            <div class="blockchains-table__item blockchains-table__item-no-visible">$100.00k</div>
+                            <div class="blockchains-table__item blockchains-table__item-no-visible">$100.00k</div>
+                            <div class="blockchains-table__item">100</div>
+                        </a>
+                    </div>
+                    <div class="blockchains-table__header-wrapper">
+                        <a href="wink.html" class="blockchains-table__header-wrapper-link">
+                            <div class="blockchains-table__number">3</div>
+                            <div class="blockchains-table__img">
+                                <img src="images/fallout-4.png" alt="">
+                            </div>
+                            <div class="blockchains-table__game-name">Fallout4</div>
+                            <div class="blockchains-table__item blockchains-table__item-no-visible">EOS</div>
+                            <div class="blockchains-table__item blockchains-table__item-no-visible">Games</div>
+                            <div class="blockchains-table__item blockchains-table__item-no-visible">1.85</div>
+                            <div class="blockchains-table__item">61</div>
+                            <div class="blockchains-table__item blockchains-table__item-no-visible">$100.00k</div>
+                            <div class="blockchains-table__item blockchains-table__item-no-visible">$100.00k</div>
+                            <div class="blockchains-table__item">100</div>
+                        </a>
+                    </div>
+                    <div class="blockchains-table__header-wrapper">
+                        <a href="wink.html" class="blockchains-table__header-wrapper-link">
+                            <div class="blockchains-table__number">4</div>
+                            <div class="blockchains-table__img">
+                                <img src="images/american-football.png" alt="">
+                            </div>
+                            <div class="blockchains-table__game-name">Fallout4</div>
+                            <div class="blockchains-table__item blockchains-table__item-no-visible">EOS</div>
+                            <div class="blockchains-table__item blockchains-table__item-no-visible">Games</div>
+                            <div class="blockchains-table__item blockchains-table__item-no-visible">1.85</div>
+                            <div class="blockchains-table__item">61</div>
+                            <div class="blockchains-table__item blockchains-table__item-no-visible">$100.00k</div>
+                            <div class="blockchains-table__item blockchains-table__item-no-visible">$100.00k</div>
+                            <div class="blockchains-table__item">100</div>
+                        </a>
+                    </div>
+                    <div class="blockchains-table__header-wrapper">
+                        <a href="wink.html" class="blockchains-table__header-wrapper-link">
+                            <div class="blockchains-table__number">5</div>
+                            <div class="blockchains-table__img">
+                                <img src="images/fallout-4.png" alt="">
+                            </div>
+                            <div class="blockchains-table__game-name">Fallout4</div>
+                            <div class="blockchains-table__item blockchains-table__item-no-visible">EOS</div>
+                            <div class="blockchains-table__item blockchains-table__item-no-visible">Games</div>
+                            <div class="blockchains-table__item blockchains-table__item-no-visible">1.85</div>
+                            <div class="blockchains-table__item">61</div>
+                            <div class="blockchains-table__item blockchains-table__item-no-visible">$100.00k</div>
+                            <div class="blockchains-table__item blockchains-table__item-no-visible">$100.00k</div>
+                            <div class="blockchains-table__item">100</div>
+                        </a>
+                    </div>
+                    <div class="blockchains-table__header-wrapper">
+                        <a href="wink.html" class="blockchains-table__header-wrapper-link">
+                            <div class="blockchains-table__number">6</div>
+                            <div class="blockchains-table__img">
+                                <img src="images/american-football.png" alt="">
+                            </div>
+                            <div class="blockchains-table__game-name">Fallout4</div>
+                            <div class="blockchains-table__item blockchains-table__item-no-visible">EOS</div>
+                            <div class="blockchains-table__item blockchains-table__item-no-visible">Games</div>
+                            <div class="blockchains-table__item blockchains-table__item-no-visible">1.85</div>
+                            <div class="blockchains-table__item">61</div>
+                            <div class="blockchains-table__item blockchains-table__item-no-visible">$100.00k</div>
+                            <div class="blockchains-table__item blockchains-table__item-no-visible">$100.00k</div>
+                            <div class="blockchains-table__item">100</div>
+                        </a>
+                    </div>
+                    <div class="blockchains-table__header-wrapper">
+                        <a href="wink.html" class="blockchains-table__header-wrapper-link">
+                            <div class="blockchains-table__number">7</div>
+                            <div class="blockchains-table__img">
+                                <img src="images/fallout-4.png" alt="">
+                            </div>
+                            <div class="blockchains-table__game-name">Fallout4</div>
+                            <div class="blockchains-table__item blockchains-table__item-no-visible">EOS</div>
+                            <div class="blockchains-table__item blockchains-table__item-no-visible">Games</div>
+                            <div class="blockchains-table__item blockchains-table__item-no-visible">1.85</div>
+                            <div class="blockchains-table__item">61</div>
+                            <div class="blockchains-table__item blockchains-table__item-no-visible">$100.00k</div>
+                            <div class="blockchains-table__item blockchains-table__item-no-visible">$100.00k</div>
+                            <div class="blockchains-table__item">100</div>
+                        </a>
+                    </div>
+                    <div class="blockchains-table__header-wrapper">
+                        <a href="wink.html" class="blockchains-table__header-wrapper-link">
+                            <div class="blockchains-table__number">8</div>
+                            <div class="blockchains-table__img">
+                                <img src="images/american-football.png" alt="">
+                            </div>
+                            <div class="blockchains-table__game-name">Fallout4</div>
+                            <div class="blockchains-table__item blockchains-table__item-no-visible">EOS</div>
+                            <div class="blockchains-table__item blockchains-table__item-no-visible">Games</div>
+                            <div class="blockchains-table__item blockchains-table__item-no-visible">1.85</div>
+                            <div class="blockchains-table__item">61</div>
+                            <div class="blockchains-table__item blockchains-table__item-no-visible">$100.00k</div>
+                            <div class="blockchains-table__item blockchains-table__item-no-visible">$100.00k</div>
+                            <div class="blockchains-table__item">100</div>
+                        </a>
+                    </div>
+                    <div class="blockchains-table__header-wrapper">
+                        <a href="wink.html" class="blockchains-table__header-wrapper-link">
+                            <div class="blockchains-table__number">9</div>
+                            <div class="blockchains-table__img">
+                                <img src="images/fallout-4.png" alt="">
+                            </div>
+                            <div class="blockchains-table__game-name">Fallout4</div>
+                            <div class="blockchains-table__item blockchains-table__item-no-visible">EOS</div>
+                            <div class="blockchains-table__item blockchains-table__item-no-visible">Games</div>
+                            <div class="blockchains-table__item blockchains-table__item-no-visible">1.85</div>
+                            <div class="blockchains-table__item">61</div>
+                            <div class="blockchains-table__item blockchains-table__item-no-visible">$100.00k</div>
+                            <div class="blockchains-table__item blockchains-table__item-no-visible">$100.00k</div>
+                            <div class="blockchains-table__item">100</div>
+                        </a>
+                    </div>
+                    <div class="blockchains-table__header-wrapper blockchains-table__header-wrapper-last">
+                        <a href="wink.html" class="blockchains-table__header-wrapper-link">
+                            <div class="blockchains-table__number">10</div>
+                            <div class="blockchains-table__img">
+                                <img src="images/american-football.png" alt="">
+                            </div>
+                            <div class="blockchains-table__game-name">Fallout4</div>
+                            <div class="blockchains-table__item blockchains-table__item-no-visible">EOS</div>
+                            <div class="blockchains-table__item blockchains-table__item-no-visible">Games</div>
+                            <div class="blockchains-table__item blockchains-table__item-no-visible">1.85</div>
+                            <div class="blockchains-table__item">61</div>
+                            <div class="blockchains-table__item blockchains-table__item-no-visible">$100.00k</div>
+                            <div class="blockchains-table__item blockchains-table__item-no-visible">$100.00k</div>
+                            <div class="blockchains-table__item">100</div>
+                        </a>
+                    </div>
+                    <a key="see_more" href="#" class="see-more"> See more</a>
+                </div>
+            </div>
+            <div class="blockchains-info">
+                <div class="blockchains-info-wrapper fadeInUp wow">
+                    <div class="blockchains-info__item">
+                        <p key="total_dapps" class="blockchains-info-title">Total Dapps</p>
+                        <p class="blockchains-info-text">3 000</p>
+                    </div>
+                    <div class="blockchains-info__item">
+                        <p key="smart_contracts" class="blockchains-info-title">Smart Contracts</p>
+                        <p class="blockchains-info-text">20 000</p>
+                    </div>
+                    <div class="blockchains-info__item">
+                        <p key="_24hr_users" class="blockchains-info-title">24Hr Users</p>
+                        <p class="blockchains-info-text">200 000</p>
+                    </div>
+                    <div class="blockchains-info__item">
+                        <p key="_24hr_transactions" class="blockchains-info-title">24Hr Transactions</p>
+                        <p class="blockchains-info-text">40 000 000</p>
+                    </div>
+                    <div class="blockchains-info__item">
+                        <p key="_24hr_volume" class="blockchains-info-title">24Hr Volume</p>
+                        <p class="blockchains-info-text">40 000 000</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="blockchains-schedule">
+            <div class="container">
+                <div class="blockchains-schedule__header">
+                    <div class="blockchains-schedule-title">
+                        <h2 key="blockchain_s_data_info">Blockchain's Data Info</h2>
+                    </div>
+                    <div class="blockchains-schedule_check">
+                        <button key="volume" class="blockchains-schedule_check-button blockchains-schedule_check-button-active">Volume</button>
+                        <button key="dau" class="blockchains-schedule_check-button blockchains-schedule_check-button-no-active">DAU</button>
+                        <button key="transactions" class="blockchains-schedule_check-button blockchains-schedule_check-button-no-active">Transactions</button>
+                    </div>
+                </div>
+                <div class="blockchains-schedule__img">
+                    <img src="images/schedule.png" alt="">
+                </div>
+            </div>
+        </div>
+
+    </main>
+
+    <footer class="index-footer">
+        <section class="footer">
+            <div class="footer__wrapper">
+                <div class="footer__title">
+                    <h2 key="follow_us">Follow us</h2>
+                </div>
+                <div class="soc">
+                    <div class="soc-item"><img src="images/LinkedIn.svg" alt=""></div>
+                    <div class="soc-item"> <img src="images/faceboock.svg" alt=""></div>
+                    <div class="soc-item"><img src="images/twitter.svg" alt=""></div>
+                    <div class="soc-item"><img src="images/hz.svg" alt=""></div>
+                    <div class="soc-item"><img src="images/youtube.svg" alt=""></div>
+                </div>
+            </div>
+            <nav class="footer__nav">
+                <ul class="footer__list">
+                    <li key="submit_dapp" class="footer__item"><a href="" class="footer__link">Submit Dapp</a></li>
+                    <li key="privacy_policy" class="footer__item"><a href="" class="footer__link">Privacy Policy</a></li>
+                    <li key="terms_of_use" class="footer__item"><a href="" class="footer__link">Terms of Use</a></li>
+                    <li key="cookie_policy" class="footer__item"><a href="" class="footer__link">Cookie Policy</a></li>
+                </ul>
+            </nav>
+            <p key="copyright_2020" class="footer__text">Copyright c 2020 Dapp.expert</p>
+        </section>
+    </footer>
+    <script src="js/jquery.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/select2@4.0.13/dist/js/select2.min.js"></script>
+    <script src="js/slick.min.js"></script>
+    <script src="js/wow.min.js"></script>
+    <script src="js/script.js"></script>
+    <script src="js/languages.js"></script>
+</body>
+
+</html>

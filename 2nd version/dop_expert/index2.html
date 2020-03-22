@@ -1,0 +1,307 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link href="https://cdn.jsdelivr.net/npm/select2@4.0.13/dist/css/select2.min.css" rel="stylesheet" />
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/animate.css">
+    <title key=submitdapp_page_title>Submit Your Dapp</title>
+</head>
+
+<body>
+    <div class="mobile-overley"></div>
+    <header>
+        <div class="header">
+            <div class="container">
+                <div class="header__wrapper">
+                    <div class="logo">
+                        <a href="index.html">
+                            <img src="images/logo.svg" alt="logo">
+                        </a>
+                    </div>
+                    <div class="header__wrapper-inf">
+                        <form action="" class="header__form">
+                            <div class="search-input">
+                                <input key="search_placeholder" type="text" class="header__search" name="header__search" placeholder="Search...">
+                            </div>
+
+                            <a key="submit_dapp_btn" href="index2.html" class="header__button">Submit DAPP</a>
+                        </form>
+                        <div class="language-select">
+                            <button class="language-btn" disabled>
+                                <img id="current_language" src="images/language-en.svg" alt="EN" height="28" />
+                            </button>
+                            <div class="dropdown-language">
+                                <a class="translate" id="en" href="">
+                                    <img src="images/language-en.svg" alt="EN" height="28" />
+                                </a>
+                                <a class="translate" id="ru" href="">
+                                    <img src="images/language-ru.svg" alt="RU" height="28" />
+                                </a>
+                                <a class="translate" id="jp" href="">
+                                    <img src="images/language-jp.svg" alt="JP" height="28" />
+                                </a>
+                                <a class="translate" id="es" href="">
+                                    <img src="images/language-es.svg" alt="ES" height="28" />
+                                </a>
+                                <a class="translate" id="fr" href="">
+                                    <img src="images/language-fr.svg" alt="FR" height="28" />
+                                </a>
+                                <a class="translate" id="id" href="">
+                                    <img src="images/language-id.svg" alt="ID" height="28" />
+                                </a>
+                                <a class="translate" id="ko" href="">
+                                    <img src="images/language-ko.svg" alt="KO" height="28" />
+                                </a>
+                                <a class="translate" id="pt" href="">
+                                    <img src="images/language-pt.svg" alt="PT" height="28" />
+                                </a>
+                                <a class="translate" id="zh" href="">
+                                    <img src="images/language-zh.svg" alt="ZH" height="28" />
+                                </a>
+                                <a class="translate" id="tw" href="">
+                                    <img src="images/language-tw.svg" alt="TW" height="28" />
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="mobile-header">
+            <div class="logo">
+                <a href="index.html">
+                    <img src="images/logo.svg" alt="logo">
+                </a>
+            </div>
+            <div class="mobile-header__wrapper">
+                <div class="header__language"></div>
+            </div>
+        </div>
+        <div class="search-input mobile-search-input">
+            <input key="search_placeholder" type="text" class="header__search mobile-header__search-input" name="header__search" placeholder="Search...">
+
+        </div>
+        <a key="submit_dapp_btn" href="index2.html" class="header__button mobile-header__button">Submit DAPP</a>
+
+    </header>
+
+    <main>
+        <div class="container">
+            <section class="dapp">
+                <div class=" dapp-title fadeInUp wow ">
+                    <h1 key="dapp_title" key="submitdapp_page_head_title ">You can Submit <br> your Dapp here</h1>
+                </div>
+                <p key="dapp_sub_title" class="dapp-sub-title fadeInUp wow ">Please enter all the information about your dapp in the next fields If you want to update your dapp information please let us know at info@dapp.expert</p>
+                <form action=" " id="dapp-form " class="dapp__form fadeInUp wow ">
+                    <div class="dapp__list ">
+                        <p key="dapp_info_colon" class="dapp__text ">Dapp Info:</p>
+                        <div class="dapp-wrapper ">
+                            <input key="dapp_name_star" type="text " class="dapp__input " placeholder="Dapp Name * ">
+                            <div class="select-dapp ">
+                                <select type="text " class="dapp__input dapp__select " placeholder="Category * ">
+                                    <option key="category" selected="true " disabled="disabled ">Category</option>
+                                    <option key="gambling">Gambling</option>
+                                    <option key="games">Games</option>
+                                    <option key="exchanges">Exchanges</option>
+                                    <option key="high_risk">High-Risk</option>
+                                    <option key="social">Social</option>
+                                    <option key="finance">Finance</option>
+                                    <option key="collectibles">Collectibles</option>
+                                    <option key="marketplaces">Marketplaces</option>
+ 
+                                </select>
+                            </div>
+                            <input key="dapp_website_star" type="text " class="dapp__input " placeholder="Dapp Website *">
+                            <div class="select-dapp ">
+                                <select type="text " class="dapp__input dapp__select " placeholder="Language * ">
+                                    <option key="language" selected="true " disabled="disabled ">Language<p class="req "> *</p></option>
+                                    <option>English <p class="req ">*</p> </option>
+                                    <option>Chinese Simplified</option>
+                                    <option>Chinese Teaditional</option>
+                                    <option>Japanese</option>
+                                    <option>Korean</option>
+                                    <option>Spanish</option>
+                                    <option>Portuguese</option>
+                                    <option>Russian</option>
+                                    <option>Vietnamese</option>
+                                    <option>Other</option>
+                                </select>
+                            </div>
+                            <input key="dapp_s_short_description" type="text " class="dapp__input " placeholder="Dapp 's Short Description *">
+                            <div class="select-dapp">
+                                <select type="text" class="dapp__input dapp__select" placeholder="Platform *">
+                                    <option key="platform" selected="true" disabled="disabled">Platform</option>
+                                    <option>iOS</option>
+                                    <option>Android</option>
+                                    <option>Web</option>
+                                </select>
+                            </div>
+                            <div class="select-dapp">
+                                <select type="text" class="dapp__input dapp__select" placeholder=" Blockchain *">
+                                    <option key="blockchain" selected="true" disabled="disabled">Blockchain</option>
+                                    <option>Ethereum</option>
+                                    <option>Tron</option>
+                                    <option>EOS</option>
+                                    <option>Steem</option>
+                                    <option>TomoChain</option>
+                                    <option>IOST</option>
+                                    <option>Klaytn</option>
+                                    <option>Lino</option>
+                                    <option>Terra</option>
+                                    <option>NEO</option>
+                                    <option>Loom</option>
+                                    <option>ONT</option>
+                                    <option>Thunder core</option>
+                                    <option>VeChain</option>
+                                    <option>Wawes</option>
+                                    <option>WAX</option>
+                                </select>
+                            </div>
+                            <input key="mainnet_contact_address" type="text" class="dapp__input" placeholder="Mainnet Contract Address (use ', '' to separate)">
+                        </div>
+                        <p key="dapp_s_full_description" class="dapp__text ">Dapp's Full Description</p>
+                        <div class="dapp-wrapper ">
+                            <div class="textarea-wrap ">
+                                <textarea name=" " id=" " cols="30 " rows="10 " class="dapp__input dapp__textarea "></textarea>
+                            </div>
+                            <div class="dapp-btn-wrapper ">
+                                <button class="dapp_drug "><svg width="23 " height="23 " viewBox="0 0 23 23 " fill="none " xmlns="http://www.w3.org/2000/svg ">
+                                    <path d="M22.5 12L1 12 " stroke="black " stroke-linecap="round " stroke-linejoin="round "/>
+                                    <path d="M12 1V22.5 " stroke="black " stroke-linecap="round " stroke-linejoin="round "/>
+                                    </svg>
+                                </button>
+                                <p key="dapp_logo" class="dapp-logo-text ">Dapp Logo</p>
+                            </div>
+                        </div>
+                    </div>
+                </form>
+            </section>
+        </div>
+        <section class="soc-media ">
+            <div class="container ">
+                <div class="dapp-title fadeInUp wow ">
+                    <h1 key="social_media">Social Media</h1>
+                </div>
+                <form action=" " id="soc-media " class="dapp__form fadeInUp wow ">
+                    <div class="dapp__list ">
+
+                        <div class="dapp-wrapper soc-media-list ">
+                            <input type="text " class="dapp__input " placeholder="Facebook ">
+                            <input type="text " class="dapp__input " placeholder="Twitter ">
+                            <input type="text " class="dapp__input " placeholder="Instagram ">
+                            <input type="text " class="dapp__input " placeholder="Youtube ">
+                            <input type="text " class="dapp__input " placeholder="Telegram ">
+                            <input type="text " class="dapp__input " placeholder="Linkedin ">
+                        </div>
+                        <div class="soc-media-wrapper ">
+
+                            <div class="dapp-wrapper fadeInUp wow ">
+                                <button type="button " class="dapp_drug soc-media-btn "><svg width="23 " height="23 " viewBox="0 0 23 23 " fill="none " xmlns="http://www.w3.org/2000/svg ">
+                                        <path d="M22.5 12L1 12 " stroke="black " stroke-linecap="round " stroke-linejoin="round "/>
+                                        <path d="M12 1V22.5 " stroke="black " stroke-linecap="round " stroke-linejoin="round "/>
+                                        </svg>
+                                    </button>
+                            </div>
+                            <p key="add_more_social_media" class="dapp__text fadeInUp wow ">Add one more Social Media</p>
+                        </div>
+                    </div>
+                </form>
+            </div>
+        </section>
+        <section class="contact ">
+            <div class="container ">
+                <div class="dapp-title fadeInUp wow ">
+                    <h1 key="contact_details">Contact Details</h1>
+                </div>
+                <form action=" " id="soc-media " class="dapp__form fadeInUp wow ">
+                    <div class="dapp__list ">
+
+                        <div class="dapp-wrapper ">
+                            <input key="team_location" type="text " class="dapp__input " placeholder="Team Location ">
+                            <input key="contact_email_star" type="text " class="dapp__input " placeholder="Contact Email * ">
+                            <input key="contact_person_s_name" type="text " class="dapp__input contact-input " placeholder="Contact Person's Name">
+                        </div>
+                    </div>
+                </form>
+            </div>
+        </section>
+        <section class="scrin">
+            <div class="container">
+                <div class="dapp-title fadeInUp wow">
+                    <h1 key="add_screenshots">Add Screenshots</h1>
+                </div>
+                <p key="add_screenshots_sub_title" class="dapp-sub-title fadeInUp wow">Upload images that can best describe features of your dapp. Please upload images with a ratio of 2:1 that are less than 512KB and 1200x600. Recommended resolutions are 600x300, 800x400.</p>
+                <form action="" id="soc-media" class="dapp__form">
+                    <div class="dapp__list fadeInUp wow">
+                        <p key="drag_and_drop" class="dapp__text">Drag & Drop</p>
+                        <div class="dapp-wrapper scrin-wrapper">
+                            <button type="button" class="dapp_drug soc-media-btn scrin-btn ">
+                                    <svg width="23" height="23" viewBox="0 0 23 23" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                    <path d="M22.5 12L1 12" stroke="black" stroke-linecap="round" stroke-linejoin="round"/>
+                                    <path d="M12 1V22.5" stroke="black" stroke-linecap="round" stroke-linejoin="round"/>
+                                    </svg>
+                                </button>
+                            <div class="dapp_drug soc-media-btn scrin-btn drag-img">
+                                <img src="images/drag-img.jpg" alt="">
+                            </div>
+                        </div>
+
+                        <div class="modal-drug-img">
+                            <button type="button" class="modal-drug-img-btn"><svg xmlns="http://www.w3.org/2000/svg" width="23" height="23" viewBox="0 0 23 23" fill="none">
+                                    <path d="M16.9706 5.65674L5.65687 16.9704" stroke="black" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+                                    <path d="M5.65686 5.65674L16.9706 16.9704" stroke="black" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+                                    </svg>
+                                </button>
+                            <img src="images/0zlwkwtoiek 2.png" alt="">
+                        </div>
+                    </div>
+                </form>
+            </div>
+        </section>
+        <div class="submit-drapp fadeInUp wow">
+            <p key="fields_are_required" class="submit-drapp-req">Fields with * are required</p>
+            <button key="submit_your_dapp" class="submit-drap__btn">Submit Your Dapp</button>
+            <p key="by_pressing_submit_dapp_btn" class="submit-drap__text">By pressing on "Submit your Dapp" button you confirm that you have read the Terms of Use and Legal Policy</p>
+        </div>
+
+
+    </main>
+
+    <footer class="index-footer">
+        <section class="footer">
+            <div class="footer__wrapper">
+                <div class="footer__title">
+                    <h2 key="follow_us">Follow us</h2>
+                </div>
+                <div class="soc">
+                    <div class="soc-item"><img src="images/LinkedIn.svg" alt=""></div>
+                    <div class="soc-item"> <img src="images/faceboock.svg" alt=""></div>
+                    <div class="soc-item"><img src="images/twitter.svg" alt=""></div>
+                    <div class="soc-item"><img src="images/hz.svg" alt=""></div>
+                    <div class="soc-item"><img src="images/youtube.svg" alt=""></div>
+                </div>
+            </div>
+            <nav class="footer__nav">
+                <ul class="footer__list">
+                    <li key="submit_dapp" class="footer__item"><a href="" class="footer__link">Submit Dapp</a></li>
+                    <li key="privacy_policy" class="footer__item"><a href="" class="footer__link">Privacy Policy</a></li>
+                    <li key="terms_of_use" class="footer__item"><a href="" class="footer__link">Terms of Use</a></li>
+                    <li key="cookie_policy" class="footer__item"><a href="" class="footer__link">Cookie Policy</a></li>
+                </ul>
+            </nav>
+            <p key="copyright_2020" class="footer__text">Copyright c 2020 Dapp.expert</p>
+        </section>
+    </footer>
+    <script src="js/jquery.js"></script>
+    <script src="js/slick.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/select2@4.0.13/dist/js/select2.min.js"></script>
+    <script src="js/wow.min.js"></script>
+    <script src="js/script.js"></script>
+    <script src="js/languages.js"></script>
+</body>
+
+</html>

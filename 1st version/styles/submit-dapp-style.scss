@@ -13,10 +13,10 @@
 
 @mixin dappForm {
     .field {
+        font-family: $font2;
         border: 2px solid #1E46D4;
         box-sizing: border-box;
         border-radius: 34px;
-        font-family: $font2;
         font-style: italic;
         font-weight: 300;
         font-size: 14px;
@@ -30,18 +30,21 @@
         width: 100%;
     }
     label {
-        font-family: Roboto;
+        font-family: $font2;
         font-size: 14px;
         color: #000;
     }
     p {
         color: #636363;
-        font-family: $font2;
         font-size: 14px;
     }
     .form-label-left {
         margin-left: 2rem;
     }
+}
+
+body {
+    font-family: $font1;
 }
 
 .no-padding {

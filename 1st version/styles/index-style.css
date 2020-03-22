@@ -96,20 +96,22 @@
   padding: 0;
 }
 
+body {
+  font-family: "Open Sans";
+}
+
 #blockchains-list {
   margin-top: 85px;
   margin-bottom: 1rem;
 }
 
 #blockchains-list .label h1 {
-  font-family: "Open Sans";
   font-weight: bolder;
   font-size: 36px;
   color: #6F75D7;
 }
 
 #blockchains-list .label #blockchain-select button.btn {
-  font-family: "Open Sans";
   font-size: 20px;
   border-radius: 11px;
 }
@@ -146,7 +148,6 @@
 
 #blockchains-list #coming-soon p {
   font-size: 11px;
-  font-family: "Open Sans";
   position: absolute;
   text-align: center;
   left: 50%;
@@ -204,7 +205,6 @@
   position: relative;
   top: 1rem;
   right: 2rem;
-  font-family: "Open Sans";
   font-size: 11px;
   text-align: right;
 }
@@ -229,7 +229,6 @@
 }
 
 .table #period-select button.btn {
-  font-family: "Open Sans";
   font-size: 16px;
   border-radius: 11px;
   width: 90px;
@@ -264,7 +263,6 @@
 }
 
 #seeMore {
-  font-family: "Open Sans";
   font-size: 14px;
   -webkit-text-decoration-line: underline;
           text-decoration-line: underline;
@@ -297,13 +295,11 @@
 
 #lineChartSection .kind {
   padding-top: 98px;
-  font-family: "Open Sans";
   font-size: 13px;
   text-align: center;
 }
 
 #lineChartSection .kind a {
-  font-family: "Open Sans";
   font-size: 16px;
   text-align: center;
   color: #2A3749;
