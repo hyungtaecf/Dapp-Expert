@@ -1084,6 +1084,9 @@ var languages = {
 $(document).ready(function() {
     // TODO: get the language from locale
     var lang = localStorage.getItem("language");
+    if (!lang) {
+        lang = "en"
+    }
     changeLanguage(lang)
     var current_language_flag = $("#current_language")
     switch (lang) {
@@ -1124,10 +1127,9 @@ $(document).ready(function() {
 
 
     function changeLanguage(lang) {
-        $('[key]').each(function(index, element) {
+        $('[key]').each(function() {
             var placeholderText = $(this).attr('placeholder');
             if (typeof placeholderText !== typeof undefined && placeholderText !== false) {
-                console.log(this)
                 $(this).attr("placeholder", languages[lang][$(this).attr('key')]);
             } else {
                 $(this).text(languages[lang][$(this).attr('key')])

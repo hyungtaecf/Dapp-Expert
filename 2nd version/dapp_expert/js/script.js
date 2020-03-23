@@ -302,4 +302,93 @@ document.addEventListener('DOMContentLoaded', () => {
 
     // wow
     new WOW().init()
+
+
+    // function activateButton(commonParent, commonElement) {
+    //     $(commonParent).find(commonElement).click(function() {
+    //         $(commonParent).find(commonElement).removeClass("active")
+    //         $(this).addClass("active")
+    //     })
+    // }
+
+    function removeHash() {
+        history.pushState("", document.title, window.location.pathname +
+            window.location.search);
+    }
+
+    //////////////////
+    // LEGAL POLICY //
+    //////////////////
+
+    // On click select
+    $(".legal_policy_select").on("click", function() {
+        var btnId = $(this).find("button").attr("id")
+
+        //clearing hash
+        removeHash()
+
+        //activate clicked button and deactivate others
+        $("#legal-policy__list").find(".toggle").each(function() {
+            $(this).removeClass("active")
+            if ($(this).attr("id") === btnId) $(this).addClass("active")
+        })
+
+        //store state in the local storage
+        localStorage.setItem("legal-policy-section", btnId)
+
+        //hide-show
+        if (btnId === "cookie-policy-btn") {
+            $("#cookie-policy-title").show();
+            $("#cookie-policy").show();
+        } else {
+            $("#cookie-policy-title").hide();
+            $("#cookie-policy").hide();
+        }
+        if (btnId === "privacy-policy-btn") {
+            $("#privacy-policy-title").show();
+            $("#privacy-policy").show();
+        } else {
+            $("#privacy-policy-title").hide();
+            $("#privacy-policy").hide();
+        }
+        if (btnId === "terms-of-use-btn") {
+            $("#terms-of-use-title").show();
+            $("#terms-of-use").show();
+        } else {
+            $("#terms-of-use-title").hide();
+            $("#terms-of-use").hide();
+        }
+    })
+
+    // On click footer links
+    switch (window.location.hash.substr(1)) {
+        case "cookie":
+            $("#cookie-policy-btn").click()
+            break;
+        case "privacy":
+            $("#privacy-policy-btn").click()
+            break;
+        case "terms":
+            $("#terms-of-use-btn").click()
+            break;
+        default:
+            $("#cookie-policy-btn").click()
+            break;
+    }
+
+    //init
+    switch (localStorage.getItem("legal-policy-section")) {
+        case "cookie-policy-btn":
+            $("#cookie-policy-btn").click()
+            break;
+        case "privacy-policy-btn":
+            $("#privacy-policy-btn").click()
+            break;
+        case "terms-of-use-btn":
+            $("#terms-of-use-btn").click()
+            break;
+        default:
+            $("#cookie-policy-btn").click()
+            break;
+    }
 });

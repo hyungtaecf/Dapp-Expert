@@ -27,7 +27,7 @@
                                 <input key="search_placeholder" type="text" class="header__search" name="header__search" placeholder="Search...">
                             </div>
 
-                            <a key="submit_dapp_btn" href="index2.html" class="header__button">Submit DAPP</a>
+                            <a key="submit_dapp_btn" href="submit-dapp.html" class="header__button">Submit DAPP</a>
                         </form>
                         <div class="language-select">
                             <button class="language-btn" disabled>
@@ -108,15 +108,24 @@
             </div>
             <nav class="footer__nav">
                 <ul class="footer__list">
-                    <li key="submit_dapp" class="footer__item"><a href="" class="footer__link">Submit Dapp</a></li>
-                    <li key="privacy_policy" class="footer__item"><a href="" class="footer__link">Privacy Policy</a></li>
-                    <li key="terms_of_use" class="footer__item"><a href="" class="footer__link">Terms of Use</a></li>
-                    <li key="cookie_policy" class="footer__item"><a href="" class="footer__link">Cookie Policy</a></li>
+                    <li class="footer__item">
+                        <a key="submit_dapp" href="submit-dapp.html" id="footerSubmitDapp" class="footer__link">Submit Dapp</a>
+                    </li>
+                    <li class="footer__item">
+                        <a key="privacy_policy" id="footerPrivacyPolicy" href="legal-policy.html#privacy" class="footer__link">Privacy Policy</a>
+                    </li>
+                    <li class="footer__item">
+                        <a key="terms_of_use" id="footerTermsOfUse" href="legal-policy.html#terms" class="footer__link">Terms of Use</a>
+                    </li>
+                    <li class="footer__item">
+                        <a key="cookie_policy" id="footerCookiePolicy" href="legal-policy.html#cookie" class="footer__link">Cookie Policy</a>
+                    </li>
                 </ul>
             </nav>
             <p key="copyright_2020" class="footer__text">Copyright c 2020 Dapp.expert</p>
         </section>
     </footer>
+
     <script src="js/jquery.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/select2@4.0.13/dist/js/select2.min.js"></script>
     <script src="js/slick.min.js"></script>
