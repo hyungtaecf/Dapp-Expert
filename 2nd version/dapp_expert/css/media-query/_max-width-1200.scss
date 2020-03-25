@@ -1,0 +1,16 @@
+@media screen and (max-width: 1200px) {
+    .blockchains-cut__list {
+        flex-wrap: wrap;
+    }
+    .blockchains-cut__item {
+        flex: 1 25%;
+    }
+    .blockchains-cut__item::before,
+    .blockchains-cut__item:last-child::before {
+        content: '';
+        right: 0;
+        width: 1px;
+        height: 15px;
+        transform: translateY(-50%) rotate(0);
+    }
+}

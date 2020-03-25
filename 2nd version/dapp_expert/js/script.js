@@ -304,12 +304,6 @@ document.addEventListener('DOMContentLoaded', () => {
     new WOW().init()
 
 
-    // function activateButton(commonParent, commonElement) {
-    //     $(commonParent).find(commonElement).click(function() {
-    //         $(commonParent).find(commonElement).removeClass("active")
-    //         $(this).addClass("active")
-    //     })
-    // }
 
     function removeHash() {
         history.pushState("", document.title, window.location.pathname +
@@ -391,4 +385,43 @@ document.addEventListener('DOMContentLoaded', () => {
             $("#cookie-policy-btn").click()
             break;
     }
+
+    ///////////////////
+    // RANKING TABLE //
+    ///////////////////
+
+
+    //BUTTONS
+    function addActiveToggleEvent(commonParent, commonElement) {
+        $(commonParent).find(commonElement).click(function() {
+            $(commonParent).find(commonElement).removeClass("active")
+            $(this).addClass("active")
+        })
+    }
+
+    addActiveToggleEvent("#period-select", "button")
+
+    //INFO MESSAGE
+    $(function() {
+        $('[data-toggle="tooltip"]').tooltip()
+    });
+
+    //CLICKABLE ROW
+    $(".clickable-row").click(function() {
+        window.location = $(this).data("href");
+    });
+
+    // Table Sticky top
+    // var tableOffset = $("#ranking-table").offset().top;
+    // var $header = $("#ranking-table > thead").clone();
+    // var $fixedHeader = $("#header-fixed").append($header);
+    // $(window).bind("scroll", function() {
+    //     var offset = $(this).scrollTop();
+
+    //     if (offset >= tableOffset && $fixedHeader.is(":hidden")) {
+    //         $fixedHeader.show();
+    //     } else if (offset < tableOffset) {
+    //         $fixedHeader.hide();
+    //     }
+    // });
 });

@@ -1,0 +1,22 @@
+@media screen and (max-width: 1000px) {
+    .blockchains__sub-list {
+        flex-wrap: wrap;
+    }
+    .blockchains-rating_negative::before {
+        left: 25px;
+    }
+    .blockchains-info__item,
+    .blockchains-info__item:first-child,
+    .blockchains-info__item:last-child {
+        margin: 10px;
+    }
+    .legal-policy__select__section {
+        .block-menu {
+            max-width: 80%;
+            text-align: center;
+        }
+    }
+    .legal-policy__section {
+        max-width: 90%;
+    }
+}

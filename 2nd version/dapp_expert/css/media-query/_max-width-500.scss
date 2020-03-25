@@ -1,0 +1,33 @@
+@media screen and (max-width: 500px) {
+    .user-like__list {
+        flex-wrap: wrap;
+        align-items: center;
+    }
+    .user-like__item {
+        margin-top: 15px;
+    }
+    .user-like__item:first-child {
+        margin-left: 23px;
+    }
+    .modal-smart-contract {
+        font-size: 11px;
+    }
+    .blockchains-table__game-name {
+        margin-right: 0;
+    }
+    .blockchains-table__header-wrapper {
+        padding-left: 0;
+    }
+    .dapp-title {
+        font-size: 24px;
+    }
+    .wink-wrapper {
+        max-width: 100%;
+    }
+    .blockchains__section-list {
+        width: 100%;
+    }
+    .modal-smart-cintract-adress {
+        font-size: 14px;
+    }
+}

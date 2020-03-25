@@ -1,0 +1,226 @@
+.header {
+    padding: 20px 0;
+    background: $theme-gradient-1;
+}
+
+.header__wrapper {
+    display: flex;
+    justify-content: space-between;
+    animation: "fadeInDown" 1s;
+}
+
+.logo {
+    display: flex;
+    align-items: center;
+    animation: "pulse" 1s;
+    animation-delay: 1s;
+}
+
+.logo a {
+    display: flex;
+    align-items: center;
+}
+
+.header__wrapper-inf {
+    display: flex;
+    height: 28px;
+}
+
+.header__form {
+    display: flex;
+}
+
+.search-input {
+    position: relative;
+}
+
+.search-input::before {
+    content: '';
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    right: 7px;
+    width: 26px;
+    height: 26px;
+    background: url($root+"images/search-icon.svg") no-repeat;
+}
+
+.header__search {
+    width: 253px;
+    padding: 9px 16px;
+    background: #FFFFFF;
+    border: 1px solid #D9D8E9;
+    border-radius: 117px;
+    font-size: 10px;
+}
+
+.req {
+    color: red;
+}
+
+.header__search::placeholder {
+    font-style: italic;
+}
+
+.header__search:focus {
+    outline: none;
+}
+
+.header__button {
+    min-width: 100px;
+    padding: 6px 23px;
+    margin: 0 36px;
+    background: $theme-color-1;
+    border-radius: 10px;
+    border: none;
+    font-size: 12px;
+    color: #FFFFFF;
+    cursor: pointer;
+    text-align: center;
+    white-space: nowrap;
+}
+
+.mobile-header__button {
+    display: none;
+}
+
+.language-select {
+    position: relative;
+    display: inline-block;
+    &:hover .dropdown-language {
+        display: block;
+    }
+    &:hover .language-btn {
+        background-color: transparent;
+    }
+    img {
+        border-radius: 46px;
+    }
+}
+
+.language-btn {
+    height: 28px;
+    width: 28px;
+    background-color: transparent;
+    padding: 1px;
+    cursor: pointer;
+    border: none;
+}
+
+.dropdown-language {
+    animation-name: "slideInDown", "fadeIn";
+    animation-duration: 0.2s, 0.5s;
+    display: none;
+    position: absolute;
+    right: -1em;
+    top: -1em;
+    background-color: $theme-color-3;
+    min-width: 60px;
+    box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+    border: 2px solid $theme-color-1;
+    box-sizing: border-box;
+    border-radius: 21px;
+    z-index: 1;
+    a {
+        padding: 12px 16px;
+        text-decoration: none;
+        display: block;
+        transition-property: "background-color";
+        background-color: $theme-color-3;
+        transition-timing-function: linear;
+        transition-duration: 0.2s;
+        &:hover {
+            box-shadow: 0px 0px 1px 0px rgba(172, 214, 174, 0.8);
+            background-color: $theme-color-2;
+        }
+        &:first-child {
+            border-top-left-radius: 21px;
+            border-top-right-radius: 21px;
+        }
+        &:last-child {
+            border-bottom-left-radius: 21px;
+            border-bottom-right-radius: 21px;
+        }
+    }
+}
+
+
+/* mobile-header */
+
+.mobile-header {
+    display: none;
+    align-items: center;
+    justify-content: space-between;
+    padding: 10px;
+    background: $theme-gradient-1;
+}
+
+.mobile-header-open {
+    width: 30px;
+    height: 16px;
+    margin-left: 25px;
+    border: none;
+    background: url($root+"images/menu-open.svg") no-repeat;
+    cursor: pointer;
+}
+
+.mobile-header__wrapper {
+    display: flex;
+    align-items: center;
+}
+
+.mobile-overley {
+    display: none;
+    position: fixed;
+    top: 0;
+    z-index: 1;
+    width: 100vw;
+    height: 100vh;
+    background: rgba(18, 18, 18, 0.22);
+}
+
+.mobile-overley-active {
+    display: block;
+}
+
+.body-overlay {
+    overflow: hidden;
+}
+
+.mobile-nav {
+    display: none;
+    width: 50vw;
+    height: 100vh;
+    z-index: 2;
+    position: fixed;
+    right: 0;
+    top: 0;
+    background: white;
+}
+
+.mobile-nav-active {
+    display: block;
+}
+
+.close-mobile-nav {
+    position: absolute;
+    right: 10px;
+    top: 10px;
+}
+
+.mobile-search-input {
+    display: none;
+    width: 370px;
+    max-width: 100%;
+    margin: 0 auto;
+    margin-top: 80px;
+}
+
+.mobile-header__search-input {
+    width: 100%;
+    padding: 20px;
+    border: 1.5px solid $theme-color-2;
+}
+
+
+/* !mobile-header */

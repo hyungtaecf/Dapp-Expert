@@ -1,0 +1,14 @@
+@font-face {
+    font-family: "Open Sans";
+    src: url($root + "font/opensans.woff2") format("woff2"), url($root + "font/opensans.woff") format("woff"), url($root + "font/opensans.ttf") format("ttf");
+}
+
+@font-face {
+    font-family: "Open Sans Bold";
+    src: url($root + "font/opensansbold.woff2") format("woff2"), url($root + "font/opensansbold.woff") format("woff"), url($root + "font/opensansbold.ttf") format("ttf");
+}
+
+@font-face {
+    font-family: "Roboto";
+    src: url($root + "font/Roboto.woff2") format("woff2"), url($root + "font/Roboto.woff") format("woff"), url($root + "font/Roboto.ttf") format("ttf");
+}

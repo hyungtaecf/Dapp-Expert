@@ -43,14 +43,8 @@
                                 <a class="translate" id="jp" href="">
                                     <img src="images/language-jp.svg" alt="JP" height="28" />
                                 </a>
-                                <a class="translate" id="es" href="">
-                                    <img src="images/language-es.svg" alt="ES" height="28" />
-                                </a>
                                 <a class="translate" id="fr" href="">
                                     <img src="images/language-fr.svg" alt="FR" height="28" />
-                                </a>
-                                <a class="translate" id="id" href="">
-                                    <img src="images/language-id.svg" alt="ID" height="28" />
                                 </a>
                                 <a class="translate" id="ko" href="">
                                     <img src="images/language-ko.svg" alt="KO" height="28" />
@@ -63,6 +57,27 @@
                                 </a>
                                 <a class="translate" id="tw" href="">
                                     <img src="images/language-tw.svg" alt="TW" height="28" />
+                                </a>
+                                <a class="translate" id="ms" href="">
+                                    <img src="images/language-ms.svg" alt="MS" height="28" />
+                                </a>
+                                <a class="" id="es" href="">
+                                    <img src="images/language-es.svg" alt="ES" height="28" />
+                                </a>
+                                <a class="" id="id" href="">
+                                    <img src="images/language-id.svg" alt="ID" height="28" />
+                                </a>
+                                <a class="" id="tr" href="">
+                                    <img src="images/language-tr.svg" alt="TR" height="28" />
+                                </a>
+                                <a class="" id="th" href="">
+                                    <img src="images/language-th.svg" alt="TH" height="28" />
+                                </a>
+                                <a class="" id="vi" href="">
+                                    <img src="images/language-vi.svg" alt="VI" height="28" />
+                                </a>
+                                <a class="" id="de" href="">
+                                    <img src="images/language-de.svg" alt="DE" height="28" />
                                 </a>
                             </div>
                         </div>
@@ -89,7 +104,7 @@
     </header>
 
     <main>
-        <section class="legal-policy__title__section">
+        <section name="test" class="legal-policy__title__section">
             <div class="container">
                 <ul>
                     <li>
@@ -108,6 +123,7 @@
         <section class="legal-policy__select__section">
             <div class="container">
                 <div class="block-menu">
+                    <div class="table"></div>
                     <ul id="legal-policy__list">
                         <li class="legal_policy_select">
                             <button id="cookie-policy-btn" class="toggle active">Cookie Policy</button>
@@ -444,6 +460,7 @@
 
     </main>
 
+    <!-- CAUTION - UNIQUE FOOTER LINKS FOR THIS PAGE -->
     <footer class="index-footer">
         <section class="footer">
             <div class="footer__wrapper">
@@ -458,19 +475,20 @@
                     <div class="soc-item"><img src="images/youtube.svg" alt=""></div>
                 </div>
             </div>
+            <!-- CAUTION - UNIQUE FOOTER LINKS FOR THIS PAGE -->
             <nav class="footer__nav">
                 <ul class="footer__list">
                     <li class="footer__item">
                         <a key="submit_dapp" href="submit-dapp.html" id="footerSubmitDapp" class="footer__link">Submit Dapp</a>
                     </li>
                     <li class="footer__item">
-                        <a key="privacy_policy" id="footerPrivacyPolicy" href="legal-policy.html#privacy" class="footer__link">Privacy Policy</a>
+                        <a key="privacy_policy" id="footerPrivacyPolicy" href="?#privacy" class="footer__link">Privacy Policy</a>
                     </li>
                     <li class="footer__item">
-                        <a key="terms_of_use" id="footerTermsOfUse" href="legal-policy.html#terms" class="footer__link">Terms of Use</a>
+                        <a key="terms_of_use" id="footerTermsOfUse" href="?#terms" class="footer__link">Terms of Use</a>
                     </li>
                     <li class="footer__item">
-                        <a key="cookie_policy" id="footerCookiePolicy" href="legal-policy.html#cookie" class="footer__link">Cookie Policy</a>
+                        <a key="cookie_policy" id="footerCookiePolicy" href="?#cookie" class="footer__link">Cookie Policy</a>
                     </li>
                 </ul>
             </nav>
@@ -484,6 +502,12 @@
     <script src="js/wow.min.js"></script>
     <script src="js/script.js"></script>
     <script src="js/languages.js"></script>
+    <script>
+        function resetHref() {
+            location.hash = '';
+        }
+        resetHref()
+    </script>
 </body>
 
 </html>

@@ -1,0 +1,321 @@
+.dapp {
+    padding: 85px 0;
+}
+
+.dapp-title {
+    // width: 400px;
+    margin-bottom: 11px;
+    font-weight: bold;
+    font-size: 36px;
+    color: #2A3749;
+}
+
+.dapp-sub-title {
+    display: block;
+    width: 729px;
+    max-width: 100%;
+    font-size: 16px;
+    color: #6A7C96;
+}
+
+.dapp__list {
+    margin-top: 50px;
+}
+
+.soc-media-wrapper {
+    display: flex;
+    align-items: center;
+}
+
+.dapp__text {
+    margin-bottom: 25px;
+    margin-top: 25px;
+    font-weight: 600;
+    font-size: 18px;
+}
+
+.dapp-wrapper {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    align-items: flex-start;
+}
+
+.dapp-btn-wrapper {
+    width: 400px;
+    display: flex;
+    align-items: center;
+}
+
+.dapp-logo-text {
+    position: relative;
+    margin-left: 15px;
+    padding-bottom: 25px;
+}
+
+.dapp-logo-text::before {
+    content: '256x256 (256KB)';
+    position: absolute;
+    top: 30px;
+    color: #636363;
+    font-size: 14px;
+    width: 125px;
+}
+
+.dapp__input {
+    width: 400px;
+    max-width: 100%;
+    height: 63px;
+    padding: 6px 30px;
+    border: 2px solid $theme-color-1;
+    border-radius: 34px;
+    font-family: "Roboto";
+    margin-bottom: 30px;
+    background: transparent;
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    -o-appearance: none;
+    appearance: none;
+    color: #000000;
+}
+
+.dapp__input::-webkit-input-placeholder {
+    font-style: italic;
+    color: #000000;
+}
+
+.dapp__input:-moz-placeholder {
+    font-style: italic;
+    color: #000000;
+}
+
+.dapp__input::placeholder {
+    font-style: italic;
+    color: #000000;
+}
+
+.dapp__input:focus {
+    outline: none;
+}
+
+.dapp__select {
+    height: 100%;
+    position: relative;
+    margin-top: 0;
+    color: #000000;
+}
+
+.select-dapp .select2-container--default .select2-selection--single {
+    border: 2px solid $theme-color-1 !important;
+    width: 400px;
+    max-width: 100%;
+    height: 63px;
+    border-radius: 34px;
+}
+
+.select2-container--default {
+    width: auto !important;
+    max-width: 100% !important;
+}
+
+.select-dapp .select2-container--open .select2-selection--single {
+    border-bottom: none !important;
+}
+
+.select2-results__options {
+    max-height: 100% !important;
+}
+
+.select-dapp .select2-container--default .select2-selection--single:focus {
+    outline: none;
+}
+
+.select-dapp .select2-container--default .select2-selection--single .select2-selection__arrow {
+    top: 50%;
+    transform: translateY(-50%);
+    right: 20px;
+}
+
+.select-dapp .select2-container--default .select2-selection--single .select2-selection__arrow b {
+    /* content: ''; */
+    border-style: none;
+    position: absolute;
+    top: 50%;
+    right: 40px;
+    transform: translateY(-50%);
+    background: url($root+"images/select.svg") no-repeat;
+    width: 20px;
+    height: 15px;
+}
+
+.select-dapp .select2-container--open .select-dapp .select2-container--default .select2-selection--single {
+    border-bottom: none !important;
+}
+
+.select2-dropdown {
+    border: 2px solid $theme-color-1 !important;
+    border-top: none !important;
+    border-radius: 34px;
+    overflow: hidden;
+}
+
+.select-dapp .select2-selection__rendered {
+    margin: auto 30px !important;
+    height: 100% !important;
+    display: flex !important;
+    align-items: center !important;
+    font-family: "Roboto" !important;
+    font-size: 13px !important;
+}
+
+.select2-search--dropdown {
+    display: none !important;
+}
+
+.select2-results__option {
+    padding: 6px 30px;
+}
+
+.select-dapp {
+    position: relative;
+    margin-bottom: 30px;
+}
+
+.select-dapp::before {
+    content: '';
+    position: absolute;
+    top: 50%;
+    right: 40px;
+    transform: translateY(-50%);
+    background: url($root+"images/select.svg") no-repeat;
+    width: 20px;
+    height: 15px;
+}
+
+.dapp__textarea {
+    height: 250px;
+}
+
+.textarea-wrap {
+    position: relative;
+    height: 250px;
+    margin-bottom: 30px;
+}
+
+.textarea-wrap::before {
+    content: '800 characters';
+    position: absolute;
+    bottom: 30px;
+    right: 50px;
+    color: #9E9E9E;
+    font-size: 13px;
+}
+
+.dapp_drug {
+    width: 76px;
+    height: 76px;
+    background: transparent;
+    border: 2px solid $theme-color-1;
+    box-sizing: border-box;
+    border-radius: 50px;
+    cursor: pointer;
+}
+
+.dapp_drug:hover,
+.dapp_drug:focus {
+    outline: none;
+}
+
+.modal-drug-img {
+    display: none;
+    position: fixed;
+    left: 50%;
+    top: 50%;
+    transform: translateX(-50%) translateY(-50%);
+    z-index: 222;
+    width: 100%;
+}
+
+.modal-drug-img-btn {
+    background: transparent;
+    border: none;
+    float: right;
+    margin-bottom: 10px;
+}
+
+.modal-drug-img-btn:hover,
+.modal-drug-img-btn:focus {
+    outline: none;
+}
+
+.modal-drug-img-active {
+    display: block;
+}
+
+.soc-media {
+    padding: 70px 0;
+    margin-top: 30px;
+    background: #FAFBFC;
+}
+
+.soc-media-btn {
+    margin: 0;
+    margin-right: 25px;
+    margin-top: 30px;
+}
+
+.contact-input {
+    margin: 25px 0 0 auto;
+}
+
+.scrin-wrapper {
+    justify-content: unset;
+}
+
+.scrin-btn {
+    margin-right: 25px;
+}
+
+.drag-img {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    overflow: hidden;
+}
+
+.submit-drapp {
+    width: 400px;
+    max-width: 100%;
+    padding: 0 15px;
+    margin: 0 auto;
+    margin-top: 96px;
+    margin-bottom: 150px;
+    position: relative;
+    z-index: -1;
+}
+
+.submit-drapp-req {
+    font-size: 16px;
+    color: #D35050;
+}
+
+.submit-drap__btn {
+    width: 400px;
+    max-width: 100%;
+    margin: 17px 0 17px 0;
+    padding: 20px;
+    background: $theme-color-1;
+    border-radius: 34px;
+    color: #FFFFFF;
+    font-size: 18px;
+    border: none;
+}
+
+.submit-drap__text {
+    font-size: 16px;
+    color: #6A7C96;
+}
+
+.contact {
+    padding: 70px 0;
+}

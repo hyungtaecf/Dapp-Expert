@@ -16,6 +16,7 @@ var languages = {
         // INDEX PAGE
         "index_page_title": "Dapp Expert",
         //blockchains header section
+        "coming_soon": "Coming Soon",
         "blockchains_colon": "BLOCKCHAINS:",
         "all": "ALL",
         "categories_colon": "CATEGORIES:",
@@ -35,7 +36,7 @@ var languages = {
         "users": "Users",
         "volume": "Volume",
         "txs": "TXS",
-        "score": /*"Dapp. Expert Score"*/ "DX Score",
+        "score": "Dapp. Expert Score",
         "see_more": "See more...",
         //blockchains info section
         "total_dapps": "Total Dapps",
@@ -124,6 +125,7 @@ var languages = {
         // INDEX PAGE
         "index_page_title": "Dapp Expert",
         //blockchains header section
+        "coming_soon": "В ближайшее время",
         "blockchains_colon": "Блокчейн:",
         "all": "Все",
         "categories_colon": "Категории:",
@@ -143,7 +145,7 @@ var languages = {
         "users": "Пользователи",
         "volume": "Оборот",
         "txs": "TXS",
-        "score": /*"Dapp. Expert индекс"*/ "DX индекс",
+        "score": "Dapp. Expert индекс",
         "see_more": "Узнать больше...",
         //blockchains info section
         "total_dapps": "Всего Dapp'ов",
@@ -232,6 +234,7 @@ var languages = {
         // INDEX PAGE
         "index_page_title": "Dapp Expert",
         //blockchains header section
+        "coming_soon": "近日公開",
         "blockchains_colon": "ブロックチェーン:",
         "all": "すべて",
         "categories_colon": "Categories:",
@@ -251,7 +254,7 @@ var languages = {
         "users": "ユーザー",
         "volume": "ボリューム",
         "txs": "TXS",
-        "score": /*"Dapp. Expertスコア"*/ "DXスコア",
+        "score": "Dapp. Expertスコア",
         "see_more": "詳細はこちら...",
         //blockchains info section
         "total_dapps": "合計ダップ数",
@@ -324,114 +327,6 @@ var languages = {
         "submit_your_review": "Submit your review",
         "users_also_like": "この商品を見た人はこんな商品も見ています"
     },
-    "es": {
-        // HEADER
-        "submit_dapp_btn": "Submit Dapp",
-        "search_placeholder": "Search...",
-
-        // FOOTER
-        "follow_us": "Follow Us",
-        "submit_dapp": "Submit Dapp",
-        "privacy_policy": "Privacy Policy",
-        "terms_of_use": "Terms of Use",
-        "cookie_policy": "Cookie Policy",
-        "copyright_2020": "Copyright © 2020 Dapp.Expert",
-
-        // INDEX PAGE
-        "index_page_title": "Dapp Expert",
-        //blockchains header section
-        "blockchains_colon": "BLOCKCHAINS:",
-        "all": "ALL",
-        "categories_colon": "CATEGORIES:",
-        "games": "Games",
-        "exchanges": "Exchanges",
-        "collectibles": "Collectibles",
-        "gambling": "Gambling",
-        "high_risk": "High-Risk",
-        "marketplaces": "Marketplaces",
-        "other": "Other",
-        //blockchains table section
-        "_24hr": "24Hr",
-        "_7days": "7Days",
-        "chain": "Chain",
-        "category": "Category",
-        "balance": "Balance",
-        "users": "Users",
-        "volume": "Volume",
-        "txs": "TXS",
-        "score": /*"Dapp. Expert Score"*/ "DX Score",
-        "see_more": "See more...",
-        //blockchains info section
-        "total_dapps": "Total Dapps",
-        "smart_contracts": "Smart Contracts",
-        "_24hr_users": "24Hr Users",
-        "_24hr_transactions": "24Hr Transactions",
-        "_24hr_volume": "24Hr Volume",
-        //blockchains schedule section
-        "blockchain_s_data_info": "Blockchain's Data Info",
-        "dau": "DAU",
-        "transactions": "Transactions",
-
-        // SUBMIT_DAPP PAGE
-        "submitdapp_page_title": "Submit Your Dapp",
-        // submit dapp header
-        "dapp_title": "You can Submit your Dapp here",
-        "dapp_sub_title": "Please enter all the information about your dapp in the next fields If you want to update your dapp information please let us know at info@dapp.expert",
-        //submit dapp form - dapp info
-        "dapp_info_colon": "Dapp Info:",
-        "dapp_name_star": "Dapp Name *",
-        "dapp_website_star": "Dapp Website *",
-        "social": "Social",
-        "finance": "Finance",
-        "language": "Language",
-        "platform": "Platform",
-        "blockchain": "Blockchain",
-        "dapp_s_short_description_star": "Dapp 's Short Description *",
-        "dapp_s_full_description": "Dapp's Full Description",
-        "mainnet_contact_address": "Mainnet Contract Address (use ', \" to separate)",
-        "dapp_logo": "Dapp Logo",
-        //submit dapp form - social media
-        "social_media": "Social Media",
-        "add_more_social_media": "Add one more Social Media",
-        //submit dapp form - contact details
-        "contact_details": "Contact Details",
-        "team_location": "Team Location",
-        "contact_email_star": "Contact Email *",
-        "contact_person_s_name": "Contact Person's Name",
-        //submit dapp form - add screenshots
-        "add_screenshots": "Add Screenshots",
-        "add_screenshots_sub_title": "Upload images that can best describe features of your dapp. Please upload images with a ratio of 2:1 that are less than 512KB and 1200x600. Recommended resolutions are 600x300, 800x400.",
-        "drag_and_drop": "Drag & Drop",
-        //submit dapp form - footer
-        "fields_are_required": "Fields with * are required",
-        "submit_your_dapp": "Submit Your Dapp",
-        "by_pressing_submit_dapp_btn": "By pressing on \"Submit your Dapp\" button you confirm that you have read the Terms of Use and Legal Policy",
-
-        // APP PAGE
-        // app page header
-        "go_to_the_website": "Go to the website",
-        "download_white_paper": "Download a White Paper",
-        "n_smart_contracts": "18 Smart Contracts",
-        "contract_addresses": "Contract Addresses",
-        // app page similar
-        "similar_to": "Similar to WINK",
-        // app page analytical data
-        "analytical_data": "Analytical Data",
-        // app page _ says
-        "_says": "Wink says",
-        // app page user's voice
-        "user_s_voice": "User's voice",
-        "see_all": "See all",
-        "leave_a_comment": "leave a comment",
-        "your_overall_rating_star": "Your overall rating *",
-        "your_name_star": "Your name *",
-        "tell_us_your_name": "Tell us your name",
-        "your_review_star": "Your review *",
-        "tell_your_review": "Tell people your review",
-        "review_based_own_experience": "This review is based on my own experience and is my genuine opinion",
-        "submit_your_review": "Submit your review",
-        "users_also_like": "Users Also Like"
-    },
     "fr": {
         // HEADER
         "submit_dapp_btn": "Soumettre le Dapp",
@@ -448,6 +343,7 @@ var languages = {
         // INDEX PAGE
         "index_page_title": "Dapp Expert",
         //blockchains header section
+        "coming_soon": "Bientôt disponible",
         "blockchains_colon": "Chaînes de blocs:",
         "all": "TOUT",
         "categories_colon": "CATEGORIES:",
@@ -467,7 +363,7 @@ var languages = {
         "users": "Utilisateurs",
         "volume": "Volume",
         "txs": "TXS",
-        "score": /*"Le score  Dapp Expert"*/ "Le Score DX",
+        "score": "Le score Dapp Expert",
         "see_more": "Voir plus...",
         //blockchains info section
         "total_dapps": "Total Dapps",
@@ -540,114 +436,6 @@ var languages = {
         "submit_your_review": "Submit your review",
         "users_also_like": "Les utilisateurs aiment aussi"
     },
-    "id": {
-        // HEADER
-        "submit_dapp_btn": "Submit Dapp",
-        "search_placeholder": "Search...",
-
-        // FOOTER
-        "follow_us": "Follow Us",
-        "submit_dapp": "Submit Dapp",
-        "privacy_policy": "Privacy Policy",
-        "terms_of_use": "Terms of Use",
-        "cookie_policy": "Cookie Policy",
-        "copyright_2020": "Copyright © 2020 Dapp.Expert",
-
-        // INDEX PAGE
-        "index_page_title": "Dapp Expert",
-        //blockchains header section
-        "blockchains_colon": "BLOCKCHAINS:",
-        "all": "ALL",
-        "categories_colon": "CATEGORIES:",
-        "games": "Games",
-        "exchanges": "Exchanges",
-        "collectibles": "Collectibles",
-        "gambling": "Gambling",
-        "high_risk": "High-Risk",
-        "marketplaces": "Marketplaces",
-        "other": "Other",
-        //blockchains table section
-        "_24hr": "24Hr",
-        "_7days": "7Days",
-        "chain": "Chain",
-        "category": "Category",
-        "balance": "Balance",
-        "users": "Users",
-        "volume": "Volume",
-        "txs": "TXS",
-        "score": /*"Dapp. Expert Score"*/ "DX Score",
-        "see_more": "See more...",
-        //blockchains info section
-        "total_dapps": "Total Dapps",
-        "smart_contracts": "Smart Contracts",
-        "_24hr_users": "24Hr Users",
-        "_24hr_transactions": "24Hr Transactions",
-        "_24hr_volume": "24Hr Volume",
-        //blockchains schedule section
-        "blockchain_s_data_info": "Blockchain's Data Info",
-        "dau": "DAU",
-        "transactions": "Transactions",
-
-        // SUBMIT_DAPP PAGE
-        "submitdapp_page_title": "Submit Your Dapp",
-        // submit dapp header
-        "dapp_title": "You can Submit your Dapp here",
-        "dapp_sub_title": "Please enter all the information about your dapp in the next fields If you want to update your dapp information please let us know at info@dapp.expert",
-        //submit dapp form - dapp info
-        "dapp_info_colon": "Dapp Info:",
-        "dapp_name_star": "Dapp Name *",
-        "dapp_website_star": "Dapp Website *",
-        "social": "Social",
-        "finance": "Finance",
-        "language": "Language",
-        "platform": "Platform",
-        "blockchain": "Blockchain",
-        "dapp_s_short_description_star": "Dapp 's Short Description *",
-        "dapp_s_full_description": "Dapp's Full Description",
-        "mainnet_contact_address": "Mainnet Contract Address (use ', \" to separate)",
-        "dapp_logo": "Dapp Logo",
-        //submit dapp form - social media
-        "social_media": "Social Media",
-        "add_more_social_media": "Add one more Social Media",
-        //submit dapp form - contact details
-        "contact_details": "Contact Details",
-        "team_location": "Team Location",
-        "contact_email_star": "Contact Email *",
-        "contact_person_s_name": "Contact Person's Name",
-        //submit dapp form - add screenshots
-        "add_screenshots": "Add Screenshots",
-        "add_screenshots_sub_title": "Upload images that can best describe features of your dapp. Please upload images with a ratio of 2:1 that are less than 512KB and 1200x600. Recommended resolutions are 600x300, 800x400.",
-        "drag_and_drop": "Drag & Drop",
-        //submit dapp form - footer
-        "fields_are_required": "Fields with * are required",
-        "submit_your_dapp": "Submit Your Dapp",
-        "by_pressing_submit_dapp_btn": "By pressing on \"Submit your Dapp\" button you confirm that you have read the Terms of Use and Legal Policy",
-
-        // APP PAGE
-        // app page header
-        "go_to_the_website": "Go to the website",
-        "download_white_paper": "Download a White Paper",
-        "n_smart_contracts": "18 Smart Contracts",
-        "contract_addresses": "Contract Addresses",
-        // app page similar
-        "similar_to": "Similar to WINK",
-        // app page analytical data
-        "analytical_data": "Analytical Data",
-        // app page _ says
-        "_says": "Wink says",
-        // app page user's voice
-        "user_s_voice": "User's voice",
-        "see_all": "See all",
-        "leave_a_comment": "leave a comment",
-        "your_overall_rating_star": "Your overall rating *",
-        "your_name_star": "Your name *",
-        "tell_us_your_name": "Tell us your name",
-        "your_review_star": "Your review *",
-        "tell_your_review": "Tell people your review",
-        "review_based_own_experience": "This review is based on my own experience and is my genuine opinion",
-        "submit_your_review": "Submit your review",
-        "users_also_like": "Users Also Like"
-    },
     "ko": {
         // HEADER
         "submit_dapp_btn": "Dapp 보냄",
@@ -664,6 +452,7 @@ var languages = {
         // INDEX PAGE
         "index_page_title": "Dapp Expert",
         //blockchains header section
+        "coming_soon": "Coming Soon",
         "blockchains_colon": "블록체인:",
         "all": "전부",
         "categories_colon": "카테고리:",
@@ -683,7 +472,7 @@ var languages = {
         "users": "사용자",
         "volume": "볼륨",
         "txs": "TXS",
-        "score": /*"Dapp.Expert 스코아"*/ "DX 스코아",
+        "score": "Dapp. Expert 스코아",
         "see_more": "더보기...",
         //blockchains info section
         "total_dapps": "총 Dapp 수",
@@ -772,6 +561,7 @@ var languages = {
         // INDEX PAGE
         "index_page_title": "Dapp Expert",
         //blockchains header section
+        "coming_soon": "Em Breve",
         "blockchains_colon": "BLOCKCHAINS:",
         "all": "TUDO",
         "categories_colon": "CATEGORIAS:",
@@ -791,7 +581,7 @@ var languages = {
         "users": "Usuários",
         "volume": "Volume",
         "txs": "TXS",
-        "score": /*"Pontuação Dapp Expert"*/ "Pontuação DX",
+        "score": "Pontuação Dapp Expert",
         "see_more": "Veja mais...",
         //blockchains info section
         "total_dapps": "Dapps Totais",
@@ -841,7 +631,7 @@ var languages = {
 
         // APP PAGE
         // app page header
-        "go_to_the_website": "Visite o site",
+        "go_to_the_website": "Visitar o site",
         "download_white_paper": "Baixe um Livro Branco",
         "n_smart_contracts": "18 Contratos Inteligentes",
         "contract_addresses": "Contract Addresses",
@@ -880,8 +670,9 @@ var languages = {
         // INDEX PAGE
         "index_page_title": "Dapp Expert",
         //blockchains header section
+        "coming_soon": "即将到来",
         "blockchains_colon": "区块链:",
-        "all": "区块链",
+        "all": "全部",
         "categories_colon": "分类目录:",
         "games": "游戏",
         "exchanges": "交流",
@@ -899,7 +690,7 @@ var languages = {
         "users": "使用者",
         "volume": "体积",
         "txs": "TXS",
-        "score": /*"Dapp.Expert分数"*/ "DX分数",
+        "score": "Dapp. Expert分数",
         "see_more": "查看更多...",
         //blockchains info section
         "total_dapps": "Dapp总数",
@@ -988,6 +779,7 @@ var languages = {
         // INDEX PAGE
         "index_page_title": "Dapp Expert",
         //blockchains header section
+        "coming_soon": "即將到來",
         "blockchains_colon": "區塊鏈:",
         "all": "全部",
         "categories_colon": "分類目錄:",
@@ -1007,7 +799,7 @@ var languages = {
         "users": "使用者",
         "volume": "體積",
         "txs": "TXS",
-        "score": /*"Dapp.Expert分數"*/ "DX分數",
+        "score": "Dapp. Expert分數",
         "see_more": "查看更多...",
         //blockchains info section
         "total_dapps": "Dapp總數",
@@ -1079,6 +871,116 @@ var languages = {
         "review_based_own_experience": "This review is based on my own experience and is my genuine opinion",
         "submit_your_review": "Submit your review",
         "users_also_like": "用戶也喜歡"
+    },
+    "ms": {
+        // HEADER
+        "submit_dapp_btn": "Hantar Dapp",
+        "search_placeholder": "Carian...",
+
+        // FOOTER
+        "follow_us": "Ikut kami",
+        "submit_dapp": "Submit Dapp",
+        "privacy_policy": "Dasar Privasi",
+        "terms_of_use": "Syarat Penggunaan",
+        "cookie_policy": "Dasar Kuki",
+        "copyright_2020": "Hak Cipta © 2020 Dapp.Expert",
+
+        // INDEX PAGE
+        "index_page_title": "Dapp Expert",
+        //blockchains header section
+        "coming_soon": "Akan Datang",
+        "blockchains_colon": "Blockchain:",
+        "all": "SEMUA",
+        "categories_colon": "Kategori:",
+        "games": "Permainan",
+        "exchanges": "Pertukaran",
+        "collectibles": "Koleksi",
+        "gambling": "Perjudian",
+        "high_risk": "Berisiko tinggi",
+        "marketplaces": "Pasar",
+        "other": "Lain-lain",
+        //blockchains table section
+        "_24hr": "24 Jam",
+        "_7days": "7 hari",
+        "chain": "Rantai",
+        "category": "Kategori",
+        "balance": "Keseimbangan",
+        "users": "Pengguna",
+        "volume": "Isi padu",
+        "txs": "TXS",
+        "score": "Skor Dapp. Expert",
+        "see_more": "Lihat lagi...",
+        //blockchains info section
+        "total_dapps": "Jumlah Dapps",
+        "smart_contracts": "Kontrak Pintar",
+        "_24hr_users": "Pengguna 24 Jam",
+        "_24hr_transactions": "Transaksi 24 Jam",
+        "_24hr_volume": "Isi padu 24 Jam",
+        //blockchains schedule section
+        "blockchain_s_data_info": "Maklumat data blok rantai",
+        "dau": "DAU",
+        "transactions": "Transaksi",
+
+        // SUBMIT_DAPP PAGE
+        "submitdapp_page_title": "Submit Your Dapp",
+        // submit dapp header
+        "dapp_title": "Anda boleh menghantar dapp di sini",
+        "dapp_sub_title": "Sila masukkan semua maklumat tentang dapp anda dalam medan seterusnya. Jika anda ingin mengemas kini maklumat dapp anda sila beritahu kami di info@dapp.expert",
+        //submit dapp form - dapp info
+        "dapp_info_colon": "Maklumat Dapp:",
+        "dapp_name_star": "Nama Dapp *",
+        "dapp_website_star": "Laman Web Dapp *",
+        "social": "Social",
+        "finance": "Finance",
+        "language": "Bahasa",
+        "platform": "Platform",
+        "blockchain": "Blockchain",
+        "dapp_s_short_description_star": "Penerangan Ringkas Dapp *",
+        "dapp_s_full_description": "Penerangan Penuh Dapp",
+        "mainnet_contact_address": "Adress Kontrak Mainnet (gunakan \",\" untuk memisahkan)",
+        "dapp_logo": "Logo Dapp",
+        //submit dapp form - social media
+        "social_media": "Media Sosial",
+        "add_more_social_media": "Tambah satu lagi Media Sosial",
+        //submit dapp form - contact details
+        "contact_details": "Butiran kenalan",
+        "team_location": "Lokasi Pasukan",
+        "contact_email_star": "E-mel Orang Perhubungan *",
+        "contact_person_s_name": "Nama Orang Perhubungan",
+        //submit dapp form - add screenshots
+        "add_screenshots": "Tambah Tangkapan Skrin",
+        "add_screenshots_sub_title": "Muat naik imej yang boleh menggambarkan ciri-ciri dapp anda yang terbaik. Sila muat naik imej dengan nisbah 2: 1 yang kurang dari 512KB dan 1200x600. Resolusi yang disyorkan adalah 600x300, 800x400.",
+        "drag_and_drop": "Seret dan lepas",
+        //submit dapp form - footer
+        "fields_are_required": "Bidang dengan * diperlukan",
+        "submit_your_dapp": "Hantar Dapp anda",
+        "by_pressing_submit_dapp_btn": "Dengan menekan butang \"Hantar Dapp anda\" anda mengesahkan bahawa anda telah membaca Syarat Penggunaan dan Dasar Perundangan",
+
+        // APP PAGE
+        // app page header
+        "go_to_the_website": "Pergi ke laman web",
+        "download_white_paper": "Muat turun buku putih",
+        "total_unique_users": "Jumlah Pengguna Unik",
+        "n_smart_contracts": "18 Kontrak Pintar",
+        "contract_addresses": "Contract Addresses",
+        // app page similar
+        "similar_to": "Sama seperti WINK",
+        // app page analytical data
+        "analytical_data": "Data analitik",
+        // app page _ says
+        "_says": "Wink kata",
+        // app page user's voice
+        "user_s_voice": "Suara pengguna",
+        "see_all": "See all",
+        "leave_a_comment": "Tinggalkan komen",
+        "your_overall_rating_star": "Your overall rating *",
+        "your_name_star": "Your name *",
+        "tell_us_your_name": "Tell us your name",
+        "your_review_star": "Your review *",
+        "tell_your_review": "Tell people your review",
+        "review_based_own_experience": "This review is based on my own experience and is my genuine opinion",
+        "submit_your_review": "Submit your review",
+        "users_also_like": "Pengguna juga suka"
     }
 }
 $(document).ready(function() {
@@ -1099,14 +1001,8 @@ $(document).ready(function() {
         case "jp":
             $(current_language_flag).attr("src", "images/language-jp.svg")
             break;
-        case "es":
-            $(current_language_flag).attr("src", "images/language-es.svg")
-            break;
         case "fr":
             $(current_language_flag).attr("src", "images/language-fr.svg")
-            break;
-        case "id":
-            $(current_language_flag).attr("src", "images/language-id.svg")
             break;
         case "ko":
             $(current_language_flag).attr("src", "images/language-ko.svg")
@@ -1119,6 +1015,9 @@ $(document).ready(function() {
             break;
         case "tw":
             $(current_language_flag).attr("src", "images/language-tw.svg")
+            break;
+        case "ms":
+            $(current_language_flag).attr("src", "images/language-ms.svg")
             break;
         default:
             $(current_language_flag).attr("src", "images/language-en.svg")
