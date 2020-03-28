@@ -1,3 +1,28 @@
+//general use functions
+function removeHash() {
+    history.pushState("", document.title, window.location.pathname +
+        window.location.search);
+}
+
+function addActiveSelectorEvent(commonParent, commonElement) {
+    $(commonParent).find(commonElement).click(function() {
+        $(commonParent).find(commonElement).removeClass("active")
+        $(this).addClass("active")
+    })
+}
+
+function hideClickingOff(element) {
+    $(document).mouseup(function(e) {
+        container = $(element);
+
+        // If the target of the click isn't the container
+        if (!container.is(e.target) && container.has(e.target).length === 0) {
+            container.hide();
+        }
+    });
+}
+
+
 document.addEventListener('DOMContentLoaded', () => {
 
     const mobileHeaderOpen = document.querySelector('.mobile-header-open');
@@ -44,15 +69,15 @@ document.addEventListener('DOMContentLoaded', () => {
 
     //стилизация option
 
-    if ($('.dapp__select') !== "undefined" && $('.dapp__select') !== null) {
+    // if ($('.dapp__select') !== "undefined" && $('.dapp__select') !== null) {
 
-        $('.dapp__select').select2({
-            placeholder: 'Select an Industry',
-            allowClear: false,
-            tags: true,
-            maximumSelectionLength: 5
-        });
-    }
+    //     $('.dapp__select').select2({
+    //         // placeholder: 'Select an Industry',
+    //         allowClear: false,
+    //         // tags: true,
+    //         // maximumSelectionLength: 0
+    //     });
+    // }
 
     // добавление нового поля ввода social media
     if (socMediaBtn !== "undefined" && socMediaBtn !== null) {
@@ -304,12 +329,6 @@ document.addEventListener('DOMContentLoaded', () => {
     new WOW().init()
 
 
-
-    function removeHash() {
-        history.pushState("", document.title, window.location.pathname +
-            window.location.search);
-    }
-
     //////////////////
     // LEGAL POLICY //
     //////////////////
@@ -392,18 +411,26 @@ document.addEventListener('DOMContentLoaded', () => {
 
 
     //BUTTONS
-    function addActiveToggleEvent(commonParent, commonElement) {
-        $(commonParent).find(commonElement).click(function() {
-            $(commonParent).find(commonElement).removeClass("active")
-            $(this).addClass("active")
-        })
-    }
-
-    addActiveToggleEvent("#period-select", "button")
+    addActiveSelectorEvent("#period-select", "button")
+    addActiveSelectorEvent("#blockchain-select", "button")
 
     //INFO MESSAGE
     $(function() {
-        $('[data-toggle="tooltip"]').tooltip()
+        $('[data-toggle="tooltip"]').tooltip({
+            position: {
+                my: "center bottom-20",
+                at: "center top",
+                using: function(position, feedback) {
+                    $(this).css(position);
+                    $("<div>")
+                        .addClass("arrow")
+                        .addClass(feedback.vertical)
+                        .addClass(feedback.horizontal)
+                        .appendTo(this);
+                }
+            }
+        });
+        $(".ui-helper-hidden-accessible").hide();
     });
 
     //CLICKABLE ROW
@@ -424,4 +451,62 @@ document.addEventListener('DOMContentLoaded', () => {
     //         $fixedHeader.hide();
     //     }
     // });
+
+    /////////////
+    // NAVBAR  //
+    /////////////
+
+    //hide-show toggle on click
+    $("#language-btn").click(function() {
+        $("#dropdown-language").toggle(function() { $(this).css({ display: "none" }) }, function() {})
+    })
+
+    //hide when click off the dropdown menu
+    hideClickingOff("#dropdown-language")
+
+    ////////////////////////
+    // Dapp Form Dropdown //
+    ////////////////////////
+
+    $(".dapp-form-dropdown .field").click(function(e) {
+        e.preventDefault();
+        var $field = $(this)
+
+        $field.closest(".dapp-form-dropdown")
+            .find(".option").stop().slideDown(150);
+        $field.css({
+            'border-bottom': 'none',
+            'border-bottom-left-radius': '0',
+            'border-bottom-right-radius': '0'
+        })
+    });
+
+    $('.dapp-form-dropdown .option li').click(function(e) {
+        e.preventDefault();
+        $li = $(this)
+        var option_value = $li.find('a').text();
+        $li.closest(".dapp-form-dropdown").find('.field .dropdown-current').text(option_value);
+        $('.option').slideUp(150,
+            function() {
+                $li.closest(".dapp-form-dropdown")
+                    .find(".field").css({
+                        'border': '2px solid #7BC143',
+                        'border-radius': '34px',
+                        'font-style': 'normal'
+                    })
+            }
+        )
+    });
+
+    $(document).mouseup(function(e) {
+        container = $(".dapp-form-dropdown .option");
+        if (!container.is(e.target) && container.has(e.target).length === 0) {
+            container.closest(".dapp-form-dropdown")
+                .find(".field").css({
+                    'border': '2px solid #7BC143',
+                    'border-radius': '34px'
+                })
+            container.hide()
+        }
+    });
 });

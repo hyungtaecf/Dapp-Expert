@@ -1,5 +1,6 @@
 .dapp {
     padding: 85px 0;
+    overflow: visible;
 }
 
 .dapp-title {
@@ -105,14 +106,13 @@
     color: #000000;
 }
 
-.select-dapp .select2-container--default .select2-selection--single {
-    border: 2px solid $theme-color-1 !important;
-    width: 400px;
-    max-width: 100%;
-    height: 63px;
-    border-radius: 34px;
-}
-
+// .select-dapp .select2-container--default .select2-selection--single {
+//     border: 2px solid $theme-color-1 !important;
+//     width: 400px;
+//     max-width: 100%;
+//     height: 63px;
+//     border-radius: 34px;
+// }
 .select2-container--default {
     width: auto !important;
     max-width: 100% !important;
@@ -193,7 +193,10 @@
 }
 
 .dapp__textarea {
-    height: 250px;
+    background: white;
+    height: 246px;
+    width: 395px;
+    resize: none;
 }
 
 .textarea-wrap {
@@ -253,6 +256,8 @@
 }
 
 .soc-media {
+    position: relative;
+    z-index: -2;
     padding: 70px 0;
     margin-top: 30px;
     background: #FAFBFC;
@@ -318,4 +323,81 @@
 
 .contact {
     padding: 70px 0;
+}
+
+////
+.select-dapp {
+    border: 2px solid $theme-color-1 !important;
+    width: 400px;
+    max-width: 100%;
+    height: 63px;
+    border-radius: 34px;
+}
+
+.dapp-form-dropdown {
+    position: relative;
+    margin-bottom: 30px;
+    .field {
+        line-height: 141.19%;
+        padding: 18px;
+        padding-right: 0px;
+        border: 2px solid $theme-color-1;
+        border-radius: 34px;
+        height: 63px;
+        max-width: 100%;
+        width: 400px;
+        font-style: italic;
+        cursor: pointer;
+        .dropdown-current {
+            font-family: "Roboto";
+            font-size: 13px;
+            z-index: 10;
+        }
+        .dropdown-arrow {
+            position: absolute;
+            z-index: 3;
+            top: 31px;
+            right: 40px;
+            transform: translateY(-50%);
+            background: url($root+"images/select.svg") no-repeat;
+            width: 20px;
+            height: 15px;
+        }
+    }
+    .option {
+        position: absolute;
+        top: 62px;
+        display: none;
+        list-style: none;
+        margin-top: -1px;
+        border: 2px solid $theme-color-1;
+        border-top: none;
+        border-bottom-left-radius: 34px;
+        border-bottom-right-radius: 34px;
+        width: 400px;
+        min-width: 100%;
+        padding: 0px;
+        z-index: 4;
+        background: white;
+        overflow: visible;
+        li {
+            display: block;
+            cursor: pointer;
+            padding: 10px 18px;
+            &:first-child {
+                background: transparent;
+            }
+            a {
+                text-decoration: none;
+                color: #000;
+            }
+            &:hover {
+                background: $theme-color-3;
+                &:last-child {
+                    border-bottom-left-radius: 34px;
+                    border-bottom-right-radius: 34px;
+                }
+            }
+        }
+    }
 }

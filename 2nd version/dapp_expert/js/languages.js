@@ -28,6 +28,10 @@ var languages = {
         "marketplaces": "Marketplaces",
         "other": "Other",
         //blockchains table section
+        "balance_tooltip": "The amount of tokens in dapps",
+        "users_tooltip": "The number of users which did transactions in dapp's smart contracts",
+        "volume_tooltip": "Amount of transactions made by users into a dapp's smart contracts (USD)",
+        "txs_tooltip": "The number of smart contract transactions made by users in Dapp",
         "_24hr": "24Hr",
         "_7days": "7Days",
         "chain": "Chain",
@@ -63,7 +67,7 @@ var languages = {
         "language": "Language",
         "platform": "Platform",
         "blockchain": "Blockchain",
-        "dapp_s_short_description_star": "Dapp 's Short Description *",
+        "dapp_s_short_description_star": "Dapp's Short Description *",
         "dapp_s_full_description": "Dapp's Full Description",
         "mainnet_contact_address": "Mainnet Contract Address (use \",\" to separate)",
         "dapp_logo": "Dapp Logo",
@@ -86,16 +90,25 @@ var languages = {
 
         // APP PAGE
         // app page header
+        "_24hr_users_colon": "24Hr Users:",
+        "total_unique_users_colon": "Total Unique Users:",
+        "balance_colon": "BALANCE:",
+        "_24hr_users_colon": "24Hr Users:",
+        "total_unique_users_colon": "Total Unique Users:",
+        "balance_colon": "BALANCE:",
         "go_to_the_website": "Go to the website",
         "download_white_paper": "Download a White Paper",
-        "n_smart_contracts": "18 Smart Contracts",
+        "_smart_contracts-1": "",
+        "_smart_contracts-2": " Smart Contracts",
         "contract_addresses": "Contract Addresses",
         // app page similar
-        "similar_to": "Similar to WINK",
+        "similar_to-1": "Similar to ",
+        "similar_to-2": "",
         // app page analytical data
         "analytical_data": "Analytical Data",
         // app page _ says
-        "_says": "Wink says",
+        "_says-1": "",
+        "_says-2": " says",
         // app page user's voice
         "user_s_voice": "User's voice",
         "see_all": "See all",
@@ -137,6 +150,10 @@ var languages = {
         "marketplaces": "Торговые площадки",
         "other": "Другое",
         //blockchains table section
+        "balance_tooltip": "The amount of tokens in dapps",
+        "users_tooltip": "The number of users which did transactions in dapp's smart contracts",
+        "volume_tooltip": "Amount of transactions made by users into a dapp's smart contracts (USD)",
+        "txs_tooltip": "The number of smart contract transactions made by users in Dapp",
         "_24hr": "24часа",
         "_7days": "7 дней",
         "chain": "Блокчейн",
@@ -169,7 +186,7 @@ var languages = {
         "dapp_website_star": "Адрес сайта Dapp *",
         "social": "Social",
         "finance": "Finance",
-        "language": "言語",
+        "language": "Языки",
         "platform": "Платформа",
         "dapp_s_short_description_star": "Краткое описание децентрализованного приложения *",
         "blockchain": "Блокчейн",
@@ -195,16 +212,22 @@ var languages = {
 
         // APP PAGE
         // app page header
+        "_24hr_users_colon": "Пользователей за 24 часа:",
+        "total_unique_users_colon": "Total Unique Users:",
+        "balance_colon": "Баланс:",
         "go_to_the_website": "Перейти на сайт",
         "download_white_paper": "Скачать Whitepaper",
-        "n_smart_contracts": "18 Смарт контракты",
+        "_smart_contracts-1": "",
+        "_smart_contracts-2": " Смарт контракты",
         "contract_addresses": "Контрактные адреса",
         // app page similar
-        "similar_to": "Похожее на WINK",
+        "similar_to-1": "Похожее на ",
+        "similar_to-2": "",
         // app page analytical data
         "analytical_data": "Аналитика",
         // app page _ says
-        "_says": "Wink говорит о себе",
+        "_says-1": "",
+        "_says-2": " говорит о себе",
         // app page user's voice
         "user_s_voice": "Отзыв пользователя",
         "see_all": "See all",
@@ -216,7 +239,7 @@ var languages = {
         "tell_your_review": "Напишите свой отзыв",
         "review_based_own_experience": "Этот отзыв основан на моем собственном опыте и является моим подлинным мнением",
         "submit_your_review": "Оставить отзыв",
-        "users_also_like": "Другие пользователи предпочитают",
+        "users_also_like": "Другие пользователи предпочитают"
     },
     "jp": {
         // HEADER
@@ -246,6 +269,10 @@ var languages = {
         "marketplaces": "マーケットプレイス",
         "other": "その他",
         //blockchains table section
+        "balance_tooltip": "The amount of tokens in dapps",
+        "users_tooltip": "The number of users which did transactions in dapp's smart contracts",
+        "volume_tooltip": "Amount of transactions made by users into a dapp's smart contracts (USD)",
+        "txs_tooltip": "The number of smart contract transactions made by users in Dapp",
         "_24hr": "24Hr",
         "_7days": "7 日間",
         "chain": "チェーン",
@@ -304,16 +331,22 @@ var languages = {
 
         // APP PAGE
         // app page header
+        "_24hr_users_colon": "24時間以内のユーザー数:",
+        "total_unique_users_colon": "一般ユーザの合計数:",
+        "balance_colon": "バランス:",
         "go_to_the_website": "Webサイトにアクセスする",
         "download_white_paper": "ホワイトペーパーのダウンロード",
-        "n_smart_contracts": "18 スマートコントラクト",
+        "_smart_contracts-1": "",
+        "_smart_contracts-2": "スマートコントラクト",
         "contract_addresses": "Contract Addresses",
         // app page similar
-        "similar_to": "に類似しています。WINK",
+        "similar_to-1": "",
+        "similar_to-2": "に類似",
         // app page analytical data
         "analytical_data": "分析データ",
         // app page _ says
-        "_says": "Wink ...の発言",
+        "_says-1": "",
+        "_says-2": "の発言",
         // app page user's voice
         "user_s_voice": "User's voice",
         "see_all": "See all",
@@ -355,6 +388,10 @@ var languages = {
         "marketplaces": "Marchés",
         "other": "Autres",
         //blockchains table section
+        "balance_tooltip": "The amount of tokens in dapps",
+        "users_tooltip": "The number of users which did transactions in dapp's smart contracts",
+        "volume_tooltip": "Amount of transactions made by users into a dapp's smart contracts (USD)",
+        "txs_tooltip": "The number of smart contract transactions made by users in Dapp",
         "_24hr": "24 heures",
         "_7days": "7 jours",
         "chain": "Chaîne",
@@ -413,16 +450,23 @@ var languages = {
 
         // APP PAGE
         // app page header
+        "_24hr_users_colon": "Utilisateurs 24h:",
+        "total_unique_users_colon": "Total des utilisateurs uniques:",
+        "balance_colon": "BALANCE:",
         "go_to_the_website": "Aller sur le site web",
         "download_white_paper": "Télécharger un livre blanc",
-        "n_smart_contracts": "18 Contracts intelligents",
+        "_smart_contracts-1": "",
+        "_smart_contracts-2": " Contracts intelligents",
         "contract_addresses": "Contract Addresses",
         // app page similar
-        "similar_to": "Similaire à WINK",
+        "similar_to-1": "Similaire à ",
+        "similar_to-2": "",
         // app page analytical data
         "analytical_data": "Données analytiques",
         // app page _ says
-        "_says": "Wink  dit",
+        "_says-1": "",
+        "_says-2": " dit",
+
         // app page user's voice
         "user_s_voice": "Les utilisateurs témoignent",
         "see_all": "See all",
@@ -438,12 +482,12 @@ var languages = {
     },
     "ko": {
         // HEADER
-        "submit_dapp_btn": "Dapp 보냄",
+        "submit_dapp_btn": "Dapp 보내기",
         "search_placeholder": "검색...",
 
         // FOOTER
         "follow_us": "Follow Us",
-        "submit_dapp": "Dapp 보냄",
+        "submit_dapp": "Dapp 보내기",
         "privacy_policy": "개인정보처리방침",
         "terms_of_use": "이용약관",
         "cookie_policy": "쿠키 정책",
@@ -464,6 +508,10 @@ var languages = {
         "marketplaces": "장터",
         "other": "기타",
         //blockchains table section
+        "balance_tooltip": "The amount of tokens in dapps",
+        "users_tooltip": "The number of users which did transactions in dapp's smart contracts",
+        "volume_tooltip": "Amount of transactions made by users into a dapp's smart contracts (USD)",
+        "txs_tooltip": "The number of smart contract transactions made by users in Dapp",
         "_24hr": "24시간",
         "_7days": "7일",
         "chain": "체인",
@@ -522,16 +570,22 @@ var languages = {
 
         // APP PAGE
         // app page header
+        "_24hr_users_colon": "24시간 이용자수:",
+        "total_unique_users_colon": "총 순 사용자:",
+        "balance_colon": "발랑스:",
         "go_to_the_website": "웹 사이트로 이동",
         "download_white_paper": "백서 다운로드",
-        "n_smart_contracts": "18 스마트 계약",
+        "_smart_contracts-1": "스마트 계약 ",
+        "_smart_contracts-2": "개",
         "contract_addresses": "계약 주소 목록",
         // app page similar
-        "similar_to": "비슷한",
+        "similar_to-1": "",
+        "similar_to-2": "와 비슷한",
         // app page analytical data
         "analytical_data": "분석 데이터",
         // app page _ says
-        "_says": "Wink 말한다",
+        "_says-1": "",
+        "_says-2": "의 말",
         // app page user's voice
         "user_s_voice": "사용자의 목소리",
         "see_all": "See all",
@@ -563,7 +617,7 @@ var languages = {
         //blockchains header section
         "coming_soon": "Em Breve",
         "blockchains_colon": "BLOCKCHAINS:",
-        "all": "TUDO",
+        "all": "Tudo",
         "categories_colon": "CATEGORIAS:",
         "games": "Jogos",
         "exchanges": "Câmbio",
@@ -573,6 +627,10 @@ var languages = {
         "marketplaces": "Mercado",
         "other": "Outras",
         //blockchains table section
+        "balance_tooltip": "Quantidade de tokens em um dapp",
+        "users_tooltip": "Número de usuários que fizeram transações em contratos inteligentes de um dapp",
+        "volume_tooltip": "Quantidade de transações feitas por usuários para contratos inteligentes de um dapp (USD)",
+        "txs_tooltip": "Número de transações de contratos inteligentes feita por usuários em um Dapp",
         "_24hr": "24h",
         "_7days": "7d",
         "chain": "Rede",
@@ -606,7 +664,7 @@ var languages = {
         "social": "Social",
         "finance": "Finanças",
         "language": "Idioma",
-        "platform": "Platforma",
+        "platform": "Plataforma",
         "blockchain": "Blockchain",
         "dapp_s_short_description_star": "Breve Descrição do Dapp *",
         "dapp_s_full_description": "Descrição Completa do Dapp",
@@ -631,16 +689,22 @@ var languages = {
 
         // APP PAGE
         // app page header
+        "_24hr_users_colon": "Usuários Diários:",
+        "total_unique_users_colon": "Usuários Únicos Totais:",
+        "balance_colon": "SALDO:",
         "go_to_the_website": "Visitar o site",
         "download_white_paper": "Baixe um Livro Branco",
-        "n_smart_contracts": "18 Contratos Inteligentes",
+        "_smart_contracts-1": "",
+        "_smart_contracts-2": " Contratos Inteligentes",
         "contract_addresses": "Contract Addresses",
         // app page similar
-        "similar_to": "Semelhantes",
+        "similar_to-1": "Semelhantes a ",
+        "similar_to-2": "",
         // app page analytical data
         "analytical_data": "Dados Analíticos",
         // app page _ says
-        "_says": "Wink diz",
+        "_says-1": "",
+        "_says-2": " diz",
         // app page user's voice
         "user_s_voice": "Voz do usuário",
         "see_all": "Ver tudo",
@@ -682,6 +746,10 @@ var languages = {
         "marketplaces": "市场",
         "other": "其他",
         //blockchains table section
+        "balance_tooltip": "The amount of tokens in dapps",
+        "users_tooltip": "The number of users which did transactions in dapp's smart contracts",
+        "volume_tooltip": "Amount of transactions made by users into a dapp's smart contracts (USD)",
+        "txs_tooltip": "The number of smart contract transactions made by users in Dapp",
         "_24hr": "24小时",
         "_7days": "7天",
         "chain": "链",
@@ -740,16 +808,22 @@ var languages = {
 
         // APP PAGE
         // app page header
+        "_24hr_users_colon": "24小时用户:",
+        "total_unique_users_colon": "唯一身份用户总数:",
+        "balance_colon": "平衡:",
         "go_to_the_website": "进入网站",
         "download_white_paper": "下载白皮书",
-        "n_smart_contracts": "18智能合约",
+        "_smart_contracts-1": "",
+        "_smart_contracts-2": "智能合约",
         "contract_addresses": "Contract Addresses",
         // app page similar
-        "similar_to": "Wink 相似",
+        "similar_to-1": "相似",
+        "similar_to-2": "",
         // app page analytical data
         "analytical_data": "分析数据",
         // app page _ says
-        "_says": "Wink 说",
+        "_says-1": "",
+        "_says-2": "说",
         // app page user's voice
         "user_s_voice": "用户的声音",
         "see_all": "See all",
@@ -791,6 +865,10 @@ var languages = {
         "marketplaces": "市場",
         "other": "其他",
         //blockchains table section
+        "balance_tooltip": "The amount of tokens in dapps",
+        "users_tooltip": "The number of users which did transactions in dapp's smart contracts",
+        "volume_tooltip": "Amount of transactions made by users into a dapp's smart contracts (USD)",
+        "txs_tooltip": "The number of smart contract transactions made by users in Dapp",
         "_24hr": "24小時",
         "_7days": "7天",
         "chain": "鏈",
@@ -849,16 +927,21 @@ var languages = {
 
         // APP PAGE
         // app page header
+        "_24hr_users_colon": "24小時用戶:",
+        "total_unique_users_colon": "唯一身份用戶總數:",
+        "balance_colon": "平衡:",
         "go_to_the_website": "進入網站",
         "download_white_paper": "下載白皮書",
-        "n_smart_contracts": "18智能合約",
+        "_smart_contracts-1": "",
+        "_smart_contracts-2": "智能合約",
         "contract_addresses": "Contract Addresses",
         // app page similar
-        "similar_to": "Wink 相似",
+        "similar_to-1": "相似",
+        "similar_to-2": "",
         // app page analytical data
         "analytical_data": "分析數據",
         // app page _ says
-        "_says": "Wink 說",
+        "_says-2": "說",
         // app page user's voice
         "user_s_voice": "用戶的聲音",
         "see_all": "See all",
@@ -900,6 +983,10 @@ var languages = {
         "marketplaces": "Pasar",
         "other": "Lain-lain",
         //blockchains table section
+        "balance_tooltip": "The amount of tokens in dapps",
+        "users_tooltip": "The number of users which did transactions in dapp's smart contracts",
+        "volume_tooltip": "Amount of transactions made by users into a dapp's smart contracts (USD)",
+        "txs_tooltip": "The number of smart contract transactions made by users in Dapp",
         "_24hr": "24 Jam",
         "_7days": "7 hari",
         "chain": "Rantai",
@@ -958,17 +1045,23 @@ var languages = {
 
         // APP PAGE
         // app page header
+        "_24hr_users_colon": "Pengguna 24 Jam:",
+        "total_unique_users_colon": "Jumlah Pengguna Unik:",
+        "balance_colon": "Keseimbangan:",
         "go_to_the_website": "Pergi ke laman web",
         "download_white_paper": "Muat turun buku putih",
         "total_unique_users": "Jumlah Pengguna Unik",
-        "n_smart_contracts": "18 Kontrak Pintar",
+        "_smart_contracts-1": "",
+        "_smart_contracts-2": " Kontrak Pintar",
         "contract_addresses": "Contract Addresses",
         // app page similar
-        "similar_to": "Sama seperti WINK",
+        "similar_to-1": "Sama seperti ",
+        "similar_to-2": "",
         // app page analytical data
         "analytical_data": "Data analitik",
         // app page _ says
-        "_says": "Wink kata",
+        "_says-1": "",
+        "_says-2": " kata",
         // app page user's voice
         "user_s_voice": "Suara pengguna",
         "see_all": "See all",
@@ -991,45 +1084,48 @@ $(document).ready(function() {
     }
     changeLanguage(lang)
     var current_language_flag = $("#current_language")
-    switch (lang) {
-        case "en":
-            $(current_language_flag).attr("src", "images/language-en.svg")
-            break;
-        case "ru":
-            $(current_language_flag).attr("src", "images/language-ru.svg")
-            break;
-        case "jp":
-            $(current_language_flag).attr("src", "images/language-jp.svg")
-            break;
-        case "fr":
-            $(current_language_flag).attr("src", "images/language-fr.svg")
-            break;
-        case "ko":
-            $(current_language_flag).attr("src", "images/language-ko.svg")
-            break;
-        case "pt":
-            $(current_language_flag).attr("src", "images/language-pt.svg")
-            break;
-        case "zh":
-            $(current_language_flag).attr("src", "images/language-zh.svg")
-            break;
-        case "tw":
-            $(current_language_flag).attr("src", "images/language-tw.svg")
-            break;
-        case "ms":
-            $(current_language_flag).attr("src", "images/language-ms.svg")
-            break;
-        default:
-            $(current_language_flag).attr("src", "images/language-en.svg")
-            break;
-    }
+        // switch (lang) {
+        //     case "en":
+        //         $(current_language_flag).attr("src", "images/language-en.svg")
+        //         break;
+        //     case "ru":
+        //         $(current_language_flag).attr("src", "images/language-ru.svg")
+        //         break;
+        //     case "jp":
+        //         $(current_language_flag).attr("src", "images/language-jp.svg")
+        //         break;
+        //     case "fr":
+        //         $(current_language_flag).attr("src", "images/language-fr.svg")
+        //         break;
+        //     case "ko":
+        //         $(current_language_flag).attr("src", "images/language-ko.svg")
+        //         break;
+        //     case "pt":
+        //         $(current_language_flag).attr("src", "images/language-pt.svg")
+        //         break;
+        //     case "zh":
+        //         $(current_language_flag).attr("src", "images/language-zh.svg")
+        //         break;
+        //     case "tw":
+        //         $(current_language_flag).attr("src", "images/language-tw.svg")
+        //         break;
+        //     case "ms":
+        //         $(current_language_flag).attr("src", "images/language-ms.svg")
+        //         break;
+        //     default:
+        //         $(current_language_flag).attr("src", "images/language-en.svg")
+        //         break;
+        // }
 
 
     function changeLanguage(lang) {
         $('[key]').each(function() {
             var placeholderText = $(this).attr('placeholder');
+            var titleText = $(this).attr('title');
             if (typeof placeholderText !== typeof undefined && placeholderText !== false) {
                 $(this).attr("placeholder", languages[lang][$(this).attr('key')]);
+            } else if (typeof titleText !== typeof undefined && titleText !== false) {
+                $(this).attr("title", languages[lang][$(this).attr('key')]);
             } else {
                 $(this).text(languages[lang][$(this).attr('key')])
             }
@@ -1041,5 +1137,7 @@ $(document).ready(function() {
         localStorage.setItem("language", lang);
 
         changeLanguage(lang)
+
     })
+
 })

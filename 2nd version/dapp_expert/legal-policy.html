@@ -28,59 +28,69 @@
                             </div>
 
                             <a key="submit_dapp_btn" href="submit-dapp.html" class="header__button">Submit DAPP</a>
-                        </form>
-                        <div class="language-select">
-                            <button class="language-btn" disabled>
-                                <img id="current_language" src="images/language-en.svg" alt="EN" height="28" />
-                            </button>
-                            <div class="dropdown-language">
-                                <a class="translate" id="en" href="">
-                                    <img src="images/language-en.svg" alt="EN" height="28" />
+                            <div class="language-select">
+                                <a id="language-btn" value="Language" disabled>
+                                    <span key="language">Language</span>
                                 </a>
-                                <a class="translate" id="ru" href="">
-                                    <img src="images/language-ru.svg" alt="RU" height="28" />
-                                </a>
-                                <a class="translate" id="jp" href="">
-                                    <img src="images/language-jp.svg" alt="JP" height="28" />
-                                </a>
-                                <a class="translate" id="fr" href="">
-                                    <img src="images/language-fr.svg" alt="FR" height="28" />
-                                </a>
-                                <a class="translate" id="ko" href="">
-                                    <img src="images/language-ko.svg" alt="KO" height="28" />
-                                </a>
-                                <a class="translate" id="pt" href="">
-                                    <img src="images/language-pt.svg" alt="PT" height="28" />
-                                </a>
-                                <a class="translate" id="zh" href="">
-                                    <img src="images/language-zh.svg" alt="ZH" height="28" />
-                                </a>
-                                <a class="translate" id="tw" href="">
-                                    <img src="images/language-tw.svg" alt="TW" height="28" />
-                                </a>
-                                <a class="translate" id="ms" href="">
-                                    <img src="images/language-ms.svg" alt="MS" height="28" />
-                                </a>
-                                <a class="" id="es" href="">
-                                    <img src="images/language-es.svg" alt="ES" height="28" />
-                                </a>
-                                <a class="" id="id" href="">
-                                    <img src="images/language-id.svg" alt="ID" height="28" />
-                                </a>
-                                <a class="" id="tr" href="">
-                                    <img src="images/language-tr.svg" alt="TR" height="28" />
-                                </a>
-                                <a class="" id="th" href="">
-                                    <img src="images/language-th.svg" alt="TH" height="28" />
-                                </a>
-                                <a class="" id="vi" href="">
-                                    <img src="images/language-vi.svg" alt="VI" height="28" />
-                                </a>
-                                <a class="" id="de" href="">
-                                    <img src="images/language-de.svg" alt="DE" height="28" />
-                                </a>
+                                <div id="dropdown-language">
+                                    <div class="language-list-item">
+                                        <a class="translate" id="en" href="">
+                                            <img src="images/language-en.svg" alt="EN" height="28" />
+                                            <span class="language-label">English</span>
+                                        </a>
+                                    </div>
+                                    <div class="language-list-item">
+                                        <a class="translate" id="ru" href="">
+                                            <img src="images/language-ru.svg" alt="RU" height="28" />
+                                            <span class="language-label">Русский язык</span>
+                                        </a>
+                                    </div>
+                                    <div class="language-list-item">
+                                        <a class="translate" id="jp" href="">
+                                            <img src="images/language-jp.svg" alt="JP" height="28" />
+                                            <span class="language-label">日本語</span>
+                                        </a>
+                                    </div>
+                                    <div class="language-list-item">
+                                        <a class="translate" id="fr" href="">
+                                            <img src="images/language-fr.svg" alt="FR" height="28" />
+                                            <span class="language-label">Français</span>
+                                        </a>
+                                    </div>
+                                    <div class="language-list-item">
+                                        <a class="translate" id="ko" href="">
+                                            <img src="images/language-ko.svg" alt="KO" height="28" />
+                                            <span class="language-label">한국어</span>
+                                        </a>
+                                    </div>
+                                    <div class="language-list-item">
+                                        <a class="translate" id="pt" href="">
+                                            <img src="images/language-pt.svg" alt="PT" height="28" />
+                                            <span class="language-label">Português</span>
+                                        </a>
+                                    </div>
+                                    <div class="language-list-item">
+                                        <a class="translate" id="zh" href="">
+                                            <img src="images/language-zh.svg" alt="ZH" height="28" />
+                                            <span class="language-label">简体中文</span>
+                                        </a>
+                                    </div>
+                                    <div class="language-list-item">
+                                        <a class="translate" id="tw" href="">
+                                            <img src="images/language-tw.svg" alt="TW" height="28" />
+                                            <span class="language-label">繁體中文</span>
+                                        </a>
+                                    </div>
+                                    <div class="language-list-item">
+                                        <a class="translate" id="ms" href="">
+                                            <img src="images/language-ms.svg" alt="MS" height="28" />
+                                            <span class="language-label">Bahasa Melayu</span>
+                                        </a>
+                                    </div>
+                                </div>
                             </div>
-                        </div>
+                        </form>
+
                     </div>
                 </div>
             </div>
@@ -476,38 +486,31 @@
                 </div>
             </div>
             <!-- CAUTION - UNIQUE FOOTER LINKS FOR THIS PAGE -->
-            <nav class="footer__nav">
-                <ul class="footer__list">
-                    <li class="footer__item">
-                        <a key="submit_dapp" href="submit-dapp.html" id="footerSubmitDapp" class="footer__link">Submit Dapp</a>
-                    </li>
-                    <li class="footer__item">
-                        <a key="privacy_policy" id="footerPrivacyPolicy" href="?#privacy" class="footer__link">Privacy Policy</a>
-                    </li>
-                    <li class="footer__item">
-                        <a key="terms_of_use" id="footerTermsOfUse" href="?#terms" class="footer__link">Terms of Use</a>
-                    </li>
-                    <li class="footer__item">
-                        <a key="cookie_policy" id="footerCookiePolicy" href="?#cookie" class="footer__link">Cookie Policy</a>
-                    </li>
-                </ul>
-            </nav>
+            <div class="footer__nav">
+                <div class="footer__item">
+                    <a key="submit_dapp" href="submit-dapp.html" id="footerSubmitDapp">Submit Dapp</a>
+                </div>
+                <div class="footer__item">
+                    <a key="privacy_policy" id="footerPrivacyPolicy" href="?#privacy">Privacy Policy</a>
+                </div>
+                <div class="footer__item">
+                    <a key="terms_of_use" id="footerTermsOfUse" href="?#terms">Terms of Use</a>
+                </div>
+                <div class="footer__item">
+                    <a key="cookie_policy" id="footerCookiePolicy" href="?#cookie">Cookie Policy</a>
+                </div>
+            </div>
             <p key="copyright_2020" class="footer__text">Copyright c 2020 Dapp.expert</p>
         </section>
     </footer>
 
     <script src="js/jquery.js"></script>
+    <script src="js/jquery-ui.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/select2@4.0.13/dist/js/select2.min.js"></script>
     <script src="js/slick.min.js"></script>
     <script src="js/wow.min.js"></script>
     <script src="js/script.js"></script>
     <script src="js/languages.js"></script>
-    <script>
-        function resetHref() {
-            location.hash = '';
-        }
-        resetHref()
-    </script>
 </body>
 
 </html>

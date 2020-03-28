@@ -29,59 +29,69 @@
                             </div>
 
                             <a key="submit_dapp_btn" href="submit-dapp.html" class="header__button">Submit DAPP</a>
-                        </form>
-                        <div class="language-select">
-                            <button class="language-btn" disabled>
-                                <img id="current_language" src="images/language-en.svg" alt="EN" height="28" />
-                            </button>
-                            <div class="dropdown-language">
-                                <a class="translate" id="en" href="">
-                                    <img src="images/language-en.svg" alt="EN" height="28" />
+                            <div class="language-select">
+                                <a id="language-btn" value="Language" disabled>
+                                    <span key="language">Language</span>
                                 </a>
-                                <a class="translate" id="ru" href="">
-                                    <img src="images/language-ru.svg" alt="RU" height="28" />
-                                </a>
-                                <a class="translate" id="jp" href="">
-                                    <img src="images/language-jp.svg" alt="JP" height="28" />
-                                </a>
-                                <a class="translate" id="fr" href="">
-                                    <img src="images/language-fr.svg" alt="FR" height="28" />
-                                </a>
-                                <a class="translate" id="ko" href="">
-                                    <img src="images/language-ko.svg" alt="KO" height="28" />
-                                </a>
-                                <a class="translate" id="pt" href="">
-                                    <img src="images/language-pt.svg" alt="PT" height="28" />
-                                </a>
-                                <a class="translate" id="zh" href="">
-                                    <img src="images/language-zh.svg" alt="ZH" height="28" />
-                                </a>
-                                <a class="translate" id="tw" href="">
-                                    <img src="images/language-tw.svg" alt="TW" height="28" />
-                                </a>
-                                <a class="translate" id="ms" href="">
-                                    <img src="images/language-ms.svg" alt="MS" height="28" />
-                                </a>
-                                <a class="" id="es" href="">
-                                    <img src="images/language-es.svg" alt="ES" height="28" />
-                                </a>
-                                <a class="" id="id" href="">
-                                    <img src="images/language-id.svg" alt="ID" height="28" />
-                                </a>
-                                <a class="" id="tr" href="">
-                                    <img src="images/language-tr.svg" alt="TR" height="28" />
-                                </a>
-                                <a class="" id="th" href="">
-                                    <img src="images/language-th.svg" alt="TH" height="28" />
-                                </a>
-                                <a class="" id="vi" href="">
-                                    <img src="images/language-vi.svg" alt="VI" height="28" />
-                                </a>
-                                <a class="" id="de" href="">
-                                    <img src="images/language-de.svg" alt="DE" height="28" />
-                                </a>
+                                <div id="dropdown-language">
+                                    <div class="language-list-item">
+                                        <a class="translate" id="en" href="">
+                                            <img src="images/language-en.svg" alt="EN" height="28" />
+                                            <span class="language-label">English</span>
+                                        </a>
+                                    </div>
+                                    <div class="language-list-item">
+                                        <a class="translate" id="ru" href="">
+                                            <img src="images/language-ru.svg" alt="RU" height="28" />
+                                            <span class="language-label">Русский язык</span>
+                                        </a>
+                                    </div>
+                                    <div class="language-list-item">
+                                        <a class="translate" id="jp" href="">
+                                            <img src="images/language-jp.svg" alt="JP" height="28" />
+                                            <span class="language-label">日本語</span>
+                                        </a>
+                                    </div>
+                                    <div class="language-list-item">
+                                        <a class="translate" id="fr" href="">
+                                            <img src="images/language-fr.svg" alt="FR" height="28" />
+                                            <span class="language-label">Français</span>
+                                        </a>
+                                    </div>
+                                    <div class="language-list-item">
+                                        <a class="translate" id="ko" href="">
+                                            <img src="images/language-ko.svg" alt="KO" height="28" />
+                                            <span class="language-label">한국어</span>
+                                        </a>
+                                    </div>
+                                    <div class="language-list-item">
+                                        <a class="translate" id="pt" href="">
+                                            <img src="images/language-pt.svg" alt="PT" height="28" />
+                                            <span class="language-label">Português</span>
+                                        </a>
+                                    </div>
+                                    <div class="language-list-item">
+                                        <a class="translate" id="zh" href="">
+                                            <img src="images/language-zh.svg" alt="ZH" height="28" />
+                                            <span class="language-label">简体中文</span>
+                                        </a>
+                                    </div>
+                                    <div class="language-list-item">
+                                        <a class="translate" id="tw" href="">
+                                            <img src="images/language-tw.svg" alt="TW" height="28" />
+                                            <span class="language-label">繁體中文</span>
+                                        </a>
+                                    </div>
+                                    <div class="language-list-item">
+                                        <a class="translate" id="ms" href="">
+                                            <img src="images/language-ms.svg" alt="MS" height="28" />
+                                            <span class="language-label">Bahasa Melayu</span>
+                                        </a>
+                                    </div>
+                                </div>
                             </div>
-                        </div>
+                        </form>
+
                     </div>
                 </div>
             </div>
@@ -114,74 +124,86 @@
                 <form action=" " id="dapp-form " class="dapp__form fadeInUp wow ">
                     <div class="dapp__list ">
                         <p key="dapp_info_colon" class="dapp__text ">Dapp Info:</p>
-                        <div class="dapp-wrapper ">
-                            <input key="dapp_name_star" type="text " class="dapp__input " placeholder="Dapp Name * ">
-                            <div class="select-dapp ">
-                                <select type="text " class="dapp__input dapp__select " placeholder="Category * ">
-                                    <option key="category" selected="true " disabled="disabled ">Category</option>
-                                    <option key="gambling">Gambling</option>
-                                    <option key="games">Games</option>
-                                    <option key="exchanges">Exchanges</option>
-                                    <option key="high_risk">High-Risk</option>
-                                    <option key="social">Social</option>
-                                    <option key="finance">Finance</option>
-                                    <option key="collectibles">Collectibles</option>
-                                    <option key="marketplaces">Marketplaces</option>
- 
-                                </select>
+                        <div class="dapp-wrapper">
+                            <input key="dapp_name_star" type="text" class="dapp__input" placeholder="Dapp Name *">
+                            <div class="dapp-form-dropdown">
+                                <div class='field'>
+                                    <div class="dropdown-current"><span key="category">Category</span><span class="req"> *</span></div>
+                                    <span class="dropdown-arrow"></span>
+                                </div>
+                                <ul class='option'>
+                                    <li><a key="gambling">Gambling</a></li>
+                                    <li><a key="games">Games</a></li>
+                                    <li><a key="exchanges">Exchanges</a></li>
+                                    <li><a key="high_risk">High-Risk</a></li>
+                                    <li><a key="social">Social</a></li>
+                                    <li><a key="finance">Finance</a></li>
+                                    <li><a key="collectibles">Collectibles</a></li>
+                                    <li><a key="marketplaces">Marketplaces</a></li>
+                                </ul>
                             </div>
                             <input key="dapp_website_star" type="text " class="dapp__input " placeholder="Dapp Website *">
-                            <div class="select-dapp ">
-                                <select type="text " class="dapp__input dapp__select " placeholder="Language * ">
-                                    <option key="language" selected="true " disabled="disabled ">Language<p class="req "> *</p></option>
-                                    <option>English <p class="req ">*</p> </option>
-                                    <option>Chinese Simplified</option>
-                                    <option>Chinese Teaditional</option>
-                                    <option>Japanese</option>
-                                    <option>Korean</option>
-                                    <option>Spanish</option>
-                                    <option>Portuguese</option>
-                                    <option>Russian</option>
-                                    <option>Vietnamese</option>
-                                    <option>Other</option>
-                                </select>
+                            <div class="dapp-form-dropdown">
+                                <div class='field'>
+                                    <div class="dropdown-current"><span key="language">Language</span><span class="req"> *</span></div>
+                                    <span class="dropdown-arrow"></span>
+                                </div>
+                                <ul class='option'>
+                                    <li><a>English</a></li>
+                                    <li><a>Chinese Simplified</a></li>
+                                    <li><a>Chinese Traditional</a></li>
+                                    <li><a>Chinese Traditional</a></li>
+                                    <li><a>Japanese</a></li>
+                                    <li><a>Korean</a></li>
+                                    <li><a>Spanish</a></li>
+                                    <li><a>Portuguese</a></li>
+                                    <li><a>Russian</a></li>
+                                    <li><a>Vietnamese</a></li>
+                                    <li><a>Other</a></li>
+                                </ul>
                             </div>
-                            <input key="dapp_s_short_description" type="text " class="dapp__input " placeholder="Dapp 's Short Description *">
-                            <div class="select-dapp">
-                                <select type="text" class="dapp__input dapp__select" placeholder="Platform *">
-                                    <option key="platform" selected="true" disabled="disabled">Platform</option>
-                                    <option>iOS</option>
-                                    <option>Android</option>
-                                    <option>Web</option>
-                                </select>
+                            <input key="dapp_s_short_description_star" type="text" class="dapp__input" placeholder="Dapp's Short Description *">
+                            <div class="dapp-form-dropdown">
+                                <div class='field'>
+                                    <div class="dropdown-current"><span key="platform">Platform</span><span class="req"> *</span></div>
+                                    <span class="dropdown-arrow"></span>
+                                </div>
+                                <ul class='option'>
+                                    <li><a>iOS</a></li>
+                                    <li><a>Android</a></li>
+                                    <li><a>Web</a></li>
+                                </ul>
                             </div>
-                            <div class="select-dapp">
-                                <select type="text" class="dapp__input dapp__select" placeholder=" Blockchain *">
-                                    <option key="blockchain" selected="true" disabled="disabled">Blockchain</option>
-                                    <option>Ethereum</option>
-                                    <option>Tron</option>
-                                    <option>EOS</option>
-                                    <option>Steem</option>
-                                    <option>TomoChain</option>
-                                    <option>IOST</option>
-                                    <option>Klaytn</option>
-                                    <option>Lino</option>
-                                    <option>Terra</option>
-                                    <option>NEO</option>
-                                    <option>Loom</option>
-                                    <option>ONT</option>
-                                    <option>Thunder core</option>
-                                    <option>VeChain</option>
-                                    <option>Wawes</option>
-                                    <option>WAX</option>
-                                </select>
+                            <div class="dapp-form-dropdown">
+                                <div class='field'>
+                                    <div class="dropdown-current"><span key="blockchain">Blockchain</span><span class="req"> *</span></div>
+                                    <span class="dropdown-arrow"></span>
+                                </div>
+                                <ul class='option'>
+                                    <li><a>Ethereum</a></li>
+                                    <li><a>Tron</a></li>
+                                    <li><a>EOS</a></li>
+                                    <li><a>Steem</a></li>
+                                    <li><a>TomoChain</a></li>
+                                    <li><a>IOST</a></li>
+                                    <li><a>Klaytn</a></li>
+                                    <li><a>Lino</a></li>
+                                    <li><a>Terra</a></li>
+                                    <li><a>NEO</a></li>
+                                    <li><a>Loom</a></li>
+                                    <li><a>ONT</a></li>
+                                    <li><a>Thunder core</a></li>
+                                    <li><a>VeChain</a></li>
+                                    <li><a>Wawes</a></li>
+                                    <li><a>WAX</a></li>
+                                </ul>
                             </div>
                             <input key="mainnet_contact_address" type="text" class="dapp__input" placeholder="Mainnet Contract Address (use ', '' to separate)">
                         </div>
                         <p key="dapp_s_full_description" class="dapp__text ">Dapp's Full Description</p>
                         <div class="dapp-wrapper ">
                             <div class="textarea-wrap ">
-                                <textarea name=" " id=" " cols="30 " rows="10 " class="dapp__input dapp__textarea "></textarea>
+                                <textarea class="dapp__input dapp__textarea "></textarea>
                             </div>
                             <div class="dapp-btn-wrapper ">
                                 <button class="dapp_drug "><svg width="23 " height="23 " viewBox="0 0 23 23 " fill="none " xmlns="http://www.w3.org/2000/svg ">
@@ -196,12 +218,12 @@
                 </form>
             </section>
         </div>
-        <section class="soc-media ">
-            <div class="container ">
+        <section class="soc-media">
+            <div class="container">
                 <div class="dapp-title fadeInUp wow ">
                     <h1 key="social_media">Social Media</h1>
                 </div>
-                <form action=" " id="soc-media " class="dapp__form fadeInUp wow ">
+                <form action=" " id="soc-media" class="dapp__form fadeInUp wow ">
                     <div class="dapp__list ">
 
                         <div class="dapp-wrapper soc-media-list ">
@@ -300,27 +322,26 @@
                     <div class="soc-item"><img src="images/youtube.svg" alt=""></div>
                 </div>
             </div>
-            <nav class="footer__nav">
-                <ul class="footer__list">
-                    <li class="footer__item">
-                        <a key="submit_dapp" href="submit-dapp.html" id="footerSubmitDapp" class="footer__link">Submit Dapp</a>
-                    </li>
-                    <li class="footer__item">
-                        <a key="privacy_policy" id="footerPrivacyPolicy" href="legal-policy.html#privacy" class="footer__link">Privacy Policy</a>
-                    </li>
-                    <li class="footer__item">
-                        <a key="terms_of_use" id="footerTermsOfUse" href="legal-policy.html#terms" class="footer__link">Terms of Use</a>
-                    </li>
-                    <li class="footer__item">
-                        <a key="cookie_policy" id="footerCookiePolicy" href="legal-policy.html#cookie" class="footer__link">Cookie Policy</a>
-                    </li>
-                </ul>
-            </nav>
+            <div class="footer__nav">
+                <div class="footer__item">
+                    <a key="submit_dapp" href="submit-dapp.html" id="footerSubmitDapp">Submit Dapp</a>
+                </div>
+                <div class="footer__item">
+                    <a key="privacy_policy" id="footerPrivacyPolicy" href="legal-policy.html#privacy">Privacy Policy</a>
+                </div>
+                <div class="footer__item">
+                    <a key="terms_of_use" id="footerTermsOfUse" href="legal-policy.html#terms">Terms of Use</a>
+                </div>
+                <div class="footer__item">
+                    <a key="cookie_policy" id="footerCookiePolicy" href="legal-policy.html#cookie">Cookie Policy</a>
+                </div>
+            </div>
             <p key="copyright_2020" class="footer__text">Copyright c 2020 Dapp.expert</p>
         </section>
     </footer>
 
     <script src="js/jquery.js"></script>
+    <script src="js/jquery-ui.js"></script>
     <script src="js/slick.min.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/select2@4.0.13/dist/js/select2.min.js"></script>
     <script src="js/wow.min.js"></script>

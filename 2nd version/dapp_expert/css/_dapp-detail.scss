@@ -46,6 +46,7 @@
 }
 
 .wink-about__inf {
+    margin-left: 5px;
     font-weight: normal;
 }
 
@@ -63,6 +64,7 @@
 }
 
 .wink-about__link {
+    flex: 1;
     position: relative;
     margin-top: 33px;
     font-size: 18px;

@@ -1,14 +1,14 @@
 @font-face {
     font-family: "Open Sans";
-    src: url($root + "font/opensans.woff2") format("woff2"), url($root + "font/opensans.woff") format("woff"), url($root + "font/opensans.ttf") format("ttf");
+    src: url($root + "font/opensans-all-regular.woff2") format("woff2"), url($root + "font/opensans-all-regular.woff") format("woff"), url($root + "font/opensans-all-regular.ttf") format("ttf");
 }
 
 @font-face {
     font-family: "Open Sans Bold";
-    src: url($root + "font/opensansbold.woff2") format("woff2"), url($root + "font/opensansbold.woff") format("woff"), url($root + "font/opensansbold.ttf") format("ttf");
+    src: url($root + "font/opensans-all-700.woff2") format("woff2"), url($root + "font/opensans-all-700.woff") format("woff"), url($root + "font/opensans-all-700.ttf") format("ttf");
 }
 
 @font-face {
     font-family: "Roboto";
-    src: url($root + "font/Roboto.woff2") format("woff2"), url($root + "font/Roboto.woff") format("woff"), url($root + "font/Roboto.ttf") format("ttf");
+    src: url($root + "font/roboto-all.woff2") format("woff2"), url($root + "font/roboto-all.woff") format("woff"), url($root + "font/roboto-all.ttf") format("ttf");
 }

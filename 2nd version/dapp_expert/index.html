@@ -28,59 +28,69 @@
                             </div>
 
                             <a key="submit_dapp_btn" href="submit-dapp.html" class="header__button">Submit DAPP</a>
-                        </form>
-                        <div class="language-select">
-                            <button class="language-btn" disabled>
-                                <img id="current_language" src="images/language-en.svg" alt="EN" height="28" />
-                            </button>
-                            <div class="dropdown-language">
-                                <a class="translate" id="en" href="">
-                                    <img src="images/language-en.svg" alt="EN" height="28" />
+                            <div class="language-select">
+                                <a id="language-btn" value="Language" disabled>
+                                    <span key="language">Language</span>
                                 </a>
-                                <a class="translate" id="ru" href="">
-                                    <img src="images/language-ru.svg" alt="RU" height="28" />
-                                </a>
-                                <a class="translate" id="jp" href="">
-                                    <img src="images/language-jp.svg" alt="JP" height="28" />
-                                </a>
-                                <a class="translate" id="fr" href="">
-                                    <img src="images/language-fr.svg" alt="FR" height="28" />
-                                </a>
-                                <a class="translate" id="ko" href="">
-                                    <img src="images/language-ko.svg" alt="KO" height="28" />
-                                </a>
-                                <a class="translate" id="pt" href="">
-                                    <img src="images/language-pt.svg" alt="PT" height="28" />
-                                </a>
-                                <a class="translate" id="zh" href="">
-                                    <img src="images/language-zh.svg" alt="ZH" height="28" />
-                                </a>
-                                <a class="translate" id="tw" href="">
-                                    <img src="images/language-tw.svg" alt="TW" height="28" />
-                                </a>
-                                <a class="translate" id="ms" href="">
-                                    <img src="images/language-ms.svg" alt="MS" height="28" />
-                                </a>
-                                <a class="" id="es" href="">
-                                    <img src="images/language-es.svg" alt="ES" height="28" />
-                                </a>
-                                <a class="" id="id" href="">
-                                    <img src="images/language-id.svg" alt="ID" height="28" />
-                                </a>
-                                <a class="" id="tr" href="">
-                                    <img src="images/language-tr.svg" alt="TR" height="28" />
-                                </a>
-                                <a class="" id="th" href="">
-                                    <img src="images/language-th.svg" alt="TH" height="28" />
-                                </a>
-                                <a class="" id="vi" href="">
-                                    <img src="images/language-vi.svg" alt="VI" height="28" />
-                                </a>
-                                <a class="" id="de" href="">
-                                    <img src="images/language-de.svg" alt="DE" height="28" />
-                                </a>
+                                <div id="dropdown-language">
+                                    <div class="language-list-item">
+                                        <a class="translate" id="en" href="">
+                                            <img src="images/language-en.svg" alt="EN" height="28" />
+                                            <span class="language-label">English</span>
+                                        </a>
+                                    </div>
+                                    <div class="language-list-item">
+                                        <a class="translate" id="ru" href="">
+                                            <img src="images/language-ru.svg" alt="RU" height="28" />
+                                            <span class="language-label">Русский язык</span>
+                                        </a>
+                                    </div>
+                                    <div class="language-list-item">
+                                        <a class="translate" id="jp" href="">
+                                            <img src="images/language-jp.svg" alt="JP" height="28" />
+                                            <span class="language-label">日本語</span>
+                                        </a>
+                                    </div>
+                                    <div class="language-list-item">
+                                        <a class="translate" id="fr" href="">
+                                            <img src="images/language-fr.svg" alt="FR" height="28" />
+                                            <span class="language-label">Français</span>
+                                        </a>
+                                    </div>
+                                    <div class="language-list-item">
+                                        <a class="translate" id="ko" href="">
+                                            <img src="images/language-ko.svg" alt="KO" height="28" />
+                                            <span class="language-label">한국어</span>
+                                        </a>
+                                    </div>
+                                    <div class="language-list-item">
+                                        <a class="translate" id="pt" href="">
+                                            <img src="images/language-pt.svg" alt="PT" height="28" />
+                                            <span class="language-label">Português</span>
+                                        </a>
+                                    </div>
+                                    <div class="language-list-item">
+                                        <a class="translate" id="zh" href="">
+                                            <img src="images/language-zh.svg" alt="ZH" height="28" />
+                                            <span class="language-label">简体中文</span>
+                                        </a>
+                                    </div>
+                                    <div class="language-list-item">
+                                        <a class="translate" id="tw" href="">
+                                            <img src="images/language-tw.svg" alt="TW" height="28" />
+                                            <span class="language-label">繁體中文</span>
+                                        </a>
+                                    </div>
+                                    <div class="language-list-item">
+                                        <a class="translate" id="ms" href="">
+                                            <img src="images/language-ms.svg" alt="MS" height="28" />
+                                            <span class="language-label">Bahasa Melayu</span>
+                                        </a>
+                                    </div>
+                                </div>
                             </div>
-                        </div>
+                        </form>
+
                     </div>
                 </div>
             </div>
@@ -99,7 +109,7 @@
             <input key="search_placeholder" type="text" class="header__search mobile-header__search-input" name="header__search" placeholder="Search...">
 
         </div>
-        <a key="submit_dapp_btn" href="index2.html" class="header__button mobile-header__button">Submit DAPP</a>
+        <a key="submit_dapp_btn" href="submit-dapp.html" class="header__button mobile-header__button">Submit DAPP</a>
 
     </header>
 
@@ -110,19 +120,16 @@
                     <div class="blockchains-title">
                         <h2 key="blockchains_colon">blockchains:</h2>
                     </div>
-                    <div class="blockchains__section-list ">
-                        <button key="all" class="blockchains-button blockchains-button-all">ALL</button>
-                        <button class="blockchains-button blockchains-button-eth blockchains-button-active">ETH</button>
+                    <div id="blockchain-select" class="blockchains__section-list">
+                        <button id="allBtn" key="all" class="active">ALL</button>
+                        <button>ETH</button>
+                        <button>TRON</button>
+                        <button disabled>EOS</button>
+                        <button disabled>IOST</button>
+                        <button disabled>LOOM</button>
+                        <button disabled>NEO</button>
+                        <button disabled>VeChain</button>
                         <p key="coming_soon" id="coming-soon">Coming Soon</p>
-                        <ul class="blockchains-cut__list">
-                            <li class="blockchains-cut__item">TRON</li>
-                            <li class="blockchains-cut__item">EOS</li>
-                            <li class="blockchains-cut__item">IOST</li>
-                            <li class="blockchains-cut__item">LOOM</li>
-                            <li class="blockchains-cut__item">NEO</li>
-                            <li class="blockchains-cut__item">VeChain</li>
-                        </ul>
-
                     </div>
                 </div>
                 <div class="blockchains__list fadeInUp wow">
@@ -143,254 +150,258 @@
                 </div>
 
                 <section>
-                    <table class="content-table" id="ranking-table">
-                        <thead>
-                            <tr>
-                                <th scope="col">
-                                    <div id="period-select">
-                                        <button id="_24hBtn" class="active" key="_24hr">24Hr</button>
-                                        <button id="_7dBtn" key="_7days">7Days</button>
-                                    </div>
-                                </th>
-                                <th key="chain" scope="col">
-                                    Chain
-                                </th>
-                                <th key="category" scope="col">
-                                    Category
-                                </th>
-                                <th scope="col">
-                                    <span class="tooltip" data-toggle="tooltip" data-placement="top" title="About Balance">? </span>
-                                    <span key="balance">Balance</span>
-                                </th>
-                                <th key="users" scope="col">
-                                    Users
-                                </th>
-                                <th scope="col">
-                                    <span class="tooltip" data-toggle="tooltip" data-placement="top" title="About Volume">?</span>
-                                    <span key="volume">Volume</span>
-                                </th>
-                                <th scope="col">
-                                    <span class="tooltip" data-toggle="tooltip" data-placement="top" title="About TXS">?</span>
-                                    <span key="txs">TXS</span>
-                                </th>
-                                <th key="score" scope="col">
-                                    Dapp. Expert Score
-                                </th>
-                            </tr>
-                        </thead>
-                        <tbody>
-                            <tr class="clickable-row" data-href="dapp-detail.html">
-                                <th scope="row">
-                                    <div>
-                                        <span class="rank">1</span>
-                                        <img src="images/fallout-4.png">
-                                        <span class="name">Fallout4</span>
-                                    </div>
-                                </th>
-                                <td>EOS</td>
-                                <td>Games</td>
-                                <td>1.85</td>
-                                <td>61<span class="balance negative">-4.69%</span>
-                                </td>
-                                <td>$100.00k</td>
-                                <td>100.00k</td>
-                                <td>100</td>
+                    <div class="scroll-box">
+                        <table class="content-table" id="ranking-table">
+                            <thead>
+                                <tr>
+                                    <th scope="col">
+                                        <div id="period-select">
+                                            <button id="_24hBtn" class="active" key="_24hr">24Hr</button>
+                                            <button id="_7dBtn" key="_7days">7Days</button>
+                                        </div>
+                                    </th>
+                                    <th key="chain" scope="col">
+                                        Chain
+                                    </th>
+                                    <th key="category" scope="col">
+                                        Category
+                                    </th>
+                                    <th scope="col">
+                                        <span key="balance_tooltip" class="tooltip" data-toggle="tooltip" data-placement="top" title="The amount of tokens in dapps">? </span>
+                                        <span key="balance">Balance</span>
+                                    </th>
+                                    <th scope="col">
+                                        <span key="users_tooltip" class="tooltip" data-toggle="tooltip" data-placement="top" title="The number of users which did transactions in dapp's smart contracts">? </span>
+                                        <span key="users">Users</span>
+                                    </th>
+                                    <th scope="col">
+                                        <span key="volume_tooltip" class="tooltip" data-toggle="tooltip" data-placement="top" title="Amount of transactions made by users into a dapp's smart contracts (USD)">?</span>
+                                        <span key="volume">Volume</span>
+                                    </th>
+                                    <th scope="col">
+                                        <span key="txs_tooltip" class="tooltip" data-toggle="tooltip" data-placement="top" title="The number of smart contract transactions made by users in Dapp">?</span>
+                                        <span key="txs">TXS</span>
+                                    </th>
+                                    <th key="score" scope="col">
+                                        Dapp. Expert Score
+                                    </th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr class="clickable-row" data-href="dapp-detail.html#Fallout4">
+                                    <th scope="row">
+                                        <div>
+                                            <span class="rank">1</span>
+                                            <img src="images/fallout-4.png">
+                                            <span class="name">Fallout4</span>
+                                        </div>
+                                    </th>
+                                    <td>EOS</td>
+                                    <td>Games</td>
+                                    <td>1.85</td>
+                                    <td>61<span class="balance negative">-4.69%</span>
+                                    </td>
+                                    <td>$100.00k</td>
+                                    <td>100.00k</td>
+                                    <td>100</td>
 
-                            </tr>
-                            <tr class="clickable-row" data-href="dapp-detail.html">
-                                <th scope="row">
-                                    <div>
-                                        <span class="rank">2</span>
-                                        <img src="images/watch.png">
-                                        <span class="name">Watch</span>
-                                    </div>
-                                </th>
-                                <td>EOS</td>
-                                <td>Games</td>
-                                <td>1.85</td>
-                                <td>
-                                    61
-                                    <span class="balance positive">14.34%</span>
-                                </td>
-                                <td>$100.00k</td>
-                                <td>100.00k</td>
-                                <td>100</td>
-                            </tr>
-                            <tr class="clickable-row" data-href="dapp-detail.html">
-                                <th scope="row">
-                                    <div>
-                                        <span class="rank">3</span>
-                                        <img src="images/fallout-4.png">
-                                        <span class="name">Fallout4</span>
-                                    </div>
-                                </th>
-                                <td>EOS</td>
-                                <td>Games</td>
-                                <td>1.85</td>
-                                <td>
-                                    61
-                                    <!-- <span class="balance negative">-4.69%</span> -->
-                                </td>
-                                <td>$100.00k</td>
-                                <td>100.00k</td>
-                                <td>100</td>
-                            </tr>
-                            <tr class="clickable-row" data-href="dapp-detail.html">
-                                <th scope="row">
-                                    <div>
-                                        <span class="rank">4</span>
-                                        <img src="images/fallout-4.png">
-                                        <span class="name">Fallout4</span>
-                                    </div>
-                                </th>
-                                <td>EOS</td>
-                                <td>Games</td>
-                                <td>1.85</td>
-                                <td>
-                                    61
-                                    <!-- <span class="balance negative">-4.69%</span> -->
-                                </td>
-                                <td>$100.00k</td>
-                                <td>100.00k</td>
-                                <td>100</td>
-                            </tr>
-                            <tr class="clickable-row" data-href="dapp-detail.html">
-                                <th scope="row">
-                                    <div>
-                                        <span class="rank">5</span>
-                                        <img src="images/fallout-4.png">
-                                        <span class="name">Fallout4</span>
-                                    </div>
-                                </th>
-                                <td>EOS</td>
-                                <td>Games</td>
-                                <td>1.85</td>
-                                <td>
-                                    61
-                                    <!-- <span class="balance negative">-4.69%</span> -->
-                                </td>
-                                <td>$100.00k</td>
-                                <td>100.00k</td>
-                                <td>100</td>
-                            </tr>
-                            <tr class="clickable-row" data-href="dapp-detail.html">
-                                <th scope="row">
-                                    <div>
-                                        <span class="rank">6</span>
-                                        <img src="images/fallout-4.png">
-                                        <span class="name">Fallout4</span>
-                                    </div>
-                                </th>
-                                <td>EOS</td>
-                                <td>Games</td>
-                                <td>1.85</td>
-                                <td>
-                                    61
-                                    <!-- <span class="balance negative">-4.69%</span> -->
-                                </td>
-                                <td>$100.00k</td>
-                                <td>100.00k</td>
-                                <td>100</td>
-                            </tr>
-                            <tr class="clickable-row" data-href="dapp-detail.html">
-                                <th scope="row">
-                                    <div>
-                                        <span class="rank">7</span>
-                                        <img src="images/fallout-4.png">
-                                        <span class="name">Fallout4</span>
-                                    </div>
-                                </th>
-                                <td>EOS</td>
-                                <td>Games</td>
-                                <td>1.85</td>
-                                <td>
-                                    61
-                                    <!-- <span class="balance negative">-4.69%</span> -->
-                                </td>
-                                <td>$100.00k</td>
-                                <td>100.00k</td>
-                                <td>100</td>
-                            </tr>
-                            <tr class="clickable-row" data-href="dapp-detail.html">
-                                <th scope="row">
-                                    <div>
-                                        <span class="rank">8</span>
-                                        <img src="images/fallout-4.png">
-                                        <span class="name">Fallout4</span>
-                                    </div>
-                                </th>
-                                <td>EOS</td>
-                                <td>Games</td>
-                                <td>1.85</td>
-                                <td>
-                                    61
-                                    <!-- <span class="balance negative">-4.69%</span> -->
-                                </td>
-                                <td>$100.00k</td>
-                                <td>100.00k</td>
-                                <td>100</td>
-                            </tr>
-                            <tr class="clickable-row" data-href="dapp-detail.html">
-                                <th scope="row">
-                                    <div>
-                                        <span class="rank">9</span>
-                                        <img src="images/fallout-4.png">
-                                        <span class="name">Fallout4</span>
-                                    </div>
-                                </th>
-                                <td>EOS</td>
-                                <td>Games</td>
-                                <td>1.85</td>
-                                <td>
-                                    61
-                                    <!-- <span class="balance negative">-4.69%</span> -->
-                                </td>
-                                <td>$100.00k</td>
-                                <td>100.00k</td>
-                                <td>100</td>
-                            </tr>
-                            <tr class="clickable-row" data-href="dapp-detail.html">
-                                <th scope="row">
-                                    <div>
-                                        <span class="rank">10</span>
-                                        <img src="images/fallout-4.png">
-                                        <span class="name">Fallout4</span>
-                                    </div>
-                                </th>
-                                <td>EOS</td>
-                                <td>Games</td>
-                                <td>1.85</td>
-                                <td>
-                                    61
-                                    <!-- <span class="balance negative">-4.69%</span> -->
-                                </td>
-                                <td>$100.00k</td>
-                                <td>100.00k</td>
-                                <td>100</td>
-                            </tr>
-                            <tr class="clickable-row" data-href="dapp-detail.html">
-                                <th scope="row">
-                                    <div>
-                                        <span class="rank">100</span>
-                                        <img src="images/fallout-4.png">
-                                        <span class="name">Fallout4</span>
-                                    </div>
-                                </th>
-                                <td>EOS</td>
-                                <td>Games</td>
-                                <td>1.85</td>
-                                <td>
-                                    61
-                                    <!-- <span class="balance negative">-4.69%</span> -->
-                                </td>
-                                <td>$100.00k</td>
-                                <td>100.00k</td>
-                                <td>100</td>
-                            </tr>
-                        </tbody>
-                    </table>
-                    <!-- <table id="header-fixed"></table> -->
-                    <a key="see_more" href="#" class="see-more"> See more</a>
+                                </tr>
+                                <tr class="clickable-row" data-href="dapp-detail.html#Watch">
+                                    <th scope="row">
+                                        <div>
+                                            <span class="rank">2</span>
+                                            <img src="images/watch.png">
+                                            <span class="name">Watch</span>
+                                        </div>
+                                    </th>
+                                    <td>EOS</td>
+                                    <td>Games</td>
+                                    <td>1.85</td>
+                                    <td>
+                                        61
+                                        <span class="balance positive">14.34%</span>
+                                    </td>
+                                    <td>$100.00k</td>
+                                    <td>100.00k</td>
+                                    <td>100</td>
+                                </tr>
+                                <tr class="clickable-row" data-href="dapp-detail.html#MakerDAO">
+                                    <th scope="row">
+                                        <div>
+                                            <span class="rank">3</span>
+                                            <img src="images/fallout-4.png">
+                                            <span class="name">MakerDAO</span>
+                                        </div>
+                                    </th>
+                                    <td>EOS</td>
+                                    <td>Games</td>
+                                    <td>1.85</td>
+                                    <td>
+                                        61
+                                        <!-- <span class="balance negative">-4.69%</span> -->
+                                    </td>
+                                    <td>$100.00k</td>
+                                    <td>100.00k</td>
+                                    <td>100</td>
+                                </tr>
+                                <tr class="clickable-row" data-href="dapp-detail.html#Splinterlands">
+                                    <th scope="row">
+                                        <div>
+                                            <span class="rank">4</span>
+                                            <img src="images/fallout-4.png">
+                                            <span class="name">Splinterlands</span>
+                                        </div>
+                                    </th>
+                                    <td>EOS</td>
+                                    <td>Games</td>
+                                    <td>1.85</td>
+                                    <td>
+                                        61
+                                        <!-- <span class="balance negative">-4.69%</span> -->
+                                    </td>
+                                    <td>$100.00k</td>
+                                    <td>100.00k</td>
+                                    <td>100</td>
+                                </tr>
+                                <tr class="clickable-row" data-href="dapp-detail.html#Chainlink">
+                                    <th scope="row">
+                                        <div>
+                                            <span class="rank">5</span>
+                                            <img src="images/fallout-4.png">
+                                            <span class="name">Chainlink</span>
+                                        </div>
+                                    </th>
+                                    <td>EOS</td>
+                                    <td>Games</td>
+                                    <td>1.85</td>
+                                    <td>
+                                        61
+                                        <!-- <span class="balance negative">-4.69%</span> -->
+                                    </td>
+                                    <td>$100.00k</td>
+                                    <td>100.00k</td>
+                                    <td>100</td>
+                                </tr>
+                                <tr class="clickable-row" data-href="dapp-detail.html#Status">
+                                    <th scope="row">
+                                        <div>
+                                            <span class="rank">6</span>
+                                            <img src="images/fallout-4.png">
+                                            <span class="name">Status</span>
+                                        </div>
+                                    </th>
+                                    <td>EOS</td>
+                                    <td>Games</td>
+                                    <td>1.85</td>
+                                    <td>
+                                        61
+                                        <!-- <span class="balance negative">-4.69%</span> -->
+                                    </td>
+                                    <td>$100.00k</td>
+                                    <td>100.00k</td>
+                                    <td>100</td>
+                                </tr>
+                                <tr class="clickable-row" data-href="dapp-detail.html#KyberNetwork">
+                                    <th scope="row">
+                                        <div>
+                                            <span class="rank">7</span>
+                                            <img src="images/fallout-4.png">
+                                            <span class="name">KyberNetwork</span>
+                                        </div>
+                                    </th>
+                                    <td>EOS</td>
+                                    <td>Games</td>
+                                    <td>1.85</td>
+                                    <td>
+                                        61
+                                        <!-- <span class="balance negative">-4.69%</span> -->
+                                    </td>
+                                    <td>$100.00k</td>
+                                    <td>100.00k</td>
+                                    <td>100</td>
+                                </tr>
+                                <tr class="clickable-row" data-href="dapp-detail.html#Steemit">
+                                    <th scope="row">
+                                        <div>
+                                            <span class="rank">8</span>
+                                            <img src="images/fallout-4.png">
+                                            <span class="name">Steemit</span>
+                                        </div>
+                                    </th>
+                                    <td>EOS</td>
+                                    <td>Games</td>
+                                    <td>1.85</td>
+                                    <td>
+                                        61
+                                        <!-- <span class="balance negative">-4.69%</span> -->
+                                    </td>
+                                    <td>$100.00k</td>
+                                    <td>100.00k</td>
+                                    <td>100</td>
+                                </tr>
+                                <tr class="clickable-row" data-href="dapp-detail.html#My Crypto Heroes">
+                                    <th scope="row">
+                                        <div>
+                                            <span class="rank">9</span>
+                                            <img src="images/fallout-4.png">
+                                            <span class="name">My Crypto Heroes</span>
+                                        </div>
+                                    </th>
+                                    <td>EOS</td>
+                                    <td>Games</td>
+                                    <td>1.85</td>
+                                    <td>
+                                        61
+                                        <!-- <span class="balance negative">-4.69%</span> -->
+                                    </td>
+                                    <td>$100.00k</td>
+                                    <td>100.00k</td>
+                                    <td>100</td>
+                                </tr>
+                                <tr class="clickable-row" data-href="dapp-detail.html#COSMOCHAIN">
+                                    <th scope="row">
+                                        <div>
+                                            <span class="rank">10</span>
+                                            <img src="images/fallout-4.png">
+                                            <span class="name">COSMOCHAIN</span>
+                                        </div>
+                                    </th>
+                                    <td>EOS</td>
+                                    <td>Games</td>
+                                    <td>1.85</td>
+                                    <td>
+                                        61
+                                        <!-- <span class="balance negative">-4.69%</span> -->
+                                    </td>
+                                    <td>$100.00k</td>
+                                    <td>100.00k</td>
+                                    <td>100</td>
+                                </tr>
+                                <tr class="clickable-row" data-href="dapp-detail.html#Esteem">
+                                    <th scope="row">
+                                        <div>
+                                            <span class="rank">100</span>
+                                            <img src="images/fallout-4.png">
+                                            <span class="name">Esteem</span>
+                                        </div>
+                                    </th>
+                                    <td>EOS</td>
+                                    <td>Games</td>
+                                    <td>1.85</td>
+                                    <td>
+                                        61
+                                        <!-- <span class="balance negative">-4.69%</span> -->
+                                    </td>
+                                    <td>$100.00k</td>
+                                    <td>100.00k</td>
+                                    <td>100</td>
+                                </tr>
+                            </tbody>
+                        </table>
+                        <!-- <table id="header-fixed"></table> -->
+                        <a key="see_more" href="#" class="see-more"> See more</a>
+                    </div>
+
                 </section>
             </section>
 
@@ -453,27 +464,25 @@
                     <div class="soc-item"><img src="images/youtube.svg" alt=""></div>
                 </div>
             </div>
-            <nav class="footer__nav">
-                <ul class="footer__list">
-                    <li class="footer__item">
-                        <a key="submit_dapp" href="submit-dapp.html" id="footerSubmitDapp" class="footer__link">Submit Dapp</a>
-                    </li>
-                    <li class="footer__item">
-                        <a key="privacy_policy" id="footerPrivacyPolicy" href="legal-policy.html#privacy" class="footer__link">Privacy Policy</a>
-                    </li>
-                    <li class="footer__item">
-                        <a key="terms_of_use" id="footerTermsOfUse" href="legal-policy.html#terms" class="footer__link">Terms of Use</a>
-                    </li>
-                    <li class="footer__item">
-                        <a key="cookie_policy" id="footerCookiePolicy" href="legal-policy.html#cookie" class="footer__link">Cookie Policy</a>
-                    </li>
-                </ul>
-            </nav>
+            <div class="footer__nav">
+                <div class="footer__item">
+                    <a key="submit_dapp" href="submit-dapp.html" id="footerSubmitDapp">Submit Dapp</a>
+                </div>
+                <div class="footer__item">
+                    <a key="privacy_policy" id="footerPrivacyPolicy" href="legal-policy.html#privacy">Privacy Policy</a>
+                </div>
+                <div class="footer__item">
+                    <a key="terms_of_use" id="footerTermsOfUse" href="legal-policy.html#terms">Terms of Use</a>
+                </div>
+                <div class="footer__item">
+                    <a key="cookie_policy" id="footerCookiePolicy" href="legal-policy.html#cookie">Cookie Policy</a>
+                </div>
+            </div>
             <p key="copyright_2020" class="footer__text">Copyright c 2020 Dapp.expert</p>
         </section>
     </footer>
-
     <script src="js/jquery.js"></script>
+    <script src="js/jquery-ui.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/select2@4.0.13/dist/js/select2.min.js"></script>
     <script src="js/slick.min.js"></script>
     <script src="js/wow.min.js"></script>
