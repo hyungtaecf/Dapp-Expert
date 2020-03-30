@@ -16,6 +16,7 @@
 .wink-link-wrapper {
     max-width: 100%;
     width: 100%;
+    flex-direction: row;
 }
 
 .wink-about-img {
@@ -669,3 +670,7 @@
 
 
 /* !modal */
+
+.wink-flex {
+    flex: 1;
+}

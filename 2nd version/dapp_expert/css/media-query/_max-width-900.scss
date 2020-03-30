@@ -49,7 +49,7 @@
         padding: 16px;
         overflow: hidden;
         background: #FFFFFF;
-        border: 1.5px solid #BCBBD1 !important;
+        border: 1.5px solid $theme-color-1 !important;
         box-sizing: border-box;
         border-radius: 117px;
         align-items: flex-start;
@@ -256,6 +256,8 @@
     }
     .blockchains-info-wrapper {
         justify-content: space-between;
+        flex-direction: column;
+        max-height: 400px;
     }
     .blockchains-info__item {
         width: 200px;
@@ -376,5 +378,141 @@
         // .footer__item:last-child::before {
         //     content: none;
         // }
+    }
+    .blockchain-dropdown {
+        display: block;
+        position: relative;
+        margin: 0 auto 25px auto;
+        width: 350px;
+        align-items: center;
+        .field {
+            line-height: 141.19%;
+            padding: 18px;
+            padding-right: 0px;
+            border: 1.5px solid $theme-color-1;
+            border-radius: 34px;
+            height: 60px;
+            max-width: 100%;
+            width: 350px;
+            cursor: pointer;
+            .dropdown-current {
+                font-family: "Open Sans";
+                font-size: 16px;
+                z-index: 10;
+            }
+            .dropdown-arrow {
+                position: absolute;
+                z-index: 3;
+                top: 31px;
+                right: 20px;
+                transform: translateY(-50%);
+                background: url($root+"images/select.svg") no-repeat;
+                width: 20px;
+                height: 15px;
+            }
+        }
+        .option {
+            position: absolute;
+            top: 61px;
+            display: none;
+            list-style: none;
+            margin-top: -1px;
+            border: 1.5px solid $theme-color-1;
+            border-top: none;
+            border-bottom-left-radius: 34px;
+            border-bottom-right-radius: 34px;
+            width: 350px;
+            min-width: 100%;
+            padding: 0px;
+            z-index: 4;
+            background: white;
+            overflow: visible;
+            li {
+                display: block;
+                cursor: pointer;
+                padding: 10px 18px;
+                &:first-child {
+                    background: transparent;
+                }
+                a {
+                    text-decoration: none;
+                    color: #000;
+                }
+                &:hover {
+                    background: $theme-color-3;
+                    &:last-child {
+                        border-bottom-left-radius: 34px;
+                        border-bottom-right-radius: 34px;
+                    }
+                }
+            }
+        }
+    }
+    .scroll-box {
+        width: initial;
+        padding: 0;
+        margin: 0 0;
+        .content-table {
+            min-width: 400px;
+            width: 100%;
+            thead {
+                display: none;
+            }
+            tbody {
+                tr {
+                    height: 81px;
+                    display: flex;
+                    vertical-align: middle;
+                    &:first-child {
+                        border-top: 1px solid #ACD6AE;
+                    }
+                    th {
+                        flex: 2;
+                        div {
+                            height: 100%;
+                        }
+                    }
+                    td {
+                        display: flex;
+                        height: 100%;
+                        align-items: center;
+                        flex: 1;
+                        .value {
+                            text-align: right;
+                            margin-right: 20px;
+                            width: 100%;
+                        }
+                        &.chain-td {
+                            display: none;
+                        }
+                        &.category-td {
+                            display: none;
+                        }
+                        &.balance-td {
+                            display: none;
+                        }
+                        &.users-td {
+                            .value {
+                                margin: 0 0 21px 0;
+                            }
+                        }
+                        &.volume-td {
+                            display: none;
+                        }
+                        &.txs-td {
+                            display: none;
+                        }
+                        .balance {
+                            font-size: 16px;
+                            right: 0px;
+                            bottom: 17;
+                        }
+                    }
+                }
+            }
+        }
+    }
+    .see-more {
+        margin-right: 20px;
     }
 }

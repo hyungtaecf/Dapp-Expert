@@ -102,15 +102,31 @@
                     <img src="images/logo.svg" alt="logo">
                 </a>
             </div>
-            <div class="mobile-header__wrapper">
-                <div class="header__language"></div>
+            <div id="mySidenav" class="sidenav">
+                <a href="javascript:void(0) " class="closebtn">&times;</a>
+                <a href="#" id="mobile-language-btn" key="language">Language</a>
+                <a href="submit-dapp.html" key="submit_dapp">Submit Dapp</a>
+                <a href="legal-policy.html#privacy" key="privacy_policy">Privacy Policy</a>
+                <a href="legal-policy.html#terms" key="terms_of_use">Terms of Use</a>
+                <a href="legal-policy.html#cookie" key="cookie_policy">Cookie Policy</a>
             </div>
+            <div class="hamburguer_btn">
+                <a id="side_menu_btn">
+                    <img src=" images/menu-open.svg">
+                </a>
+            </div>
+
+
+            <!-- <div class="mobile-header__wrapper ">
+                <div class="header__language "></div>
+            </div> -->
         </div>
-        <div class="search-input mobile-search-input">
-            <input key="search_placeholder" type="text" class="header__search mobile-header__search-input" name="header__search" placeholder="Search...">
+
+        <div class="search-input mobile-search-input ">
+            <input key="search_placeholder " type="text " class="header__search mobile-header__search-input " name="header__search " placeholder="Search... ">
 
         </div>
-        <a key="submit_dapp_btn" href="index2.html" class="header__button mobile-header__button">Submit DAPP</a>
+        <a key="submit_dapp_btn " href="index2.html " class="header__button mobile-header__button ">Submit DAPP</a>
 
     </header>
 
@@ -202,8 +218,9 @@
                         </div>
                         <p key="dapp_s_full_description" class="dapp__text ">Dapp's Full Description</p>
                         <div class="dapp-wrapper ">
-                            <div class="textarea-wrap ">
-                                <textarea class="dapp__input dapp__textarea "></textarea>
+                            <div class="textarea-wrap">
+                                <textarea id="full_description_textarea" class="dapp__input dapp__textarea" maxlength="800"></textarea>
+                                <span class="character_count"><span id="full_description_count">800</span> characters</span>
                             </div>
                             <div class="dapp-btn-wrapper ">
                                 <button class="dapp_drug "><svg width="23 " height="23 " viewBox="0 0 23 23 " fill="none " xmlns="http://www.w3.org/2000/svg ">

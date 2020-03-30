@@ -213,7 +213,7 @@ var languages = {
         // APP PAGE
         // app page header
         "_24hr_users_colon": "Пользователей за 24 часа:",
-        "total_unique_users_colon": "Total Unique Users:",
+        "total_unique_users_colon": "Всего уникальных пользователей:",
         "balance_colon": "Баланс:",
         "go_to_the_website": "Перейти на сайт",
         "download_white_paper": "Скачать Whitepaper",
@@ -456,7 +456,7 @@ var languages = {
         "go_to_the_website": "Aller sur le site web",
         "download_white_paper": "Télécharger un livre blanc",
         "_smart_contracts-1": "",
-        "_smart_contracts-2": " Contracts intelligents",
+        "_smart_contracts-2": " Contracts int.",
         "contract_addresses": "Contract Addresses",
         // app page similar
         "similar_to-1": "Similaire à ",

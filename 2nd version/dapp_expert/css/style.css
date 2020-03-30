@@ -234,7 +234,7 @@ button {
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
   border-radius: 21px;
-  z-index: 1;
+  z-index: 10;
 }
 
 #dropdown-language .language-list-item {
@@ -285,7 +285,10 @@ button {
       -ms-flex-pack: justify;
           justify-content: space-between;
   padding: 10px;
-  background: linear-gradient(89.7deg, #fbfdf3 0.43%, #dbefcd 99.99%);
+  background: white;
+  border-bottom: 1px solid #ebecf0;
+  -webkit-box-shadow: 0px 1px 3px 0px rgba(0, 0, 0, 0.2);
+          box-shadow: 0px 1px 3px 0px rgba(0, 0, 0, 0.2);
 }
 
 .mobile-header-open {
@@ -357,6 +360,50 @@ button {
   width: 100%;
   padding: 20px;
   border: 1.5px solid #ACD6AE;
+}
+
+.hamburguer_btn {
+  position: relative;
+  height: 20px;
+  width: 25px;
+  margin: auto 0;
+}
+
+.sidenav {
+  height: 100%;
+  width: 250px;
+  position: fixed;
+  z-index: 1;
+  top: 0;
+  right: -250px;
+  background-color: #F1FFE2;
+  border-left: 1px solid white;
+  overflow-x: hidden;
+  -webkit-transition: 0.5s;
+  transition: 0.5s;
+  padding-top: 60px;
+}
+
+.sidenav a {
+  padding: 8px 8px 8px 32px;
+  text-decoration: none;
+  font-size: 25px;
+  color: #7BC143;
+  display: block;
+  -webkit-transition: 0.3s;
+  transition: 0.3s;
+}
+
+.sidenav a:hover {
+  color: #ACD6AE;
+}
+
+.sidenav .closebtn {
+  position: absolute;
+  top: 0;
+  right: 25px;
+  font-size: 36px;
+  margin-left: 50px;
 }
 
 /* !mobile-header */
@@ -772,6 +819,10 @@ footer {
   -ms-flex-wrap: wrap;
       flex-wrap: wrap;
   margin-bottom: 65px;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
 }
 
 .blockchains-rating {
@@ -804,13 +855,9 @@ footer {
 
 .blockchains-info__item {
   padding: 0 10px;
-  -webkit-box-flex: 2;
-      -ms-flex: 2;
-          flex: 2;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
+  -webkit-box-flex: 1;
+      -ms-flex: 1;
+          flex: 1;
 }
 
 .blockchains-info__item:first-child {
@@ -957,6 +1004,10 @@ footer {
 
 /* table */
 .scroll-box {
+  width: 960px;
+  max-width: 100%;
+  padding: 0 20px;
+  margin: 0 auto;
   overflow: auto;
 }
 
@@ -1143,14 +1194,6 @@ footer {
   color: #43C150;
 }
 
-#header-fixed {
-  position: fixed;
-  top: 0px;
-  display: none;
-  background-color: white;
-  z-index: 1;
-}
-
 /* tooltip */
 .ui-tooltip,
 .arrow:after {
@@ -1207,6 +1250,10 @@ footer {
 }
 
 /* !tooltip */
+.blockchain-dropdown {
+  display: none;
+}
+
 /* !table */
 .dapp {
   padding: 85px 0;
@@ -1292,7 +1339,7 @@ footer {
   max-width: 100%;
   height: 63px;
   padding: 6px 30px;
-  border: 2px solid #7BC143;
+  border: 1.5px solid #7BC143;
   border-radius: 34px;
   font-family: "Roboto";
   margin-bottom: 30px;
@@ -1423,9 +1470,12 @@ footer {
 
 .dapp__textarea {
   background: white;
+  padding-bottom: 45px;
   height: 246px;
   width: 395px;
   resize: none;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
 }
 
 .textarea-wrap {
@@ -1434,20 +1484,11 @@ footer {
   margin-bottom: 30px;
 }
 
-.textarea-wrap::before {
-  content: '800 characters';
-  position: absolute;
-  bottom: 30px;
-  right: 50px;
-  color: #9E9E9E;
-  font-size: 13px;
-}
-
 .dapp_drug {
   width: 76px;
   height: 76px;
   background: transparent;
-  border: 2px solid #7BC143;
+  border: 1.5px solid #7BC143;
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
   border-radius: 50px;
@@ -1581,7 +1622,7 @@ footer {
   line-height: 141.19%;
   padding: 18px;
   padding-right: 0px;
-  border: 2px solid #7BC143;
+  border: 1.5px solid #7BC143;
   border-radius: 34px;
   height: 63px;
   max-width: 100%;
@@ -1614,7 +1655,7 @@ footer {
   display: none;
   list-style: none;
   margin-top: -1px;
-  border: 2px solid #7BC143;
+  border: 1.5px solid #7BC143;
   border-top: none;
   border-bottom-left-radius: 34px;
   border-bottom-right-radius: 34px;
@@ -1650,6 +1691,15 @@ footer {
   border-bottom-right-radius: 34px;
 }
 
+.character_count {
+  position: absolute;
+  bottom: 30px;
+  right: 50px;
+  color: #9E9E9E;
+  font-size: 13px;
+  background: rgba(255, 255, 255, 0.5);
+}
+
 .wink-about {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -1680,6 +1730,10 @@ footer {
 .wink-link-wrapper {
   max-width: 100%;
   width: 100%;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
 }
 
 .wink-about-img {
@@ -1735,6 +1789,9 @@ footer {
 }
 
 .wink-about__link {
+  -webkit-box-flex: 1;
+      -ms-flex: 1;
+          flex: 1;
   position: relative;
   margin-top: 33px;
   font-size: 18px;
@@ -2423,6 +2480,12 @@ footer {
 }
 
 /* !modal */
+.wink-flex {
+  -webkit-box-flex: 1;
+      -ms-flex: 1;
+          flex: 1;
+}
+
 .legal-policy__title__section {
   text-align: left;
 }
@@ -2631,7 +2694,7 @@ footer {
     padding: 16px;
     overflow: hidden;
     background: #FFFFFF;
-    border: 1.5px solid #BCBBD1 !important;
+    border: 1.5px solid #7BC143 !important;
     -webkit-box-sizing: border-box;
             box-sizing: border-box;
     border-radius: 117px;
@@ -2861,6 +2924,11 @@ footer {
     -webkit-box-pack: justify;
         -ms-flex-pack: justify;
             justify-content: space-between;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    max-height: 400px;
   }
   .blockchains-info__item {
     width: 200px;
@@ -2950,6 +3018,151 @@ footer {
         -ms-flex: 1 50%;
             flex: 1 50%;
     margin: 25px 0;
+  }
+  .blockchain-dropdown {
+    display: block;
+    position: relative;
+    margin: 0 auto 25px auto;
+    width: 350px;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
+  .blockchain-dropdown .field {
+    line-height: 141.19%;
+    padding: 18px;
+    padding-right: 0px;
+    border: 1.5px solid #7BC143;
+    border-radius: 34px;
+    height: 60px;
+    max-width: 100%;
+    width: 350px;
+    cursor: pointer;
+  }
+  .blockchain-dropdown .field .dropdown-current {
+    font-family: "Open Sans";
+    font-size: 16px;
+    z-index: 10;
+  }
+  .blockchain-dropdown .field .dropdown-arrow {
+    position: absolute;
+    z-index: 3;
+    top: 31px;
+    right: 20px;
+    -webkit-transform: translateY(-50%);
+            transform: translateY(-50%);
+    background: url("../images/select.svg") no-repeat;
+    width: 20px;
+    height: 15px;
+  }
+  .blockchain-dropdown .option {
+    position: absolute;
+    top: 61px;
+    display: none;
+    list-style: none;
+    margin-top: -1px;
+    border: 1.5px solid #7BC143;
+    border-top: none;
+    border-bottom-left-radius: 34px;
+    border-bottom-right-radius: 34px;
+    width: 350px;
+    min-width: 100%;
+    padding: 0px;
+    z-index: 4;
+    background: white;
+    overflow: visible;
+  }
+  .blockchain-dropdown .option li {
+    display: block;
+    cursor: pointer;
+    padding: 10px 18px;
+  }
+  .blockchain-dropdown .option li:first-child {
+    background: transparent;
+  }
+  .blockchain-dropdown .option li a {
+    text-decoration: none;
+    color: #000;
+  }
+  .blockchain-dropdown .option li:hover {
+    background: #F1FFE2;
+  }
+  .blockchain-dropdown .option li:hover:last-child {
+    border-bottom-left-radius: 34px;
+    border-bottom-right-radius: 34px;
+  }
+  .scroll-box {
+    width: initial;
+    padding: 0;
+    margin: 0 0;
+  }
+  .scroll-box .content-table {
+    min-width: 400px;
+    width: 100%;
+  }
+  .scroll-box .content-table thead {
+    display: none;
+  }
+  .scroll-box .content-table tbody tr {
+    height: 81px;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    vertical-align: middle;
+  }
+  .scroll-box .content-table tbody tr:first-child {
+    border-top: 1px solid #ACD6AE;
+  }
+  .scroll-box .content-table tbody tr th {
+    -webkit-box-flex: 2;
+        -ms-flex: 2;
+            flex: 2;
+  }
+  .scroll-box .content-table tbody tr th div {
+    height: 100%;
+  }
+  .scroll-box .content-table tbody tr td {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    height: 100%;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -webkit-box-flex: 1;
+        -ms-flex: 1;
+            flex: 1;
+  }
+  .scroll-box .content-table tbody tr td .value {
+    text-align: right;
+    margin-right: 20px;
+    width: 100%;
+  }
+  .scroll-box .content-table tbody tr td.chain-td {
+    display: none;
+  }
+  .scroll-box .content-table tbody tr td.category-td {
+    display: none;
+  }
+  .scroll-box .content-table tbody tr td.balance-td {
+    display: none;
+  }
+  .scroll-box .content-table tbody tr td.users-td .value {
+    margin: 0 0 21px 0;
+  }
+  .scroll-box .content-table tbody tr td.volume-td {
+    display: none;
+  }
+  .scroll-box .content-table tbody tr td.txs-td {
+    display: none;
+  }
+  .scroll-box .content-table tbody tr td .balance {
+    font-size: 16px;
+    right: 0px;
+    bottom: 17;
+  }
+  .see-more {
+    margin-right: 20px;
   }
 }
 

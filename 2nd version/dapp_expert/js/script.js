@@ -22,6 +22,49 @@ function hideClickingOff(element) {
     });
 }
 
+function dropdownInit(dropdown) {
+    $(dropdown + " .field").click(function(e) {
+        e.preventDefault();
+        var $field = $(this)
+
+        $field.closest(dropdown)
+            .find(".option").stop().slideDown(150);
+        $field.css({
+            'border-bottom': 'none',
+            'border-bottom-left-radius': '0',
+            'border-bottom-right-radius': '0'
+        })
+    });
+
+    $(dropdown + ' .option li').click(function(e) {
+        e.preventDefault();
+        $li = $(this)
+        var option_value = $li.find('a').text();
+        $li.closest(dropdown).find('.field .dropdown-current').text(option_value);
+        $('.option').slideUp(150,
+            function() {
+                $li.closest(dropdown)
+                    .find(".field").css({
+                        'border': '1.5px solid #7BC143',
+                        'border-radius': '34px',
+                        'font-style': 'normal'
+                    })
+            }
+        )
+    });
+
+    $(document).mouseup(function(e) {
+        container = $(dropdown + " .option");
+        if (!container.is(e.target) && container.has(e.target).length === 0) {
+            container.closest(dropdown)
+                .find(".field").css({
+                    'border': '1.5px solid #7BC143',
+                    'border-radius': '34px'
+                })
+            container.hide()
+        }
+    });
+}
 
 document.addEventListener('DOMContentLoaded', () => {
 
@@ -456,57 +499,75 @@ document.addEventListener('DOMContentLoaded', () => {
     // NAVBAR  //
     /////////////
 
+    // Language Button
+
     //hide-show toggle on click
     $("#language-btn").click(function() {
+        $("#dropdown-language").toggle(function() { $(this).css({ display: "none" }) }, function() {})
+    })
+    $("#mobile-language-btn").click(function() {
         $("#dropdown-language").toggle(function() { $(this).css({ display: "none" }) }, function() {})
     })
 
     //hide when click off the dropdown menu
     hideClickingOff("#dropdown-language")
 
-    ////////////////////////
-    // Dapp Form Dropdown //
-    ////////////////////////
+    // Side menu
+    $("#side_menu_btn").click(function() {
+        $(".sidenav").css("right", "0px");
+    })
 
-    $(".dapp-form-dropdown .field").click(function(e) {
-        e.preventDefault();
-        var $field = $(this)
+    $(".closebtn").click(function() {
+        $(".sidenav").css("right", "-250px");
+    })
 
-        $field.closest(".dapp-form-dropdown")
-            .find(".option").stop().slideDown(150);
-        $field.css({
-            'border-bottom': 'none',
-            'border-bottom-left-radius': '0',
-            'border-bottom-right-radius': '0'
-        })
-    });
 
-    $('.dapp-form-dropdown .option li').click(function(e) {
-        e.preventDefault();
-        $li = $(this)
-        var option_value = $li.find('a').text();
-        $li.closest(".dapp-form-dropdown").find('.field .dropdown-current').text(option_value);
-        $('.option').slideUp(150,
-            function() {
-                $li.closest(".dapp-form-dropdown")
-                    .find(".field").css({
-                        'border': '2px solid #7BC143',
-                        'border-radius': '34px',
-                        'font-style': 'normal'
-                    })
-            }
-        )
-    });
+    ///////////////
+    // Dapp Form //
+    ///////////////
 
-    $(document).mouseup(function(e) {
-        container = $(".dapp-form-dropdown .option");
-        if (!container.is(e.target) && container.has(e.target).length === 0) {
-            container.closest(".dapp-form-dropdown")
-                .find(".field").css({
-                    'border': '2px solid #7BC143',
-                    'border-radius': '34px'
-                })
-            container.hide()
+    // Dropdown
+    dropdownInit(".dapp-form-dropdown")
+
+    // Textarea
+    $('#full_description_textarea').keyup(function() {
+
+        var characterCount = $(this).val().length;
+        var countLabel = $('#full_description_count');
+
+        countLabel.text(800 - characterCount);
+
+
+        if (characterCount < 300) {
+            countLabel.css('color', '#666');
         }
+        if (characterCount >= 300 && characterCount < 400) {
+            countLabel.css('color', '#6d5555');
+        }
+        if (characterCount >= 400 && characterCount < 500) {
+            countLabel.css('color', '#793535');
+        }
+        if (characterCount >= 500 && characterCount < 600) {
+            countLabel.css('color', '#841c1c');
+        }
+        if (characterCount >= 600 && characterCount < 700) {
+            countLabel.css('color', '#8f0001');
+        }
+
+        if (characterCount >= 700) {
+            countLabel.css('color', '#8f0001');
+        }
+
+
     });
+
+    /////////////////
+    // BLOCKCHAINS //
+    /////////////////
+
+    // Dropdown
+    dropdownInit("#period_dropdown")
+    dropdownInit("#factor_dropdown")
+
+
 });

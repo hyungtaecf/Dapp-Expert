@@ -1,3 +1,10 @@
+@mixin container {
+    width: 960px;
+    max-width: 100%;
+    padding: 0 20px;
+    margin: 0 auto
+}
+
 * {
     animation: "fadeIn" 0.5s;
     margin: 0;
@@ -37,8 +44,5 @@ button {
 }
 
 .container {
-    width: 960px;
-    max-width: 100%;
-    padding: 0 20px;
-    margin: 0 auto
+    @include container();
 }
