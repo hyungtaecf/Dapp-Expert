@@ -1,0 +1,191 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dapp Expert</title>
+    <link rel="stylesheet" href="css/master.css">
+</head>
+
+<body>
+    <div id="app" :style="{ 'background': 'url(' + background + ')' }">
+        <header>
+            <!-- NAVBAR -->
+            <div id="navbar" :style="{ 'background': 'url(' + navbar_background + ')' }">
+                <div class="logo" :style="{ 'background': 'url(' + logo_background + ')' }">
+                    <div class="logo_container"><img :src="logo" alt=""></div>
+                </div>
+                <div class="search_field">
+                    <form action="POST">
+                        <input type="text" :placeholder="$t('placeholder.search')" name="search_input" :style="{ 'background': 'url(' + search_field + ')' }">
+                    </form>
+                </div>
+                <div class="expanded">
+                    <a class="submit_link" href="#">
+                        <div class="submit_btn">{{$t("button.submit_dapp")}}</div>
+                    </a>
+                    <a href="">
+                        <div class="language">
+                            <div class="lang_icon">
+                                <img :src="language" :alt="$t('alt.select_language')" :title="$t('alt.select_language')">
+                            </div>
+                            <div class="iso639-1">{{$t('button.iso639_1')}}</div>
+                        </div>
+                    </a>
+                </div>
+            </div>
+            <!-- !NAVBAR -->
+        </header>
+
+        <main>
+            <!-- Top Ads -->
+            <section id="top_ads">
+                <!-- v-for -->
+                <!-- v-if -->
+                <div>
+                    <a href="#" class="big_ad">
+                        <div class="img_container">
+                            <img src="" alt="">
+                        </div>
+                    </a>
+                </div>
+                <!-- v-else -->
+                <div>
+                    <a href="#" class="small_ad">
+                        <div class="img_container">
+                            <img src="" alt="">
+                        </div>
+                    </a>
+                </div>
+            </section>
+            <!-- !Top Ads -->
+
+            <section id="blockchain">
+                <div class="blockchains_container">
+                    <div class="blockchain_label"></div>
+                    <div class="blockchain_buttons">
+                        <!-- v-for -->
+                        <a href="">
+                            <div class="blockchain_btn"></div>
+                        </a>
+                    </div>
+                </div>
+            </section>
+
+            <!-- Categories -->
+            <section class="categories">
+                <div class="categories label"></div>
+                <!-- Todo: It will have the circles as main items with relative-position -->
+                <!-- Todo: Category labels and the dotted-line will be absolute-position -->
+                <div class="categories_container">
+                    <div class="dotted_line"></div>
+                    <!-- v-for -->
+                    <a href="">
+                        <div class="circle_outer">
+                            <div class="category_option"></div>
+                            <div class="circle inner"></div>
+                        </div>
+                    </a>
+                </div>
+            </section>
+            <!-- !Categories -->
+
+            <!-- Table -->
+            <section id="dapp_table">
+                <table>
+                    <thead>
+                        <tr>
+                            <th></th>
+                            <th></th>
+                            <th></th>
+                            <th></th>
+                            <svg width="0.368in" height="0.354in">
+                            <path fill-rule="evenodd"  stroke="rgb(12, 135, 242)" stroke-width="3px" stroke-linecap="butt" stroke-linejoin="miter" fill="none"
+                            d="M11.648,2.275 L12.721,2.275 L22.650,22.415 L1.719,22.415 L11.648,2.275 Z"/>
+                        </svg>
+                            <th></th>
+                            <th></th>
+                            <th></th>
+                            <th></th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <!-- v-for -->
+                        <tr>
+                            <td></td>
+                            <td></td>
+                            <td></td>
+                            <td></td>
+                            <td></td>
+                            <td></td>
+                            <td></td>
+                            <td></td>
+                        </tr>
+                    </tbody>
+                </table>
+                <div class="see_more"></div>
+            </section>
+            <!-- !Table -->
+
+            <section id="info">
+                <!-- v-for -->
+                <div class="info_item">
+                    <div class="info_title"></div>
+                    <!-- v-bind:class="[if last... border]" -->
+                    <div class="info_value"></div>
+                </div>
+                <div class="info_item">
+                    <div class="info_title"></div>
+                    <div class="info_value"></div>
+                </div>
+            </section>
+
+            <section id="graphic_section">
+                <div>
+                    <div class="title"></div>
+                    <div class="buttons">
+                        <!-- v-for -->
+                        <a href="">
+                            <div class="button_selector"></div>
+                        </a>
+                    </div>
+                    <div class="graphic"></div>
+                </div>
+            </section>
+        </main>
+
+
+        <footer>
+            <div class="social">
+                <div class="title"></div>
+                <div class="social_buttons">
+                    <!-- v-for -->
+                    <a href="">
+                        <div class="social_btn"><img src="" alt=""></div>
+                    </a>
+                </div>
+            </div>
+            <div class="other_links">
+                <!-- v-for -->
+                <a href=""></a>
+            </div>
+            <div class="copyright"></div>
+        </footer>
+
+        <!-- <p>{{ $t("message.hello") }}</p> -->
+    </div>
+    <!-- development version, includes helpful console warnings -->
+    <script src="https://cdn.jsdelivr.net/npm/vue/dist/vue.js"></script>
+
+    <!-- production version, optimized for size and speed -->
+    <!-- <script src="https://cdn.jsdelivr.net/npm/vue"></script> -->
+
+    <!-- Vue I18n -->
+    <script src="https://unpkg.com/vue-i18n/dist/vue-i18n.js"></script>
+
+    <!-- Vue -->
+    <script src="js/main.js"></script>
+</body>
+
+</html>
