@@ -1,0 +1,107 @@
+{
+   "candy_pop_duel":{
+      "name":"Candy Pop Duel",
+      "chain":"EOS",
+      "category":"Games",
+      "balance":{
+         "value":"$ 446.40 M",
+         "percent":"0.01%"
+      },
+      "users":{
+         "value":"2 K",
+         "percent":"0.01%"
+      },
+      "volume":{
+         "value":"$ 186.47 K",
+         "percent_left":"15.41%",
+         "percent_right":"-7.37%"
+      },
+      "txs":"3 K",
+      "score":"99.11",
+      "hover":false
+   },
+   "candy_pop_duel2":{
+      "name":"Candy Pop Duel2",
+      "chain":"EOS",
+      "category":"Games",
+      "balance":{
+         "value":"$ 446.40 M",
+         "percent":"0.01%"
+      },
+      "users":{
+         "value":"2 K",
+         "percent":"0.01%"
+      },
+      "volume":{
+         "value":"$ 186.47 K",
+         "percent_left":"15.41%",
+         "percent_right":"-7.37%"
+      },
+      "txs":"3 K",
+      "score":"99.11",
+      "hover":false
+   },
+   "candy_pop_duel3":{
+      "name":"Candy Pop Duel3",
+      "chain":"EOS",
+      "category":"Games",
+      "balance":{
+         "value":"$ 446.40 M",
+         "percent":"0.01%"
+      },
+      "users":{
+         "value":"2 K",
+         "percent":"0.01%"
+      },
+      "volume":{
+         "value":"$ 186.47 K",
+         "percent_left":"15.41%",
+         "percent_right":"-7.37%"
+      },
+      "txs":"3 K",
+      "score":"99.11",
+      "hover":false
+   },
+   "candy_pop_duel4":{
+      "name":"Candy Pop Duel4",
+      "chain":"EOS",
+      "category":"Games",
+      "balance":{
+         "value":"$ 446.40 M",
+         "percent":"0.01%"
+      },
+      "users":{
+         "value":"2 K",
+         "percent":"0.01%"
+      },
+      "volume":{
+         "value":"$ 186.47 K",
+         "percent_left":"15.41%",
+         "percent_right":"-7.37%"
+      },
+      "txs":"3 K",
+      "score":"99.11",
+      "hover":false
+   },
+   "candy_pop_duel5":{
+      "name":"Candy Pop Duel5",
+      "chain":"EOS",
+      "category":"Games",
+      "balance":{
+         "value":"$ 446.40 M",
+         "percent":"0.01%"
+      },
+      "users":{
+         "value":"2 K",
+         "percent":"0.01%"
+      },
+      "volume":{
+         "value":"$ 186.47 K",
+         "percent_left":"15.41%",
+         "percent_right":"-7.37%"
+      },
+      "txs":"3 K",
+      "score":"99.11",
+      "hover":false
+   }
+}

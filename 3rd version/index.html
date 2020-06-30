@@ -14,7 +14,9 @@
             <!-- NAVBAR -->
             <div id="navbar" :style="{ 'background': 'url(' + navbar_background + ')' }">
                 <div class="logo" :style="{ 'background': 'url(' + logo_background + ')' }">
-                    <div class="logo_container"><img :src="logo" alt=""></div>
+                    <div class="logo_container">
+                        <img :src="logo" alt="Dapp Expert">
+                    </div>
                 </div>
                 <div class="search_field">
                     <form action="POST">
@@ -22,17 +24,15 @@
                     </form>
                 </div>
                 <div class="expanded">
-                    <a class="submit_link" href="#">
+                    <router-link to="/submit_dapp">
                         <div class="submit_btn">{{$t("button.submit_dapp")}}</div>
-                    </a>
-                    <a href="">
-                        <div class="language">
-                            <div class="lang_icon">
-                                <img :src="language" :alt="$t('alt.select_language')" :title="$t('alt.select_language')">
-                            </div>
-                            <div class="iso639-1">{{$t('button.iso639_1')}}</div>
+                    </router-link>
+                    <div class="language" @click="$i18n.locale==='en'?$i18n.locale='ru':$i18n.locale='en'">
+                        <div class="lang_icon">
+                            <img :src="language" :alt="$t('alt.select_language')" :title="$t('alt.select_language')">
                         </div>
-                    </a>
+                        <div class="iso639-1">{{$t('button.iso639_1')}}</div>
+                    </div>
                 </div>
             </div>
             <!-- !NAVBAR -->
@@ -41,50 +41,51 @@
         <main>
             <!-- Top Ads -->
             <section id="top_ads">
-                <!-- v-for -->
-                <!-- v-if -->
-                <div>
-                    <a href="#" class="big_ad">
+                <div class="big_ad">
+                    <a href="#">
                         <div class="img_container">
-                            <img src="" alt="">
+                            <img :src="top_ads.big_ad.img" :alt="top_ads.big_ad.alt" :title="top_ads.big_ad.alt">
                         </div>
                     </a>
                 </div>
-                <!-- v-else -->
-                <div>
-                    <a href="#" class="small_ad">
+                <div class="small_ads">
+                    <a href="#" v-for="ad in top_ads.small_ad">
                         <div class="img_container">
-                            <img src="" alt="">
+                            <img :src="ad.img" :alt="ad.alt" :title="ad.alt">
                         </div>
                     </a>
                 </div>
             </section>
             <!-- !Top Ads -->
 
+            <!-- Blockchains -->
             <section id="blockchain">
-                <div class="blockchains_container">
-                    <div class="blockchain_label"></div>
+                <div class="blockchains_container" :style="{ 'background': 'url(' + blockchain_background + ')' }">
+                    <div class="blockchain_label">{{$t('message.blockchains')}}</div>
                     <div class="blockchain_buttons">
-                        <!-- v-for -->
                         <a href="">
-                            <div class="blockchain_btn"></div>
+                            <div class="blockchain_btn active" :style="{ 'background': 'url(' + trapezio_blue_btn + ')' }">{{$t('button.all')}}</div>
+                        </a>
+                        <a v-for="blockchain in blockchains" href="">
+                            <div class="blockchain_btn" :style="{ 'background': 'url(' + trapezio_grey_btn + ')' }">{{blockchain.acronym}}</div>
                         </a>
                     </div>
                 </div>
             </section>
+            <!-- !Blockchains -->
 
             <!-- Categories -->
-            <section class="categories">
-                <div class="categories label"></div>
+            <section id="categories">
+                <div class="categories_label">{{$t('message.categories')}}:</div>
                 <!-- Todo: It will have the circles as main items with relative-position -->
                 <!-- Todo: Category labels and the dotted-line will be absolute-position -->
                 <div class="categories_container">
                     <div class="dotted_line"></div>
                     <!-- v-for -->
-                    <a href="">
+                    <a href="" v-for="category in $t('categories')">
                         <div class="circle_outer">
-                            <div class="category_option"></div>
-                            <div class="circle inner"></div>
+                            <div class="category_option">{{category}}</div>
+                            <div class="circle_inner"></div>
                         </div>
                     </a>
                 </div>
@@ -93,64 +94,181 @@
 
             <!-- Table -->
             <section id="dapp_table">
-                <table>
+                <table cellspacing="0" cellpadding="0">
                     <thead>
                         <tr>
-                            <th></th>
-                            <th></th>
-                            <th></th>
-                            <th></th>
-                            <svg width="0.368in" height="0.354in">
-                            <path fill-rule="evenodd"  stroke="rgb(12, 135, 242)" stroke-width="3px" stroke-linecap="butt" stroke-linejoin="miter" fill="none"
-                            d="M11.648,2.275 L12.721,2.275 L22.650,22.415 L1.719,22.415 L11.648,2.275 Z"/>
-                        </svg>
-                            <th></th>
-                            <th></th>
-                            <th></th>
-                            <th></th>
+                            <th>
+                                <div class="period_select">
+                                    <a href="">
+                                        <div id="_24h" class="period active" :style="{ 'background': 'url(' + trapezio_blue_btn + ')' }">{{$t('button._24h')}}</div>
+                                    </a>
+                                    <a href="">
+                                        <div id="_7d" class="period" :style="{ 'background': 'url(' + trapezio_grey_btn + ')' }">{{$t('button._7d')}}</div>
+                                    </a>
+                                </div>
+                            </th>
+                            <th>
+                                <div class="thead_item">{{$t('message.chain')}}</div>
+                            </th>
+                            <th>
+                                <div class="thead_item">{{$t('message.category')}}</div>
+                            </th>
+                            <th>
+                                <div class="thead_item">
+                                    <div class="help" title="About">
+                                        <span>?</span>
+                                    </div>
+                                    <div>{{$t('message.balance')}}</div>
+                                    <a href="">
+                                        <div class="sort">
+                                            <img :src="sort_icon" :alt="$t('message.sort')">
+                                        </div>
+                                    </a>
+                                </div>
+                            </th>
+                            <th>
+                                <div class="thead_item">
+                                    <div class="help" title="About">
+                                        <span>?</span>
+                                    </div>
+                                    <div>{{$t('message.users')}}</div>
+                                    <a href="">
+                                        <div class="sort">
+                                            <img :src="sort_icon" :alt="$t('message.sort')">
+                                        </div>
+                                    </a>
+                                </div>
+                            </th>
+                            <th>
+                                <div class="thead_item">
+                                    <div class="help" title="About">
+                                        <span>?</span>
+                                    </div>
+                                    <div>{{$t('message.volume')}}</div>
+                                    <a href="">
+                                        <div class="sort">
+                                            <img :src="sort_icon" :alt="$t('message.sort')">
+                                        </div>
+                                    </a>
+                                </div>
+                            </th>
+                            <th>
+                                <div class="thead_item">
+                                    <div class="help" title="About">
+                                        <span>?</span>
+                                    </div>
+                                    <div>TXS</div>
+                                    <a href="">
+                                        <div class="sort">
+                                            <img :src="sort_icon" :alt="$t('message.sort')">
+                                        </div>
+                                    </a>
+                                </div>
+                            </th>
+                            <th>
+                                <a href="">
+                                    <div class="thead_item">
+                                        <div class="breaklines">
+                                            {{$t('message.dapp_expert_score._0')}}
+                                            <br> {{$t('message.dapp_expert_score._1')}}
+                                            <br>{{$t('message.dapp_expert_score._2')}}
+                                        </div>
+                                    </div>
+                                </a>
+                            </th>
                         </tr>
                     </thead>
                     <tbody>
-                        <!-- v-for -->
-                        <tr>
-                            <td></td>
-                            <td></td>
-                            <td></td>
-                            <td></td>
-                            <td></td>
-                            <td></td>
-                            <td></td>
-                            <td></td>
+                        <tr v-for="dapp in dapp_list" @mouseover="{dapp.hover = true}" @mouseleave="{dapp.hover = false}">
+                            <td>
+                                <div class="picture_and_name">
+                                    <div class="picture">
+                                        <img :src="blank_square_avatar" alt="">
+                                    </div>
+                                    <div class="dapp_name">{{dapp.name}}</div>
+                                </div>
+                            </td>
+                            <td>
+                                <div class="cell">
+                                    <div class="value">{{dapp.chain}}</div>
+                                </div>
+                            </td>
+                            <td>
+                                <div class="cell">
+                                    <div class="value">{{dapp.category}}</div>
+                                </div>
+                            </td>
+                            <td>
+                                <div class="cell">
+                                    <div class="value">{{dapp.balance.value}}</div>
+                                    <div class="percent_row">
+                                        <div class="percent_left">{{dapp.balance.percent}}</div>
+                                    </div>
+                                </div>
+                            </td>
+                            <td>
+                                <div class="cell">
+                                    <div class="value">{{dapp.users.value}}</div>
+                                    <div class="percent_row">
+                                        <div class="percent_left">{{dapp.users.percent}}</div>
+                                    </div>
+                                </div>
+                            </td>
+                            <td>
+                                <div class="cell">
+                                    <div class="value">{{dapp.volume.value}}</div>
+                                    <div class="percent_row">
+                                        <div class="percent_left">{{dapp.volume.percent_left}}</div>
+                                        <div class="percent_right">{{dapp.volume.percent_right}}</div>
+                                    </div>
+                                    <div class="percent_bar_container">
+                                        <div class="percent_bar">
+                                            <img v-if="dapp.hover" class="percent_bar_background" :src="percent_bar_background_active">
+                                            <img v-else class="percent_bar_background" :src="percent_bar_background">
+                                            <img class="current_percentage" :src="percent_bar">
+                                        </div>
+                                    </div>
+                                </div>
+                            </td>
+                            <td>
+                                <div class="cell">
+                                    <div class="value">{{dapp.txs}}</div>
+                                </div>
+                            </td>
+                            <td>
+                                <div class="cell">
+                                    <div class="value">{{dapp.score}}</div>
+                                </div>
+                            </td>
+                            <td class="row_bg" :style="{ 'background': 'url(' + table_item + ')' }">
+                                <span class="bg_active" :style="{ 'background': 'url(' + table_item_active + ')' }"></span>
+                            </td>
                         </tr>
                     </tbody>
                 </table>
-                <div class="see_more"></div>
+                <div class="see_more">
+                    <div class="text">{{$t('message.see_more')}}</div>
+                </div>
             </section>
             <!-- !Table -->
 
             <section id="info">
-                <!-- v-for -->
-                <div class="info_item">
-                    <div class="info_title"></div>
-                    <!-- v-bind:class="[if last... border]" -->
-                    <div class="info_value"></div>
-                </div>
-                <div class="info_item">
-                    <div class="info_title"></div>
-                    <div class="info_value"></div>
+                <div v-for="(item, key, index) in $t('info_items')" :class="{'border' : index === Object.keys($t('info_items')).length-1, 'info_item' : 1}">
+                    <div class="info_title">{{ item._0 }}<br>{{item._1}}</div>
+                    <div class="info_value">{{ info_items[key] }}</div>
                 </div>
             </section>
 
             <section id="graphic_section">
                 <div>
-                    <div class="title"></div>
+                    <div class="title">{{$t('message.blockchains_data_info')}}</div>
                     <div class="buttons">
                         <!-- v-for -->
-                        <a href="">
-                            <div class="button_selector"></div>
-                        </a>
+                        <div class="button_selector"></div>
                     </div>
-                    <div class="graphic"></div>
+                </div>
+                <div class="graphic">
+                    <img src="" alt="">
                 </div>
             </section>
         </main>
@@ -175,6 +293,10 @@
 
         <!-- <p>{{ $t("message.hello") }}</p> -->
     </div>
+
+    <!-- jQuery -->
+    <script src="https://code.jquery.com/jquery-3.5.1.min.js" integrity="sha256-9/aliU8dGd2tb6OSsuzixeV4y/faTqgFtohetphbbj0=" crossorigin="anonymous"></script>
+
     <!-- development version, includes helpful console warnings -->
     <script src="https://cdn.jsdelivr.net/npm/vue/dist/vue.js"></script>
 
@@ -184,8 +306,14 @@
     <!-- Vue I18n -->
     <script src="https://unpkg.com/vue-i18n/dist/vue-i18n.js"></script>
 
+    <!-- Vue Router -->
+    <script src="https://unpkg.com/vue-router@3.0.1/dist/vue-router.js"></script>
+
+    <!-- Vue Media Query -->
+    <script src="https://cdn.jsdelivr.net/npm/v-media-query@1.0.4/dist/v-media-query.min.js"></script>
+
     <!-- Vue -->
-    <script src="js/main.js"></script>
+    <script type="module" src="js/main.js"></script>
 </body>
 
 </html>
