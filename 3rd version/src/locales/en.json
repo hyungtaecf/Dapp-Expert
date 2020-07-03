@@ -1,0 +1,78 @@
+{
+    "message": {
+        "hello": "hello world",
+        "blockchains": "blockchains",
+        "categories": "categories",
+        "chain": "chain",
+        "category": "category",
+        "balance": "balance",
+        "users": "users",
+        "volume": "volume",
+        "dapp_expert_score": {
+            "_0": "Dapp",
+            "_1": "Expert",
+            "_2": "Score"
+        },
+        "sort": "sort",
+        "see_more": "see more",
+        "blockchains_data_info": "blockchain's data info",
+        "copyright": "Copyright"
+    },
+    "button": {
+        "submit_dapp": "submit dapp",
+        "iso639_1": "en",
+        "all": "all",
+        "_24h": "24h",
+        "_7d": "7d",
+        "graphic_info": {
+            "volume": "Volume",
+            "dau": "DAU",
+            "transactions": "Transactions"
+        }
+    },
+    "placeholder": {
+        "search": "search"
+    },
+    "alt": {
+        "select_language": "Select Language"
+    },
+    "categories": {
+        "all": "all",
+        "collectibles": "collectibles",
+        "exchanges": "exchanges",
+        "gambling": "gambling",
+        "games": "games",
+        "high_risk": "high-risk",
+        "marketplaces": "marketplaces",
+        "other": "other"
+    },
+    "info_item": {
+        "total_dapps": {
+            "_0": "Total",
+            "_1": "Dapps"
+        },
+        "smart_contracts": {
+            "_0": "Smart",
+            "_1": "Contracts"
+        },
+        "_24h_users": {
+            "_0": "24h",
+            "_1": "Users"
+        },
+        "_24h_transactions": {
+            "_0": "24h",
+            "_1": "Transactions"
+        },
+        "_24h_volume": {
+            "_0": "24h",
+            "_1": "Volume"
+        }
+    },
+    "footer_link": {
+        "submit_dapp": "Submit Dapp",
+        "privacy_policy": "Privacy Policy",
+        "terms_of_use": "Terms of Use",
+        "cookie_policy": "Cookie Policy",
+        "coin_gecko_api": "CoinGecko API"
+    }
+}

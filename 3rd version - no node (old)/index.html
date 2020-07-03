@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dapp.expert</title>
+    <link rel="stylesheet" href="css/master.css">
+    <link rel="stylesheet" href="css/index.css">
+</head>
+
+<body>
+    <div id="app" :style="{ 'background': 'url(' + background + ')' }">
+        <!-- NAVBAR -->
+        <header>
+            <div id="navbar" :style="{ 'background': 'url(' + dx_header.navbar_background + ')' }">
+                <div class="logo" :style="{ 'background': 'url(' + dx_header.logo_background + ')' }">
+                    <div class="logo_container">
+                        <img :src="dx_header.logo" alt="Dapp Expert">
+                    </div>
+                </div>
+                <div class="search_field">
+                    <form action="POST">
+                        <input type="text" :placeholder="$t('placeholder.search')" name="search_input" :style="{ 'background': 'url(' + dx_header.search_field + ')' }">
+                    </form>
+                </div>
+                <div class="expanded">
+                    <a href="./submit_dapp.html">
+                        <div class="submit_btn">{{$t("button.submit_dapp")}}</div>
+                    </a>
+                    <div class="language" :alt="$t('alt.select_language')" :title="$t('alt.select_language')" @click="$i18n.locale==='en'?$i18n.locale='ru':$i18n.locale='en'">
+                        <div class="lang_icon">
+                            <img :src="dx_header.language">
+                        </div>
+                        <div class="iso639-1">{{$t('button.iso639_1')}}</div>
+                    </div>
+                </div>
+            </div>
+        </header>
+        <!-- !NAVBAR -->
+
+        <main>
+            <!-- Top Ads -->
+            <section id="top_ads">
+                <div class="big_ad">
+                    <a href="#">
+                        <div class="img_container">
+                            <img :src="top_ads.big_ad.img" :alt="top_ads.big_ad.alt" :title="top_ads.big_ad.alt">
+                        </div>
+                    </a>
+                </div>
+                <div class="small_ads">
+                    <a href="#" v-for="ad in top_ads.small_ad">
+                        <div class="img_container">
+                            <img :src="ad.img" :alt="ad.alt" :title="ad.alt">
+                        </div>
+                    </a>
+                </div>
+            </section>
+            <!-- !Top Ads -->
+
+            <!-- Blockchains -->
+            <blockchains-bar></blockchains-bar>
+            <!-- !Blockchains -->
+
+            <!-- Categories -->
+            <categories-bar></categories-bar>
+            <!-- !Categories -->
+
+            <!-- Table -->
+            <!-- Todo: Fix position relative to <td>, it might me the reason of the problems when using Chrome -->
+            <dapp-table></dapp-table>
+            <!-- !Table -->
+
+            <!-- Info -->
+            <info-section></info-section>
+            <!-- !Info -->
+
+            <!-- Graphic Section -->
+            <graphic-section></graphic-section>
+            <!-- !Graphic Section -->
+        </main>
+
+        <!-- Footer -->
+        <footer :style="{ 'background': 'url(' + dx_footer.footer_background + ')' }">
+            <div class="main_content">
+                <div class="social">
+                    <div class="title">Follow us</div>
+                    <div class="social_buttons">
+                        <a v-for="(item, key) in dx_footer.social" :href="item.href" :alt="key" :title="key">
+                            <div class="social_btn">
+                                <div v-html="item.svg"></div>
+                            </div>
+                        </a>
+                    </div>
+                </div>
+                <div class="other_links">
+                    <div class="link_row">
+                        <a class="link" href="./">{{$t('footer_link.submit_dapp')}}</a>
+                        <a class="link" href="./">{{$t('footer_link.terms_of_use')}}</a>
+                        <a class="link" href="./">{{$t('footer_link.cookie_policy')}}</a>
+                    </div>
+                    <div class="link_row">
+                        <a class="link" href="./">{{$t('footer_link.coin_gecko_api')}}</a>
+                        <a class="link" href="./">{{$t('footer_link.privacy_policy')}}</a>
+                    </div>
+                </div>
+            </div>
+            <div class="copyright">{{ $t('message.copyright') }} Â© {{ new Date().getFullYear() }} Dapp.expert</div>
+            <img class="footer_background_reflection" :src="dx_footer.footer_background_reflection" alt="">
+        </footer>
+        <!-- !Footer -->
+
+    </div>
+
+    <!-- development version, includes helpful console warnings -->
+    <script src="https://cdn.jsdelivr.net/npm/vue/dist/vue.js"></script>
+
+    <!-- production version, optimized for size and speed -->
+    <!-- <script src="https://cdn.jsdelivr.net/npm/vue"></script> -->
+
+    <!-- Vue I18n -->
+    <script src="https://unpkg.com/vue-i18n/dist/vue-i18n.js"></script>
+
+    <!-- Vue Router -->
+    <script src="https://unpkg.com/vue-router@3.0.1/dist/vue-router.js"></script>
+
+    <!-- Vue Media Query -->
+    <script src="https://cdn.jsdelivr.net/npm/v-media-query@1.0.4/dist/v-media-query.min.js"></script>
+
+    <!-- Mock Data -->
+    <script src="js/mock_data.js"></script>
+
+    <!-- Vue Components -->
+    <script src="js/components.js"></script>
+
+    <!-- Vue -->
+    <script type="module" src="js/main.js"></script>
+</body>
+
+</html>

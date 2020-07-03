@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<style>
+    * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+    }
+    
+    html {
+        height: 100%;
+    }
+    
+    body {
+        height: 100%;
+        width: 100%;
+    }
+    
+    div {
+        min-height: 280vh;
+        width: 100%;
+        background-size: 100% auto;
+        background-image: url("./index.jpg");
+        background-repeat: no-repeat;
+    }
+    
+    @media(max-width:768px) {
+        div {
+            min-height: 420vh;
+            background-image: url("./index_mobile.jpg");
+        }
+    }
+</style>
+
+<body>
+    <div onclick="changePage()"></div>
+    <img>
+</body>
+<script>
+    var first = false;
+
+    function changePage() {
+        first = !first;
+        myFunction(x)
+    }
+
+    function myFunction(x) {
+        if (x.matches) {
+            if (first) document.getElementsByTagName("div")[0].style.backgroundImage = 'url("./index_mobile.jpg")';
+            else document.getElementsByTagName("div")[0].style.backgroundImage = 'url("./submit-dapp_mobile.jpg")';
+        } else {
+            if (first) document.getElementsByTagName("div")[0].style.backgroundImage = 'url("./index.jpg")';
+            else document.getElementsByTagName("div")[0].style.backgroundImage = 'url("./submit-dapp.jpg")';
+        }
+    }
+
+    var x = window.matchMedia("(max-width: 768px)")
+    myFunction(x)
+    x.addListener(myFunction)
+</script>
+
+</html>

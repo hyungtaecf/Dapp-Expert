@@ -1,0 +1,63 @@
+{
+    "message": {
+        "hello": "hello world",
+        "blockchains": "Блокчейн",
+        "categories": "Категории",
+        "chain": "Блокчейн",
+        "category": "Категория",
+        "balance": "Баланс",
+        "users": "Пользователи",
+        "volume": "Оборот",
+        "dapp_expert_score": {
+            "_0": "Dapp",
+            "_1": "Expert",
+            "_2": "индекс"
+        },
+        "see_more": "Показать больше",
+        "blockchains_data_info": "Данные блокчейна",
+        "copyright": "Авторское право"
+    },
+    "button": {
+        "submit_dapp": "Разместить dapp",
+        "iso639_1": "ru",
+        "_24h": "24 часа",
+        "_7d": "7 дней",
+        "graphic_info": {
+            "volume": "Оборот",
+            "dau": "DAU",
+            "transactions": "Транзакции"
+        }
+    },
+    "placeholder": {
+        "search": "Поиск"
+    },
+    "info_item": {
+        "total_dapps": {
+            "_0": "Всего",
+            "_1": "Dapp ов"
+        },
+        "smart_contracts": {
+            "_0": "Смарт",
+            "_1": "Контракты"
+        },
+        "_24h_users": {
+            "_0": "Пользователей",
+            "_1": "за 24 часа"
+        },
+        "_24h_transactions": {
+            "_0": "Транзакции",
+            "_1": "за 24 часа"
+        },
+        "_24h_volume": {
+            "_0": "Объем",
+            "_1": "за 24 часа"
+        }
+    },
+    "footer_link": {
+        "submit_dapp": "Разместить Dapp",
+        "terms_of_use": "Условия использования",
+        "cookie_policy": "Политика связанная с Cookie",
+        "coin_gecko_api": "CoinGecko API",
+        "privacy_policy": "Политика конфиденциальности"
+    }
+}
