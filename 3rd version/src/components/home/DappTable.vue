@@ -282,7 +282,7 @@ export default {
           hover: false
         },
         candy_pop_duel4: {
-          name: "Candy Pop Duel4",
+          name: "0xUniverse",
           chain: "EOS",
           category: "Games",
           balance: {

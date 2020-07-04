@@ -50,6 +50,7 @@
 html {
   height: 100%;
   padding: 0;
+  scroll-behavior: smooth;
 }
 
 body {
@@ -64,6 +65,10 @@ a {
 
 a:visited {
   color: unset;
+}
+
+ul {
+  list-style: none;
 }
 
 #app {
@@ -85,6 +90,7 @@ header {
       -ms-flex-pack: center;
           justify-content: center;
   padding: 0 var(--body_padding);
+  height: var(--navbar_height);
 }
 
 header #navbar {
@@ -148,7 +154,7 @@ header #navbar .search_field {
 
 header #navbar .search_field input {
   height: var(--input_height);
-  width: 11vmax;
+  width: 13.5vmax;
   padding: 0 1.5vmax;
   border: none;
   background-position: center !important;
@@ -338,6 +344,10 @@ footer .main_content .social .social_buttons a .social_btn {
       -ms-flex-pack: center;
           justify-content: center;
   padding: .65vmax;
+}
+
+footer .main_content .social .social_buttons a .social_btn svg {
+  width: 100%;
 }
 
 footer .main_content .other_links {

@@ -24,6 +24,7 @@
 html {
     height: 100%;
     padding: 0;
+    scroll-behavior: smooth;
 }
 
 body {
@@ -37,6 +38,10 @@ a {
     &:visited {
         color: unset;
     }
+}
+
+ul {
+    list-style: none;
 }
 
 #app {
@@ -54,6 +59,7 @@ header {
     display: flex;
     justify-content: center;
     padding: 0 var(--body_padding);
+    height: var(--navbar_height);
     #navbar {
         padding-right: var(--navbar_padding);
         width: var(--navbar_width);
@@ -96,7 +102,7 @@ header {
             transform: translate(-50%, -50%);
             input {
                 height: var(--input_height);
-                width: 11vmax;
+                width: 13.5vmax;
                 padding: 0 1.5vmax;
                 border: none;
                 background-position: center!important;
@@ -210,6 +216,9 @@ footer {
                         align-items: center;
                         justify-content: center;
                         padding: .65vmax;
+                        svg {
+                            width: 100%;
+                        }
                     }
                 }
             }
