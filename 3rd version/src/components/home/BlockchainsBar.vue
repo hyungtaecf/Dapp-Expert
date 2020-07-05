@@ -48,3 +48,81 @@ export default {
   }
 };
 </script>
+
+<style lang="scss" scoped>
+@import "../../css/variables";
+#blockchain {
+  display: flex;
+  justify-content: center;
+  padding: 0 $submenu_body_padding;
+  .blockchains_container {
+    display: flex;
+    align-items: center;
+    padding: 0 $submenu_inner_padding;
+    height: $navbar_height;
+    width: $navbar_width;
+    background-position: center !important;
+    background-size: 100% 100% !important;
+    background-repeat: no-repeat !important;
+    .blockchain_label {
+      font-size: 1.25vmax;
+      color: $white;
+      font-weight: bold;
+      text-transform: capitalize;
+    }
+    .blockchain_buttons {
+      display: flex;
+      justify-content: space-between;
+      width: 100%;
+      padding: 0 1vmax;
+      .blockchain_btn {
+        height: $trapezio_button_height;
+        width: $trapezio_button_width;
+        background-position: center !important;
+        background-size: 100% 100% !important;
+        background-repeat: no-repeat !important;
+        text-transform: uppercase;
+        font-size: 0.6vmax;
+        letter-spacing: 0.075vmax;
+        color: $white;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        cursor: pointer;
+        &.active {
+          font-weight: bold;
+        }
+      }
+    }
+  }
+  @media (max-width: $breakpoint-tablet) {
+    padding: 3.5vmax 1vmax;
+    .blockchains_container {
+      flex-direction: column;
+      align-items: start;
+      padding: 0;
+      height: auto;
+      width: 100%;
+      background: none !important;
+      .blockchain_label {
+        font-size: 2.4vmax;
+        margin-bottom: 3vmax;
+        color: $black;
+      }
+      .blockchain_buttons {
+        display: grid;
+        width: 100%;
+        padding: 0;
+        grid-template-columns: 1fr 1fr 1fr 1fr;
+        column-gap: 1vmax;
+        row-gap: 1.75vmax;
+        .blockchain_btn {
+          height: 2.75vmax;
+          width: 100%;
+          font-size: 1.25vmax;
+        }
+      }
+    }
+  }
+}
+</style>

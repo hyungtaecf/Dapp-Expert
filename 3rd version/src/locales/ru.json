@@ -59,5 +59,30 @@
         "cookie_policy": "Политика связанная с Cookie",
         "coin_gecko_api": "CoinGecko API",
         "privacy_policy": "Политика конфиденциальности"
+    },
+    "intro_section": {
+        "_24h_users": "Пользователей за 24 часа",
+        "balance": "Баланс",
+        "go_to_the_website": "перейти на сайт",
+        "smart_contracts": "Смарт контракты"
+    },
+    "similar_section": {
+        "similar_to": {
+            "_0": "Похожее на ",
+            "_1": ""
+        }
+    },
+    "talks_section": {
+        "says": {
+            "_0": "",
+            "_1": " говорит о себе"
+        }
+    },
+    "users_voice": {
+        "users_voice": "Отзыв пользователя",
+        "go_to_the_website": "перейти на сайт"
+    },
+    "users_also_like": {
+        "users_also_like": "Другие пользователи предпочитают"
     }
 }

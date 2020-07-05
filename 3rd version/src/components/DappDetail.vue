@@ -17,21 +17,15 @@
     <!-- !Article -->
 
     <!-- Dapp talks about itself section -->
-    <section>
-      <div class="section_title2">(leading) {{ $route.params.dappName }} says (trailing)</div>
-      <div>(leading )Tweets by {{ $route.params.dappName }} (trailing)</div>
-    </section>
+    <talks-section></talks-section>
     <!-- !Dapp talks about itself section -->
 
+    <!-- User's Voice -->
+    <users-voice></users-voice>
+    <!-- !User's Voice -->
+
     <!-- Users Also Like -->
-    <section>
-      <div class="section_title2">Users Also Like</div>
-      <div class="dapps">
-        <img src alt />
-        <img src alt />
-        <img src alt />
-      </div>
-    </section>
+    <users-also-like></users-also-like>
     <!-- !Users Also Like -->
   </div>
 </template>
@@ -41,6 +35,9 @@ import IntroSection from "./dapp_detail/IntroSection";
 import ScreenshotAndSimilarSection from "./dapp_detail/ScreenshotAndSimilarSection";
 import AnalyticalData from "./dapp_detail/AnalyticalData";
 import DappArticle from "./dapp_detail/DappArticle";
+import TalksSection from "./dapp_detail/TalksSection";
+import UsersVoice from "./dapp_detail/UsersVoice";
+import UsersAlsoLike from "./dapp_detail/UsersAlsoLike";
 
 export default {
   name: "DappDetail",
@@ -48,7 +45,10 @@ export default {
     IntroSection,
     ScreenshotAndSimilarSection,
     AnalyticalData,
-    DappArticle
+    DappArticle,
+    TalksSection,
+    UsersVoice,
+    UsersAlsoLike
   }
 };
 </script>
@@ -68,5 +68,29 @@ export default {
 .article_body {
   color: $secondary;
   font-size: 1.05vmax;
+}
+.button1 {
+  padding: 0.5vmax 1.5vmax;
+  display: flex;
+  align-items: center;
+  background-color: $primary;
+  color: $white;
+  cursor: pointer;
+  font-size: 0.9vmax;
+  border-radius: 0.25rem;
+}
+.other_dapp_img {
+  $size: 4vmax;
+  background: linear-gradient(to right, #0095fd, #00cee3);
+  display: flex;
+  justify-content: center;
+  padding: 0.15vmax;
+  border-radius: 0.25rem;
+  img {
+    width: $size;
+    height: $size;
+    border-radius: 0.25rem;
+    object-fit: contain;
+  }
 }
 </style>

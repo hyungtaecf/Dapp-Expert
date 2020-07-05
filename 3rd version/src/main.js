@@ -7,6 +7,16 @@ import i18n from './i18n'
 
 Vue.config.productionTip = false
 
+import VueMq from 'vue-mq'
+
+Vue.use(VueMq, {
+    breakpoints: {
+        tablet: 768,
+        desktop: Infinity,
+    },
+    defaultBreakpoint: 'desktop'
+})
+
 /* eslint-disable no-new */
 new Vue({
     el: '#app',

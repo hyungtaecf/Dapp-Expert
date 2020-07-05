@@ -74,5 +74,30 @@
         "terms_of_use": "Terms of Use",
         "cookie_policy": "Cookie Policy",
         "coin_gecko_api": "CoinGecko API"
+    },
+    "intro_section": {
+        "_24h_users": "24h Users",
+        "balance": "Balance",
+        "go_to_the_website": "Go to the website",
+        "smart_contracts": "Smart Contracts"
+    },
+    "similar_section": {
+        "similar_to": {
+            "_0": "Similar to ",
+            "_1": ""
+        }
+    },
+    "talks_section": {
+        "says": {
+            "_0": "",
+            "_1": " says"
+        }
+    },
+    "users_voice": {
+        "users_voice": "User's Voice",
+        "go_to_the_website": "Go to the website"
+    },
+    "users_also_like": {
+        "users_also_like": "Users Also Like"
     }
 }

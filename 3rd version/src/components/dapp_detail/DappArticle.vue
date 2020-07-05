@@ -17,10 +17,12 @@ export default {
 </script>
 
 <style lang="scss" scoped>
+@import "../../css/variables";
 #dapp_article {
-  padding: 0 23vmax;
+  padding: 0 $lower_part_padding;
   .article_body {
-    padding: 1vmax 0 3.5vmax;
+    padding-top: $article_body_padding_top;
+    padding-bottom: $article_body_padding_bottom;
   }
 }
 </style>

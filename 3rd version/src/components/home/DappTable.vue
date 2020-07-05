@@ -5,14 +5,14 @@
         <tr>
           <th>
             <div class="period_select">
-              <div class="button" @click="periodSelect('24h')">
+              <div class="period_button" @click="periodSelect('24h')">
                 <div
                   id="_24h"
                   class="period active"
                   :style="{ 'background': 'url(' + [period.p_24h.active? trapezio_blue_btn : trapezio_grey_btn] + ')' }"
                 >{{$t('button._24h')}}</div>
               </div>
-              <div class="button" @click="periodSelect('7d')">
+              <div class="period_button" @click="periodSelect('7d')">
                 <div
                   id="_7d"
                   class="period"
@@ -96,6 +96,9 @@
             v-if="index<number_of_items"
           >
             <td>
+              <div class="row_bg" :style="{ 'background': 'url(' + table_item + ')' }">
+                <span class="bg_active" :style="{ 'background': 'url(' + table_item_active + ')' }"></span>
+              </div>
               <div class="picture_and_name">
                 <div class="picture">
                   <img :src="blank_square_avatar" alt />
@@ -158,9 +161,6 @@
               <div class="cell">
                 <div class="value">{{dapp.score}}</div>
               </div>
-            </td>
-            <td class="row_bg" :style="{ 'background': 'url(' + table_item + ')' }">
-              <span class="bg_active" :style="{ 'background': 'url(' + table_item_active + ')' }"></span>
             </td>
           </tr>
         </template>
@@ -433,3 +433,236 @@ export default {
   }
 };
 </script>
+
+<style lang="scss" scoped>
+@import "../../css/variables";
+.triangle {
+  border-width: 3px;
+  border-color: rgb(12, 135, 242);
+  border-style: solid;
+  position: absolute;
+  left: 1892px;
+  top: 1598px;
+  width: 16px;
+  height: 15px;
+  z-index: 179;
+}
+#dapp_table {
+  $percent_bar_height: 0.3vmax;
+  $percent_bar_width: 5vmax;
+  padding: 0 calc(#{$submenu_body_padding} + #{$submenu_inner_padding});
+  table {
+    width: 100%;
+    border-collapse: separate;
+    border-spacing: 0 0.3vmax;
+    thead {
+      th:first-child {
+        width: 0;
+      }
+      .period_select {
+        display: flex;
+        .period_button {
+          height: $trapezio_button_height;
+          width: $trapezio_button_width;
+          position: relative;
+          cursor: pointer;
+          .period {
+            $gap: 0.35vmax;
+            position: absolute;
+            top: 0;
+            height: $trapezio_button_height;
+            width: $trapezio_button_width;
+            background-position: center !important;
+            background-size: 100% 100% !important;
+            background-repeat: no-repeat !important;
+            text-transform: uppercase;
+            font-size: 0.6vmax;
+            letter-spacing: 0.075vmax;
+            color: $white;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            &#_24h {
+              left: $gap;
+            }
+            &#_7d {
+              right: $gap;
+            }
+            &.active {
+              font-weight: bold;
+            }
+          }
+        }
+      }
+      .thead_item {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        font-size: 0.75vmax;
+        text-transform: capitalize;
+        font-weight: normal;
+        color: $secondary;
+        .help {
+          height: 1vmax;
+          width: 1vmax;
+          margin: 0.25vmax;
+          border: 0.15vmax solid $border-grey;
+          border-radius: 50%;
+          position: relative;
+          &:hover {
+            cursor: help;
+          }
+          span {
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            font-size: 0.75vmax;
+            font-weight: lighter;
+          }
+        }
+        .sort {
+          margin: 0.25vmax;
+          img {
+            height: 0.5vmax;
+          }
+        }
+        .breaklines {
+          text-align: start;
+        }
+      }
+    }
+    tbody {
+      &:before {
+        content: ".";
+        display: block;
+        line-height: 1vmax;
+        text-indent: -100vw;
+      }
+      tr {
+        position: relative;
+        height: $navbar_height;
+        $fix_bg_offset: 21.5vmax;
+        &:hover {
+          cursor: pointer;
+          color: $white;
+          .bg_active {
+            top: 2.15vmax;
+            height: 120%;
+            transition: ease-in 0.1s;
+            opacity: 1;
+          }
+          .percent_right {
+            color: $white !important;
+          }
+        }
+        .row_bg,
+        .bg_active {
+          position: absolute;
+          height: 100%;
+          left: calc(50% + #{$fix_bg_offset});
+          top: 50%;
+          z-index: 5;
+          width: calc(100vw - #{$submenu_body_padding} * 2);
+          background-position: center !important;
+          background-size: 100% 100% !important;
+          background-repeat: no-repeat !important;
+        }
+        .row_bg {
+          transform: translate(-50%, -50%);
+        }
+        .bg_active {
+          width: 102%;
+          opacity: 0;
+          z-index: 6;
+          transform: translate(-80%, -50%);
+        }
+        td {
+          position: relative;
+          min-width: 4vmax;
+          * {
+            z-index: 10;
+          }
+          .dapp_name,
+          .value {
+            font-size: 0.9vmax;
+          }
+          .picture_and_name {
+            display: flex;
+            align-items: center;
+            .picture {
+              display: flex;
+              align-items: center;
+              height: 100%;
+              img {
+                height: calc(#{$navbar_height} - 0.4vmax);
+              }
+            }
+            .dapp_name {
+              margin-left: 0.5vmax;
+              color: black;
+            }
+          }
+          .cell {
+            position: absolute;
+            top: 0.75vmax;
+            left: 50%;
+            transform: translateX(-50%);
+            .value {
+              text-align: center;
+              white-space: nowrap;
+            }
+            .percent_row {
+              padding: 0.25vmax 0;
+              display: flex;
+              justify-content: space-between;
+              font-size: 0.6vmax;
+              .percent_right {
+                color: $primary;
+              }
+            }
+            .percent_bar_container {
+              .percent_bar {
+                position: relative;
+                height: $percent_bar_height;
+                width: $percent_bar_width;
+                .percent_bar_background,
+                .current_percentage {
+                  height: $percent_bar_height;
+                  position: absolute;
+                  left: 0;
+                  top: 50%;
+                  transform: translateY(-50%);
+                }
+                .percent_bar_background {
+                  width: 100%;
+                }
+                .current_percentage {
+                  width: 65%;
+                }
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+  .see_more {
+    width: 100%;
+    text-align: right;
+    text-transform: capitalize;
+    color: $primary;
+    text-decoration: underline;
+    font-size: 0.8vmax;
+    .text {
+      padding: 1vmax 2vmax;
+      &:hover {
+        cursor: pointer;
+      }
+    }
+  }
+  @media (max-width: $breakpoint-tablet) {
+    display: none;
+  }
+}
+</style>

@@ -27,17 +27,19 @@ export default {
     display: flex;
     justify-content: space-between;
     .graphic {
+      $border-radius: 1.7vmax;
       width: 100%;
       background: linear-gradient(to right, #0095fd, #00cee3);
       display: flex;
       justify-content: center;
       padding: 0.125vmax 0.125vmax 0.1vmax 0.075vmax;
-      border-radius: 1.7vmax;
+      border-radius: $border-radius;
       margin: 2.5vmax 2vmax 0 0;
       &:last-child {
         margin-right: 0;
       }
       img {
+        border-radius: $border-radius;
         width: 100%;
       }
     }

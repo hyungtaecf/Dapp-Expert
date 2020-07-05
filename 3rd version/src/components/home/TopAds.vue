@@ -48,3 +48,61 @@ export default {
   }
 };
 </script>
+
+<style lang="scss" scoped>
+@import "../../css/variables";
+#top_ads {
+  display: grid;
+  $img_height: 17.5vmax;
+  grid-template-areas: "big_ad small_ads";
+  padding: 1.5vmax 19vmax 2vmax;
+  .big_ad {
+    grid-area: big_ad;
+    .img_container {
+      img {
+        height: $img_height;
+      }
+    }
+  }
+  .small_ads {
+    grid-area: small_ads;
+    display: grid;
+    grid-template-columns: auto auto;
+    grid-template-rows: #{$img_height / 2} #{$img_height / 2};
+    a {
+      .img_container {
+        img {
+          height: #{$img_height / 2};
+        }
+      }
+    }
+  }
+  @media (max-width: $breakpoint-tablet) {
+    // $img_height: 17.5vmax;
+    width: 100%;
+    grid-template-areas: "big_ad" "small_ads";
+    padding: 1.5vmax 1vmax;
+    row-gap: 0.75vmax;
+    .big_ad {
+      .img_container {
+        img {
+          height: auto;
+          width: 100%;
+        }
+      }
+    }
+    .small_ads {
+      grid-template-columns: auto auto;
+      grid-template-rows: auto auto;
+      a {
+        .img_container {
+          img {
+            height: auto;
+            width: 100%;
+          }
+        }
+      }
+    }
+  }
+}
+</style>

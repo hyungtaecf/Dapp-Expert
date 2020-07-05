@@ -8,21 +8,23 @@
       </carousel>
     </div>
     <div class="similar">
-      <div class="section_title1">Похожее на 0xUniverse</div>
+      <div
+        class="section_title1"
+      >{{$t('similar_section.similar_to._0')}}{{ $route.params.dappName}}{{$t('similar_section.similar_to._1')}}</div>
       <div class="dapp_list">
         <template v-for="(_, key, index) in 3">
           <hr :key="key" />
           <router-link
-            :to="{name:'DappDetail', params:{dappName:'Tides of Magic'}}"
+            :to="{name:'DappDetail', params:{dappName:other_dapp.name}}"
             :key="index"
             class="dapp_row"
           >
-            <div class="img">
-              <img :src="square_avatar" alt />
+            <div class="other_dapp_img">
+              <img :src="other_dapp.picture" alt />
             </div>
             <div class="info">
-              <div class="name">Tides of Magic</div>
-              <div class="category">Games</div>
+              <div class="name">{{other_dapp.name}}</div>
+              <div class="category capitalize">{{$t('categories.'+[other_dapp.category])}}</div>
             </div>
           </router-link>
         </template>
@@ -44,7 +46,11 @@ export default {
         require("../../assets/screenshot.png"),
         require("../../assets/screenshot.png")
       ],
-      square_avatar: require("../../assets/square_avatar.png")
+      other_dapp: {
+        name: "Tides of Magic",
+        category: "games",
+        picture: require("../../assets/square_avatar.png")
+      }
     };
   },
   components: {
@@ -75,12 +81,12 @@ export default {
 }
 
 .VueCarousel-navigation {
-  --size: 3.25vmax;
+  $size: 3.25vmax;
   .VueCarousel-navigation-button {
     background: $primary !important;
     border-radius: 50%;
-    height: var(--size);
-    width: var(--size);
+    height: $size;
+    width: $size;
     padding: 0 !important;
     color: $white !important;
     font-size: 1.25vmax !important;
@@ -89,18 +95,18 @@ export default {
     }
   }
   .VueCarousel-navigation-next {
-    right: calc(var(--size) / 2) !important;
+    right: #{$size / 2} !important;
   }
   .VueCarousel-navigation-prev {
-    left: calc(var(--size) / 2) !important;
+    left: #{$size / 2} !important;
   }
 }
 #screenshot_similar {
-  --screenshot_size: 38vmax;
+  $screenshot_size: 38vmax;
   padding: 3.5vmax 18vmax 0 21vmax;
   display: grid;
   grid-template-areas: "screenshots similar";
-  grid-template-columns: var(--screenshot_size) auto;
+  grid-template-columns: $screenshot_size auto;
   .screenshots {
     margin: 1.5vmax 0;
     grid-area: screenshots;
@@ -111,11 +117,11 @@ export default {
     }
   }
   .similar {
-    --margin: 0.9vmax;
+    $margin: 0.9vmax;
     margin-left: 4.5vmax;
     grid-area: similar;
     hr {
-      margin: var(--margin) 0;
+      margin: $margin 0;
     }
     .dapp_list {
       margin-right: 2.5vmax;
@@ -127,24 +133,12 @@ export default {
         display: flex;
         align-items: center;
         padding: 0.5vmax 0;
-        .img {
-          --width: 4vmax;
-          width: var(--width);
-          background: linear-gradient(to right, #0095fd, #00cee3);
-          display: flex;
-          justify-content: center;
-          padding: 0.15vmax;
-          border-radius: 0.25rem;
-          img {
-            width: 100%;
-          }
-          img {
-            width: var(--width);
-          }
-        }
         .info {
           width: 100%;
           margin-left: 1.2vmax;
+          .capitalize {
+            text-transform: capitalize;
+          }
           .name,
           .category {
             color: $secondary;
@@ -154,7 +148,7 @@ export default {
       }
     }
   }
-  @media (max-width: 768px) {
+  @media (max-width: $breakpoint-tablet) {
     grid-template-areas: "screenshots" "similar";
   }
 }
