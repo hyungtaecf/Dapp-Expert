@@ -127,6 +127,61 @@ export default {
       "description description"
       "dapp_info website_button"
       "smart_contracts_button smart_contracts_button";
+    padding: 0 1vmax;
+    grid-template-columns: 60% 40%;
+    .avatar_pic {
+      $size: 11.75vmax;
+      padding: 3vmax 0;
+      display: flex;
+      justify-content: center;
+      img {
+        height: $size;
+        width: $size;
+        object-fit: contain;
+      }
+    }
+    .description {
+      margin: 0 1.6vmax 0 0;
+      line-height: 150%;
+      font-size: 1.7vmax !important;
+    }
+    .dapp_info {
+      margin: 3.25vmax 0 0;
+      .dapp_name {
+        font-size: 2vmax;
+        margin-bottom: 0.75vmax;
+      }
+      ul {
+        margin-bottom: 0;
+        .info_item {
+          font-size: 1.75vmax;
+          margin-bottom: 0.25vmax;
+        }
+      }
+    }
+    .website_button {
+      margin-left: 0;
+      flex-direction: column-reverse;
+      .button1 {
+        justify-content: center;
+        width: auto;
+        font-size: 1.2vmax;
+        padding: 1.1vmax 1vmax;
+        border-radius: 0.8vmax;
+        text-transform: uppercase;
+        font-weight: 500;
+        letter-spacing: 0.075vmax;
+      }
+    }
+    .smart_contracts_button {
+      margin-top: 6.5vmax;
+      .label {
+        font-size: 2.4vmax;
+      }
+      .icon {
+        font-size: 3vmax;
+      }
+    }
   }
 }
 </style>

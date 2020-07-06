@@ -18,11 +18,18 @@ export default {
 
 <style lang="scss" scoped>
 @import "../../css/variables";
+
 #dapp_article {
   padding: 0 $lower_part_padding;
   .article_body {
     padding-top: $article_body_padding_top;
     padding-bottom: $article_body_padding_bottom;
+  }
+  @media (max-width: $breakpoint-tablet) {
+    padding: 7.5vmax 1vmax 3.5vmax;
+    .article_body {
+      padding-top: 3.5vmax;
+    }
   }
 }
 </style>

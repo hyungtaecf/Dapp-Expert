@@ -38,5 +38,17 @@ export default {
       margin-right: 3.5vmax;
     }
   }
+  @media (max-width: $breakpoint-tablet) {
+    padding: 2vmax 1vmax 3.5vmax;
+    .dapps {
+      display: flex;
+      justify-content: space-between;
+      padding: 4vmax 8.5vmax;
+      margin-bottom: 0;
+      .other_dapp_img {
+        margin-right: 0;
+      }
+    }
+  }
 }
 </style>

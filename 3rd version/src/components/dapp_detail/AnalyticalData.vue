@@ -2,7 +2,10 @@
   <section id="analytical_data">
     <div class="section_title1">Аналитика</div>
     <div class="graphic_row">
-      <div v-for="(_, key) in 3" :key="key" class="graphic">
+      <div v-show="$mq === 'desktop'" v-for="(_, key) in 3" :key="key" class="graphic">
+        <img :src="small_graphic" alt />
+      </div>
+      <div v-show="$mq === 'tablet'" class="graphic">
         <img :src="small_graphic" alt />
       </div>
     </div>
@@ -21,6 +24,7 @@ export default {
 </script>
 
 <style lang="scss" scoped>
+@import "../../css/variables";
 #analytical_data {
   padding: 2vmax 22.5vmax;
   .graphic_row {
@@ -41,6 +45,29 @@ export default {
       img {
         border-radius: $border-radius;
         width: 100%;
+      }
+    }
+  }
+  @media (max-width: $breakpoint-tablet) {
+    padding: 0 9.25vmax;
+    .section_title1 {
+      text-align: center;
+      font-size: 2.4vmax;
+    }
+    .graphic_row {
+      .graphic {
+        $height: 68vw;
+        $border-radius: 7vw;
+        padding: 0 0.5vw 0.5vw 0.5vw;
+        border-radius: $border-radius;
+        margin: 7vw 4.5vw 0 0;
+        height: $height;
+
+        img {
+          border-radius: $border-radius;
+          object-fit: contain;
+          height: $height;
+        }
       }
     }
   }

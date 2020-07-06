@@ -166,6 +166,72 @@
         </template>
       </tbody>
     </table>
+    <div class="dapp_list_mobile">
+      <div class="period_select">
+        <div
+          id="_24h"
+          class="period active"
+          :style="{ 'background': 'url(' + [period.p_24h.active? trapezio_blue_btn_mobile : trapezio_grey_btn_mobile] + ')' }"
+          @click="periodSelect('24h')"
+        >{{$t('button._24h')}}</div>
+        <div
+          id="_7d"
+          class="period"
+          :style="{ 'background': 'url(' + [period.p_7d.active? trapezio_blue_btn_mobile : trapezio_grey_btn_mobile] + ')' }"
+          @click="periodSelect('7d')"
+        >{{$t('button._7d')}}</div>
+      </div>
+      <div class="dapp_list">
+        <template v-for="(dapp, key, index) in dapp_list">
+          <div
+            class="dapp_row"
+            :key="key"
+            v-if="index<number_of_items"
+            @click="goToDappPageMobile(index, dapp.name)"
+          >
+            <div
+              v-show="dapp.token"
+              class="token"
+              :style="{'background':'url('+ trapezio_blue_btn +')'}"
+            >{{$t('dapp_table.token')}}</div>
+            <div
+              :class="{bg:1,active:active_row===index}"
+              :style="{'background':'url('+[active_row===index?table_item_mobile_active:table_item_mobile]+')'}"
+            >
+              <div class="upper_row">
+                <div class="avatar_pic">
+                  <img :src="blank_square_avatar_mobile" :alt="dapp.name" />
+                </div>
+                <div class="dapp_name">{{dapp.name}}</div>
+                <div class="score_col">
+                  <div class="score">{{dapp.score_mobile}}</div>
+                  <div class="score_percent">{{dapp.score_percent}}</div>
+                </div>
+              </div>
+              <div class="percent_bar">
+                <div
+                  class="percent_bar_left"
+                  :style="{'background':'url('+percent_bar_left_mobile+')'}"
+                ></div>
+                <div
+                  class="percent_bar_center"
+                  :style="{'background':'url('+percent_bar_center_mobile+')'}"
+                ></div>
+                <div
+                  class="percent_bar_right"
+                  :style="{'background':'url('+percent_bar_right_mobile+')'}"
+                ></div>
+              </div>
+              <div class="lower_row">
+                <div class="percent_left">{{dapp.volume.left_value}}</div>
+                <div class="percent_center">{{dapp.volume.center_value}}</div>
+                <div class="percent_right">{{dapp.volume.right_value}}</div>
+              </div>
+            </div>
+          </div>
+        </template>
+      </div>
+    </div>
     <div class="see_more">
       <div class="text" @click="seeMore">{{$t('message.see_more')}}</div>
     </div>
@@ -181,6 +247,15 @@ export default {
         name: "DappDetail",
         params: { dappName: dapp_name }
       });
+    },
+    async goToDappPageMobile(index, dapp_name) {
+      this.active_row = index;
+      window.setTimeout(() => {
+        this.$router.push({
+          name: "DappDetail",
+          params: { dappName: dapp_name }
+        });
+      }, 75);
     },
     seeMore() {
       this.number_of_items += this.plus_items;
@@ -199,15 +274,24 @@ export default {
     return {
       number_of_items: 5,
       plus_items: 3,
+      active_row: -1,
       trapezio_blue_btn: require("../../assets/trapezio_blue_btn.png"),
+      trapezio_blue_btn_mobile: require("../../assets/trapezio_blue_btn_mobile.png"),
       trapezio_grey_btn: require("../../assets/trapezio_grey_btn.png"),
+      trapezio_grey_btn_mobile: require("../../assets/trapezio_grey_btn_mobile.png"),
       sort_icon: require("../../assets/sort_icon.svg"),
       table_item: require("../../assets/table_item.png"),
+      table_item_mobile: require("../../assets/table_item_mobile.png"),
       table_item_active: require("../../assets/table_item_active.png"),
+      table_item_mobile_active: require("../../assets/table_item_mobile_active.png"),
       blank_square_avatar: require("../../assets/blank_square_avatar.png"),
+      blank_square_avatar_mobile: require("../../assets/blank_square_avatar_mobile.png"),
       percent_bar: require("../../assets/percent_bar.png"),
       percent_bar_background: require("../../assets/percent_bar_background.png"),
       percent_bar_background_active: require("../../assets/percent_bar_background_active.png"),
+      percent_bar_center_mobile: require("../../assets/percent_bar_center_mobile.png"),
+      percent_bar_left_mobile: require("../../assets/percent_bar_left_mobile.png"),
+      percent_bar_right_mobile: require("../../assets/percent_bar_right_mobile.png"),
       test: true,
       period: {
         p_24h: {
@@ -233,11 +317,17 @@ export default {
           volume: {
             value: "$ 186.47 K",
             percent_left: "15.41%",
-            percent_right: "-7.37%"
+            percent_right: "-7.37%",
+            left_value: "$ 0.00 ETH",
+            center_value: "$ 5.13M WETH",
+            right_value: "$ 3.08 M Others"
           },
           txs: "3 K",
           score: "99.11",
-          hover: false
+          score_mobile: "68",
+          score_percent: "-2.58% ↓",
+          hover: false,
+          token: true
         },
         candy_pop_duel2: {
           name: "Candy Pop Duel2",
@@ -254,11 +344,17 @@ export default {
           volume: {
             value: "$ 186.47 K",
             percent_left: "15.41%",
-            percent_right: "-7.37%"
+            percent_right: "-7.37%",
+            left_value: "$ 0.00 ETH",
+            center_value: "$ 5.13M WETH",
+            right_value: "$ 3.08 M Others"
           },
           txs: "3 K",
           score: "99.11",
-          hover: false
+          score_mobile: "68",
+          score_percent: "-2.58% ↓",
+          hover: false,
+          token: true
         },
         candy_pop_duel3: {
           name: "Candy Pop Duel3",
@@ -275,10 +371,15 @@ export default {
           volume: {
             value: "$ 186.47 K",
             percent_left: "15.41%",
-            percent_right: "-7.37%"
+            percent_right: "-7.37%",
+            left_value: "$ 0.00 ETH",
+            center_value: "$ 5.13M WETH",
+            right_value: "$ 3.08 M Others"
           },
           txs: "3 K",
           score: "99.11",
+          score_mobile: "68",
+          score_percent: "-2.58% ↓",
           hover: false
         },
         candy_pop_duel4: {
@@ -296,11 +397,17 @@ export default {
           volume: {
             value: "$ 186.47 K",
             percent_left: "15.41%",
-            percent_right: "-7.37%"
+            percent_right: "-7.37%",
+            left_value: "$ 0.00 ETH",
+            center_value: "$ 5.13M WETH",
+            right_value: "$ 3.08 M Others"
           },
           txs: "3 K",
           score: "99.11",
-          hover: false
+          score_mobile: "68",
+          score_percent: "-2.58% ↓",
+          hover: false,
+          token: true
         },
         other_game: {
           name: "OtherGame",
@@ -317,11 +424,17 @@ export default {
           volume: {
             value: "$ 186.47 K",
             percent_left: "15.41%",
-            percent_right: "-7.37%"
+            percent_right: "-7.37%",
+            left_value: "$ 0.00 ETH",
+            center_value: "$ 5.13M WETH",
+            right_value: "$ 3.08 M Others"
           },
           txs: "3 K",
           score: "99.11",
-          hover: false
+          score_mobile: "68",
+          score_percent: "-2.58% ↓",
+          hover: false,
+          token: true
         },
         awesome_game: {
           name: "Awesome Game",
@@ -338,10 +451,15 @@ export default {
           volume: {
             value: "$ 186.47 K",
             percent_left: "15.41%",
-            percent_right: "-7.37%"
+            percent_right: "-7.37%",
+            left_value: "$ 0.00 ETH",
+            center_value: "$ 5.13M WETH",
+            right_value: "$ 3.08 M Others"
           },
           txs: "3 K",
           score: "99.11",
+          score_mobile: "68",
+          score_percent: "-2.58% ↓",
           hover: false
         },
         revolution_of_dapps: {
@@ -359,10 +477,15 @@ export default {
           volume: {
             value: "$ 186.47 K",
             percent_left: "15.41%",
-            percent_right: "-7.37%"
+            percent_right: "-7.37%",
+            left_value: "$ 0.00 ETH",
+            center_value: "$ 5.13M WETH",
+            right_value: "$ 3.08 M Others"
           },
           txs: "3 K",
           score: "99.11",
+          score_mobile: "68",
+          score_percent: "-2.58% ↓",
           hover: false
         },
         fps_300: {
@@ -384,7 +507,10 @@ export default {
           },
           txs: "3 K",
           score: "99.11",
-          hover: false
+          score_mobile: "68",
+          score_percent: "-2.58% ↓",
+          hover: false,
+          token: true
         },
         encrypts: {
           name: "Encrypts",
@@ -401,10 +527,15 @@ export default {
           volume: {
             value: "$ 186.47 K",
             percent_left: "15.41%",
-            percent_right: "-7.37%"
+            percent_right: "-7.37%",
+            left_value: "$ 0.00 ETH",
+            center_value: "$ 5.13M WETH",
+            right_value: "$ 3.08 M Others"
           },
           txs: "3 K",
           score: "99.11",
+          score_mobile: "68",
+          score_percent: "-2.58% ↓",
           hover: false
         },
         ninja_monkey: {
@@ -422,11 +553,17 @@ export default {
           volume: {
             value: "$ 186.47 K",
             percent_left: "15.41%",
-            percent_right: "-7.37%"
+            percent_right: "-7.37%",
+            left_value: "$ 0.00 ETH",
+            center_value: "$ 5.13M WETH",
+            right_value: "$ 3.08 M Others"
           },
           txs: "3 K",
           score: "99.11",
-          hover: false
+          score_mobile: "68",
+          score_percent: "-2.58% ↓",
+          hover: false,
+          token: true
         }
       }
     };
@@ -647,6 +784,9 @@ export default {
       }
     }
   }
+  .dapp_list_mobile {
+    display: none;
+  }
   .see_more {
     width: 100%;
     text-align: right;
@@ -662,7 +802,141 @@ export default {
     }
   }
   @media (max-width: $breakpoint-tablet) {
-    display: none;
+    padding: 0;
+    table {
+      display: none;
+    }
+    .dapp_list_mobile {
+      display: block;
+      .period_select {
+        display: flex;
+        justify-content: end;
+        margin: 3.25vmax 1.5vmax;
+        .period {
+          height: 2.75vmax;
+          width: 13.75vmax;
+          cursor: pointer;
+          background-size: 100% 100% !important;
+          text-transform: lowercase;
+          font-size: 1.75vmax;
+          letter-spacing: 0.075vmax;
+          color: $white;
+          display: flex;
+          justify-content: center;
+          align-items: center;
+          &.active {
+            font-weight: bold;
+          }
+        }
+      }
+      // EVERYTHING UNDER .dapp_row USES vw
+      .dapp_row {
+        $height: 33vw;
+        $img_fix: 6.25vw;
+        position: relative;
+        height: calc(#{$height} - #{$img_fix});
+        .token {
+          position: absolute;
+          top: 0;
+          left: 0.4vw;
+          z-index: 10;
+          text-transform: uppercase;
+          background-size: 100% 100% !important;
+          font-size: 1.75vw;
+          padding: 0.8vw 1.7vw;
+          color: $white;
+        }
+        .bg {
+          height: $height;
+          position: absolute;
+          top: 0;
+          background-size: 100% 100% !important;
+          width: 100%;
+          display: flex;
+          flex-direction: column;
+          padding: 2.75vw 10.5vw;
+          letter-spacing: 0.1vw;
+          &:last-child {
+            padding-bottom: 0;
+          }
+          .upper_row {
+            display: flex;
+            align-items: center;
+            .avatar_pic {
+              img {
+                height: 12.5vw;
+              }
+            }
+            .dapp_name {
+              color: $secondary;
+              font-size: 3.5vw;
+              font-weight: bold;
+              margin-left: 2.5vw;
+              width: 37.5vw;
+            }
+            .score_col {
+              display: flex;
+              flex-direction: column;
+              align-items: end;
+              justify-content: space-between;
+              height: 100%;
+              .score {
+                font-size: 4vw;
+                font-weight: bold;
+                padding: 1vw 0;
+              }
+              .score_percent {
+                font-size: 3vw;
+                color: #f00;
+                font-weight: bold;
+                padding: 0 1vw 1vw 0;
+              }
+            }
+          }
+          .percent_bar {
+            $lateral_percent: 15.5%;
+            width: 100%;
+            height: 1.15vw;
+            display: grid;
+            margin: 1.5vw 0 1vw;
+            grid-template-columns:
+              $lateral_percent calc(100% - #{$lateral_percent} * 2)
+              $lateral_percent;
+            * {
+              background-size: 100% 100% !important;
+              margin: 0 0.5vw;
+            }
+          }
+          .lower_row {
+            display: flex;
+            justify-content: space-between;
+            font-size: 2.75vw;
+            .percent_left {
+              color: #3971fa;
+            }
+            .percent_center {
+              color: #2f4fbc;
+            }
+            .percent_right {
+              color: #6c97fd;
+            }
+          }
+          &.active {
+            .dapp_name {
+              color: $white;
+            }
+          }
+        }
+      }
+    }
+    .see_more {
+      font-size: 1.15vmax;
+      z-index: 10;
+      .text {
+        padding: 2.5vmax 1vmax;
+        text-transform: uppercase;
+      }
+    }
   }
 }
 </style>

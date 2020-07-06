@@ -75,6 +75,9 @@
         "cookie_policy": "Cookie Policy",
         "coin_gecko_api": "CoinGecko API"
     },
+    "dapp_table": {
+        "token": "token"
+    },
     "intro_section": {
         "_24h_users": "24h Users",
         "balance": "Balance",

@@ -22,5 +22,12 @@ export default {
     padding-top: $article_body_padding_top;
     padding-bottom: $article_body_padding_bottom;
   }
+  @media (max-width: $breakpoint-tablet) {
+    padding: 2.5vmax 1vmax;
+    .users_voice_button {
+      display: flex;
+      padding: 3vmax 0 0 0.25vmax;
+    }
+  }
 }
 </style>

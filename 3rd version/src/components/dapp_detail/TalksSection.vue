@@ -23,5 +23,11 @@ export default {
     padding-top: $article_body_padding_top;
     padding-bottom: $article_body_padding_bottom;
   }
+  @media (max-width: $breakpoint-tablet) {
+    padding: 1vmax;
+    .article_body {
+      padding-top: 3.5vmax;
+    }
+  }
 }
 </style>

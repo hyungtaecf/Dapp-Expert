@@ -66,9 +66,12 @@ export default {
 .VueCarousel-dot-container {
   margin: 0 !important;
   .VueCarousel-dot {
-    border: solid 0.1vmax $darkgrey !important;
+    $size: 0.6vmax;
+    width: $size !important;
+    height: $size !important;
+    border: solid 2px $darkgrey !important;
     padding: 0 !important;
-    margin: 0.25vmax !important;
+    margin: 1.5vw 0.4vw !important;
     background-color: transparent !important;
     &:focus {
       outline: none !important;
@@ -96,9 +99,11 @@ export default {
   }
   .VueCarousel-navigation-next {
     right: #{$size / 2} !important;
+    transform: translate(100%, -100%);
   }
   .VueCarousel-navigation-prev {
     left: #{$size / 2} !important;
+    transform: translate(-100%, -100%);
   }
 }
 #screenshot_similar {
@@ -148,8 +153,40 @@ export default {
       }
     }
   }
-  @media (max-width: $breakpoint-tablet) {
+}
+@media (max-width: $breakpoint-tablet) {
+  #screenshot_similar {
+    padding: 3.25vmax 2.75vmax;
+    display: grid;
     grid-template-areas: "screenshots" "similar";
+    grid-template-columns: auto;
+    .screenshots {
+      margin: 0;
+      width: 100%;
+    }
+    .similar {
+      margin: 2vmax 0;
+      .section_title1 {
+        font-size: 1.8vmax;
+        text-align: center;
+      }
+      .dapp_list {
+        margin: 0 9.75vmax;
+        hr {
+          margin: 1.25vmax 0;
+        }
+        .dapp_row {
+          padding: 0.75vmax 0;
+          .info {
+            margin-left: 1.75vmax;
+            .name,
+            .category {
+              font-size: 1.5vmax;
+            }
+          }
+        }
+      }
+    }
   }
 }
 </style>

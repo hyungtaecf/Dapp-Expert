@@ -6,6 +6,12 @@
 
 @font-face {
     font-family: "Open Sans";
+    src: url("./fonts/OpenSans-SemiBold.ttf") format("truetype");
+    font-weight: 500;
+}
+
+@font-face {
+    font-family: "Open Sans";
     src: url("./fonts/opensans-all-700.woff2") format("woff2"), url("./fonts/opensans-all-700.woff") format("woff"), url("./fonts/opensans-all-700.ttf") format("ttf");
     font-weight: bold;
 }
@@ -19,5 +25,35 @@
 @font-face {
     font-family: "Futura PT Book";
     src: url("./fonts/FuturaPTBook.otf") format("opentype");
+    font-weight: normal;
+}
+
+@font-face {
+    font-family: "Futura PT";
+    src: url("./fonts/FuturaPTBold.otf") format("opentype");
+    font-weight: bold;
+}
+
+@font-face {
+    font-family: "Futura PT";
+    src: url("./fonts/FuturaPTMedium.otf") format("opentype");
+    font-weight: normal;
+}
+
+@font-face {
+    font-family: "Futura PT Cond";
+    src: url("./fonts/FuturaPTCondMedium.otf") format("opentype");
+    font-weight: normal;
+}
+
+@font-face {
+    font-family: "Futura PT Demi";
+    src: url("./fonts/FuturaPTDemi.otf") format("opentype");
+    font-weight: normal;
+}
+
+@font-face {
+    font-family: "Futura PT Heavy";
+    src: url("./fonts/FuturaPTHeavy.otf") format("opentype");
     font-weight: normal;
 }
