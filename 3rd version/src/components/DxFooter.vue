@@ -2,7 +2,7 @@
   <footer :style="{ 'background': 'url(' + footer_background + ')' }">
     <div class="main_content">
       <div class="social">
-        <div class="title">Follow us</div>
+        <div class="title">{{$t('message.follow_us')}}</div>
         <div class="social_buttons">
           <a
             v-for="(item, key) in social"

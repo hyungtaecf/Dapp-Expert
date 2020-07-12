@@ -1,0 +1,114 @@
+{
+    "message": {
+        "blockchains": "ブロックチェーン",
+        "chain": "チェーン",
+        "category": "カテゴリ",
+        "balance": "バランス",
+        "users": "ユーザー",
+        "volume": "ボリューム",
+        "dapp_expert_score": {
+            "_0": "Dapp",
+            "_1": "Expert",
+            "_2": "スコア"
+        },
+        "see_more": "詳細はこちら",
+        "blockchains_data_info": "ブロックチェーンのデータ情報",
+        "copyright": "著作権",
+        "follow_us": "フォローする",
+        "all": "すべて"
+    },
+    "button": {
+        "submit_dapp": "Dappの送信",
+        "_24h": "24h",
+        "_7d": "7日間",
+        "graphic_info": {
+            "volume": "ボリューム",
+            "dau": "DAU",
+            "transactions": "トランザクション"
+        }
+    },
+    "placeholder": {
+        "search": "検索"
+    },
+    "categories": {
+        "all": [
+            "すべて"
+        ],
+        "collectibles": [
+            "収集可能"
+        ],
+        "exchanges": [
+            "交換"
+        ],
+        "gambling": [
+            "ギャンブル"
+        ],
+        "games": [
+            "ゲーム"
+        ],
+        "high_risk": [
+            "ハイリスク"
+        ],
+        "marketplaces": [
+            "マーケット", "プレイス"
+        ],
+        "other": [
+            "その他"
+        ]
+    },
+    "info_item": {
+        "total_dapps": {
+            "_0": "",
+            "_1": "合計ダップ数"
+        },
+        "smart_contracts": {
+            "_0": "スマート",
+            "_1": "コントラクト"
+        },
+        "_24h_users": {
+            "_0": "24時間以内の",
+            "_1": "ユーザー数"
+        },
+        "_24h_transactions": {
+            "_0": "24時間以内の",
+            "_1": "トランザクション"
+        },
+        "_24h_volume": {
+            "_0": "24時間以内の",
+            "_1": "ボリューム"
+        }
+    },
+    "footer_link": {
+        "submit_dapp": "Dappを送信",
+        "privacy_policy": "プライバシーポリシー",
+        "terms_of_use": "利用規約",
+        "cookie_policy": "Cookie ポリシー"
+    },
+    "intro_section": {
+        "_24h_users": "24時間以内のユーザー数",
+        "balance": "バランス",
+        "go_to_the_website": "Webサイトにアクセスする",
+        "smart_contracts": "スマートコントラクト"
+    },
+    "similar_section": {
+        "similar_to": {
+            "_0": "",
+            "_1": " に類似"
+        }
+    },
+    "analytical_data": {
+        "analytical_data": "分析データ"
+    },
+    "talks_section": {
+        "says": {
+            "_0": "",
+            "_1": " の発言"
+        }
+    },
+    "users_voice": {
+        "go_to_the_website": "Webサイトにアクセスする"
+    },
+    "users_also_like": {
+        "users_also_like": "この商品を見た人はこんな商品も見ています"
+    }
+}

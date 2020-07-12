@@ -1,0 +1,116 @@
+{
+    "message": {
+        "blockchains": "區塊鏈",
+        "categories": "分類目錄",
+        "chain": "鏈",
+        "category": "類別",
+        "balance": "平衡",
+        "users": "使用者",
+        "volume": "體積",
+        "dapp_expert_score": {
+            "_0": "Dapp",
+            "_1": "Expert",
+            "_2": "分數"
+        },
+        "see_more": "查看更多",
+        "blockchains_data_info": "Blockchain的數據信息",
+        "copyright": "版權",
+        "follow_us": "追蹤我們",
+        "all": "全部"
+    },
+    "button": {
+        "submit_dapp": "提交Dapp",
+        "_24h": "24小時",
+        "_7d": "7天",
+        "graphic_info": {
+            "volume": "體積",
+            "dau": "DAU",
+            "transactions": "交易次數"
+        }
+    },
+    "placeholder": {
+        "search": "搜尋"
+    },
+    "categories": {
+        "all": [
+            "全部"
+        ],
+        "collectibles": [
+            "收藏品"
+        ],
+        "exchanges": [
+            "交流"
+        ],
+        "gambling": [
+            "賭博"
+        ],
+        "games": [
+            "遊戲"
+        ],
+        "high_risk": [
+            "高風險"
+        ],
+        "marketplaces": [
+            "市場"
+        ],
+        "other": [
+            "其他"
+        ]
+    },
+    "info_item": {
+        "total_dapps": {
+            "_0": "",
+            "_1": "Dapp總數"
+        },
+        "smart_contracts": {
+            "_0": "",
+            "_1": "智能合約"
+        },
+        "_24h_users": {
+            "_0": "",
+            "_1": "24小時用戶"
+        },
+        "_24h_transactions": {
+            "_0": "",
+            "_1": "24小時交易"
+        },
+        "_24h_volume": {
+            "_0": "",
+            "_1": "24小時流量"
+        }
+    },
+    "footer_link": {
+        "submit_dapp": "提交Dapp",
+        "privacy_policy": "隱私政策",
+        "terms_of_use": "使用條款",
+        "cookie_policy": "Cookie政策"
+    },
+    "intro_section": {
+        "_24h_users": "24小時用戶",
+        "balance": "平衡",
+        "go_to_the_website": "進入網站",
+        "smart_contracts": "智能合約"
+    },
+    "similar_section": {
+        "similar_to": {
+            "_0": "相似",
+            "_1": ""
+        }
+    },
+    "analytical_data": {
+        "analytical_data": "分析數據"
+    },
+    "talks_section": {
+        "says": {
+            "_0": "",
+            "_1": "說"
+        }
+    },
+    "users_voice": {
+        "users_voice": "用戶的聲音",
+        "go_to_the_website": "進入網站"
+    },
+    "users_also_like": {
+        "users_also_like": "用戶也喜歡"
+    }
+}

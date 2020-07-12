@@ -1,0 +1,116 @@
+{
+    "message": {
+        "blockchains": "blockchains",
+        "categories": "Kategori",
+        "chain": "chain",
+        "category": "category",
+        "balance": "balance",
+        "users": "users",
+        "volume": "volume",
+        "dapp_expert_score": {
+            "_0": "Skor",
+            "_1": "Dapp",
+            "_2": "Expert"
+        },
+        "see_more": "Lihat lagi",
+        "blockchains_data_info": "Maklumat data blok rantai",
+        "copyright": "Hak Cipta",
+        "follow_us": "Ikut kami",
+        "all": "semua"
+    },
+    "button": {
+        "submit_dapp": "Hantar Dapp",
+        "_24h": "24 Jam",
+        "_7d": "7 hari",
+        "graphic_info": {
+            "volume": "Isi padu",
+            "dau": "DAU",
+            "transactions": "Transaksi"
+        }
+    },
+    "placeholder": {
+        "search": "Carian"
+    },
+    "categories": {
+        "all": [
+            "semua"
+        ],
+        "collectibles": [
+            "Koleksi"
+        ],
+        "exchanges": [
+            "Pertukaran"
+        ],
+        "gambling": [
+            "gambling"
+        ],
+        "games": [
+            "Permainan"
+        ],
+        "high_risk": [
+            "Berisiko", "tinggi"
+        ],
+        "marketplaces": [
+            "marketplaces"
+        ],
+        "other": [
+            "Lain-lain"
+        ]
+    },
+    "info_item": {
+        "total_dapps": {
+            "_0": "Jumlah",
+            "_1": "Dapps"
+        },
+        "smart_contracts": {
+            "_0": "Kontrak",
+            "_1": "Pintar"
+        },
+        "_24h_users": {
+            "_0": "Pengguna",
+            "_1": "24 Jam"
+        },
+        "_24h_transactions": {
+            "_0": "Transaksi",
+            "_1": "24 Jam"
+        },
+        "_24h_volume": {
+            "_0": "Isi padu",
+            "_1": "24 Jam"
+        }
+    },
+    "footer_link": {
+        "submit_dapp": "Hantar Dapp",
+        "privacy_policy": "Dasar Privasi",
+        "terms_of_use": "Syarat Penggunaan",
+        "cookie_policy": "Dasar Kuki"
+    },
+    "intro_section": {
+        "_24h_users": "Pengguna 24 Jam",
+        "balance": "Keseimbangan",
+        "go_to_the_website": "Pergi ke laman web",
+        "smart_contracts": "Kontrak Pintar"
+    },
+    "similar_section": {
+        "similar_to": {
+            "_0": "Sama seperti ",
+            "_1": ""
+        }
+    },
+    "analytical_data": {
+        "analytical_data": "Data analitik"
+    },
+    "talks_section": {
+        "says": {
+            "_0": "",
+            "_1": " kata"
+        }
+    },
+    "users_voice": {
+        "users_voice": "Suara pengguna",
+        "go_to_the_website": "Pergi ke laman web"
+    },
+    "users_also_like": {
+        "users_also_like": "Pengguna juga suka"
+    }
+}

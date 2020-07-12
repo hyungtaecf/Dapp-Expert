@@ -1,6 +1,5 @@
 {
     "message": {
-        "hello": "hello world",
         "blockchains": "blockchains",
         "categories": "categories",
         "chain": "chain",
@@ -16,12 +15,12 @@
         "sort": "sort",
         "see_more": "see more",
         "blockchains_data_info": "blockchain's data info",
-        "copyright": "Copyright"
+        "copyright": "Copyright",
+        "follow_us": "Follow us",
+        "all": "all"
     },
     "button": {
         "submit_dapp": "submit dapp",
-        "iso639_1": "en",
-        "all": "all",
         "_24h": "24h",
         "_7d": "7d",
         "graphic_info": {
@@ -37,14 +36,23 @@
         "select_language": "Select Language"
     },
     "categories": {
-        "all": "all",
-        "collectibles": "collectibles",
-        "exchanges": "exchanges",
-        "gambling": "gambling",
-        "games": "games",
-        "high_risk": "high-risk",
-        "marketplaces": "marketplaces",
-        "other": "other"
+        "all": ["all"],
+        "collectibles": ["collectibles"],
+        "exchanges": ["exchanges"],
+        "gambling": ["gambling"],
+        "games": ["games"],
+        "high_risk": ["high-risk"],
+        "marketplaces": ["marketplaces"],
+        "other": ["other"]
+    },
+    "dapp_table": {
+        "token": "token",
+        "about": {
+            "balance": "The amount of tokens in dapps",
+            "users": "The number of users which did transactions in dapp's smart contracts",
+            "volume": "Amount of transactions made by users into a dapp's smart contracts (USD)",
+            "txs": "The number of smart contract transactions made by users in Dapp"
+        }
     },
     "info_item": {
         "total_dapps": {
@@ -75,9 +83,6 @@
         "cookie_policy": "Cookie Policy",
         "coin_gecko_api": "CoinGecko API"
     },
-    "dapp_table": {
-        "token": "token"
-    },
     "intro_section": {
         "_24h_users": "24h Users",
         "balance": "Balance",
@@ -89,6 +94,9 @@
             "_0": "Similar to ",
             "_1": ""
         }
+    },
+    "analytical_data": {
+        "analytical_data": "Analytical Data"
     },
     "talks_section": {
         "says": {

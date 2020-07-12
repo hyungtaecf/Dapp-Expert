@@ -1,0 +1,129 @@
+{
+    "message": {
+        "blockchains": "blockchains",
+        "categories": "categorias",
+        "chain": "Rede",
+        "category": "Categoria",
+        "balance": "Saldo",
+        "users": "Usuários",
+        "volume": "volume",
+        "dapp_expert_score": {
+            "_0": "Pontuação",
+            "_1": "Dapp",
+            "_2": "Expert"
+        },
+        "sort": "Ordenar",
+        "see_more": "Ver mais",
+        "blockchains_data_info": "Informações dos Dados de Blockchain",
+        "copyright": "Copyright",
+        "follow_us": "Siga-nos",
+        "all": "Tudo"
+    },
+    "button": {
+        "submit_dapp": "Enviar Dapp",
+        "_24h": "24h",
+        "_7d": "7d",
+        "graphic_info": {
+            "volume": "Volume",
+            "dau": "DAU",
+            "transactions": "Transações"
+        }
+    },
+    "placeholder": {
+        "search": "Pesquisar"
+    },
+    "alt": {
+        "select_language": "Selecionar Idioma"
+    },
+    "categories": {
+        "all": [
+            "Tudo"
+        ],
+        "collectibles": [
+            "Colecionáveis"
+        ],
+        "exchanges": [
+            "Câmbio"
+        ],
+        "gambling": [
+            "Apostas"
+        ],
+        "games": [
+            "Jogos"
+        ],
+        "high_risk": [
+            "Alto risco"
+        ],
+        "marketplaces": [
+            "Mercado"
+        ],
+        "other": [
+            "Outras"
+        ]
+    },
+    "dapp_table": {
+        "token": "ficha",
+        "about": {
+            "balance": "Quantidade de tokens em um dapp",
+            "users": "Número de usuários que fizeram transações em contratos inteligentes de um dapp",
+            "volume": "Quantidade de transações feitas por usuários para contratos inteligentes de um dapp (USD)",
+            "txs": "Número de transações de contratos inteligentes feita por usuários em um Dapp"
+        }
+    },
+    "info_item": {
+        "total_dapps": {
+            "_0": "Dapps",
+            "_1": "Totais"
+        },
+        "smart_contracts": {
+            "_0": "Contratos",
+            "_1": "Inteligentes"
+        },
+        "_24h_users": {
+            "_0": "Usuários",
+            "_1": "Diários"
+        },
+        "_24h_transactions": {
+            "_0": "Transações",
+            "_1": "Diárias"
+        },
+        "_24h_volume": {
+            "_0": "Volume",
+            "_1": "Diário"
+        }
+    },
+    "footer_link": {
+        "submit_dapp": "Enviar Dapp",
+        "privacy_policy": "Política de Privacidade",
+        "terms_of_use": "Termos de Uso",
+        "cookie_policy": "Política de Cookies"
+    },
+    "intro_section": {
+        "_24h_users": "Usuários Diários",
+        "balance": "Saldo",
+        "go_to_the_website": "Visitar o site",
+        "smart_contracts": "Contratos Inteligentes"
+    },
+    "similar_section": {
+        "similar_to": {
+            "_0": "Semelhantes a ",
+            "_1": ""
+        }
+    },
+    "analytical_data": {
+        "analytical_data": "Dados Analíticos"
+    },
+    "talks_section": {
+        "says": {
+            "_0": "",
+            "_1": " diz"
+        }
+    },
+    "users_voice": {
+        "users_voice": "Voz do usuário",
+        "go_to_the_website": "Visitar o site"
+    },
+    "users_also_like": {
+        "users_also_like": "Usuários também gostaram"
+    }
+}

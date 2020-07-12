@@ -8,7 +8,10 @@
       <ul>
         <li class="info_item">{{$t('intro_section._24h_users')}}: {{k24h_users}}</li>
         <li class="info_item">{{$t('intro_section.balance')}}: {{balance}}</li>
-        <li class="info_item uppercase">ETH / {{$t('categories.'+[category])}}</li>
+        <li class="info_item uppercase">
+          ETH /
+          <span v-for="(word, i) in $t('categories.'+[category])" :key="i">&nbsp;{{word}}</span>
+        </li>
         <li class="info_item uppercase">
           <span
             v-for="(language, index) in languages"

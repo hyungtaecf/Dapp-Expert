@@ -29,12 +29,25 @@
           class="language"
           :alt="$t('alt.select_language')"
           :title="$t('alt.select_language')"
-          @click="changeLanguage"
+          @click="show_language_dropdown = !show_language_dropdown"
         >
           <div class="lang_icon">
             <img :src="language" />
           </div>
-          <div class="iso639-1">{{$t('button.iso639_1')}}</div>
+          <div class="iso639-1">{{$i18n.locale}}</div>
+          <transition name="slide">
+            <div v-show="show_language_dropdown" class="dropdown_language">
+              <div
+                v-for="(lang, key) in languages"
+                :key="key"
+                class="language_item"
+                @click="changeLanguage(key)"
+              >
+                <img :src="lang.img" :alt="key" />
+                <span class="language_label">{{lang.label}}</span>
+              </div>
+            </div>
+          </transition>
         </div>
       </div>
     </div>
@@ -45,10 +58,9 @@
 export default {
   name: "DxHeader",
   methods: {
-    changeLanguage() {
-      if (this.$i18n.locale === "en") this.$i18n.locale = "ru";
-      else this.$i18n.locale = "en";
-      localStorage.setItem("locale", this.$i18n.locale);
+    changeLanguage(lang) {
+      localStorage.setItem("locale", lang);
+      this.$i18n.locale = lang;
     }
   },
   data() {
@@ -58,7 +70,46 @@ export default {
       logo_background_mobile: require("../assets/logo_background_mobile.png"),
       logo: require("../assets/dx_logo.png"),
       search_field: require("../assets/search_field.png"),
-      language: require("../assets/language.png")
+      language: require("../assets/language.png"),
+      languages: {
+        en: {
+          img: require("../assets/language-en.svg"),
+          label: "English"
+        },
+        ru: {
+          img: require("../assets/language-ru.svg"),
+          label: "Русский язык"
+        },
+        ja: {
+          img: require("../assets/language-ja.svg"),
+          label: "日本語"
+        },
+        fr: {
+          img: require("../assets/language-fr.svg"),
+          label: "Français"
+        },
+        ko: {
+          img: require("../assets/language-ko.svg"),
+          label: "한국어"
+        },
+        pt: {
+          img: require("../assets/language-pt.svg"),
+          label: "Português"
+        },
+        zh: {
+          img: require("../assets/language-zh.svg"),
+          label: "简体中文"
+        },
+        tw: {
+          img: require("../assets/language-tw.svg"),
+          label: "繁體中文"
+        },
+        ms: {
+          img: require("../assets/language-ms.svg"),
+          label: "Bahasa Melayu"
+        }
+      },
+      show_language_dropdown: false
     };
   }
 };
@@ -152,6 +203,7 @@ header {
         }
       }
       .language {
+        position: relative;
         margin-left: 2.75vmax;
         display: flex;
         &:hover {
@@ -172,6 +224,30 @@ header {
           text-transform: capitalize;
           color: $white;
           text-decoration: underline;
+        }
+        .dropdown_language {
+          position: absolute;
+          top: calc(#{$navbar_height} - #{$navbar_height} / 3 + 0.1vmax);
+          right: -1.6vmax;
+          background: rgba($darkgrey, 0.95);
+          border: 0.1vw solid rgba($black, 0.5vmax);
+          .language_item {
+            display: flex;
+            align-items: center;
+            padding: 0.5vmax 1vmax;
+            img {
+              height: 1.75vmax;
+            }
+            .language_label {
+              margin-left: 1vmax;
+              font-size: 1vmax;
+              color: $white;
+              white-space: nowrap;
+            }
+            &:hover {
+              background: rgba($black, 0.5);
+            }
+          }
         }
       }
     }
@@ -222,9 +298,59 @@ header {
             padding-left: 0.75vmax;
             font-size: 1.25vmax;
           }
+          .dropdown_language {
+            display: grid;
+            grid-template-columns: auto auto auto;
+            top: calc(#{$navbar_height} - #{$navbar_height} / 3 + 0.5vmax);
+            right: calc(50% - 2vmax);
+            transform: translateX(50%);
+            .language_item {
+              padding: 0.5vmax 1vmax;
+              img {
+                height: 3vmax;
+              }
+              .language_label {
+                margin-left: 0.75vmax;
+                font-size: 1.5vmax;
+              }
+            }
+          }
         }
       }
     }
   }
+}
+.slide-enter-active {
+  -moz-transition-duration: 0.3s;
+  -webkit-transition-duration: 0.3s;
+  -o-transition-duration: 0.3s;
+  transition-duration: 0.3s;
+  -moz-transition-timing-function: ease-in;
+  -webkit-transition-timing-function: ease-in;
+  -o-transition-timing-function: ease-in;
+  transition-timing-function: ease-in;
+}
+
+.slide-leave-active {
+  -moz-transition-duration: 0.3s;
+  -webkit-transition-duration: 0.3s;
+  -o-transition-duration: 0.3s;
+  transition-duration: 0.3s;
+  -moz-transition-timing-function: cubic-bezier(0, 1, 0.5, 1);
+  -webkit-transition-timing-function: cubic-bezier(0, 1, 0.5, 1);
+  -o-transition-timing-function: cubic-bezier(0, 1, 0.5, 1);
+  transition-timing-function: cubic-bezier(0, 1, 0.5, 1);
+}
+
+.slide-enter-to,
+.slide-leave {
+  max-height: 100vh;
+  overflow: hidden;
+}
+
+.slide-enter,
+.slide-leave-to {
+  overflow: hidden;
+  max-height: 0;
 }
 </style>

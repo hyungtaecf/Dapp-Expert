@@ -22,25 +22,44 @@
         height: 100%;
         width: 100%;
     }
-    
-    div {
+    /* div {
         min-height: 280vh;
         width: 100%;
         background-size: 100% auto;
         background-image: url("./index.jpg");
         background-repeat: no-repeat;
+    } */
+    
+    div>img {
+        width: 100%;
+    }
+    
+    .mobile {
+        display: none;
     }
     
     @media(max-width:768px) {
-        div {
+        .desktop {
+            display: none;
+        }
+        .mobile {
+            display: block;
+        }
+        /* div {
             min-height: 420vh;
             background-image: url("./index_mobile.jpg");
-        }
+        } */
     }
 </style>
 
 <body>
-    <div onclick="changePage()"></div>
+    <!-- <div onclick="changePage()"></div> -->
+    <div>
+        <img class="desktop" src="./index.jpg" alt="">
+        <!-- <img class="desktop" src="./home.jpg" alt=""> -->
+        <img class="mobile" src="./index_mobile.png" alt="">
+        <!-- <img class="mobile" src="./home_mobile.png" alt=""> -->
+    </div>
     <img>
 </body>
 <script>
@@ -61,9 +80,9 @@
         }
     }
 
-    var x = window.matchMedia("(max-width: 768px)")
-    myFunction(x)
-    x.addListener(myFunction)
+    // var x = window.matchMedia("(max-width: 768px)")
+    // myFunction(x)
+    // x.addListener(myFunction)
 </script>
 
 </html>

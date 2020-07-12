@@ -1,0 +1,114 @@
+{
+    "message": {
+        "blockchains": "Chaînes de blocs",
+        "chain": "Chaîne",
+        "category": "Catégorie",
+        "balance": "balance",
+        "users": "Utilisateurs",
+        "volume": "Volume",
+        "dapp_expert_score": {
+            "_0": "Le score",
+            "_1": "Dapp",
+            "_2": "Expert"
+        },
+        "see_more": "Voir plus",
+        "copyright": "Droit d'auteur",
+        "follow_us": "Nous suivre",
+        "all": "tout"
+    },
+    "button": {
+        "submit_dapp": "Soumettre le Dapp",
+        "_24h": "24 heures",
+        "_7d": "7 jours",
+        "graphic_info": {
+            "volume": "Volume",
+            "dau": "DAU",
+            "transactions": "Transactions"
+        }
+    },
+    "placeholder": {
+        "search": "Chercher"
+    },
+    "categories": {
+        "all": [
+            "tout"
+        ],
+        "collectibles": [
+            "Noms de", "catégorie"
+        ],
+        "exchanges": [
+            "Échanges"
+        ],
+        "gambling": [
+            "Jeux", "d'argent"
+        ],
+        "games": [
+            "Jeux"
+        ],
+        "high_risk": [
+            "Risque", "élevé"
+        ],
+        "marketplaces": [
+            "Marchés"
+        ],
+        "other": [
+            "Autres"
+        ]
+    },
+    "info_item": {
+        "total_dapps": {
+            "_0": "Total",
+            "_1": "Dapps"
+        },
+        "smart_contracts": {
+            "_0": "Contracts",
+            "_1": "intelligent"
+        },
+        "_24h_users": {
+            "_0": "Utilisateurs",
+            "_1": "24h"
+        },
+        "_24h_transactions": {
+            "_0": "Transactions",
+            "_1": "en 24h"
+        },
+        "_24h_volume": {
+            "_0": "Volume",
+            "_1": "24 heures"
+        }
+    },
+    "footer_link": {
+        "submit_dapp": "Soumettre le Dapp",
+        "privacy_policy": "Politique de confidentialité",
+        "terms_of_use": "Conditions d'utilisation",
+        "cookie_policy": "Politique de cookies"
+    },
+    "intro_section": {
+        "_24h_users": "Utilisateurs 24h",
+        "balance": "Balance",
+        "go_to_the_website": "Aller sur le site web",
+        "smart_contracts": "Contracts intelligent"
+    },
+    "similar_section": {
+        "similar_to": {
+            "_0": "Similaire à ",
+            "_1": ""
+        }
+    },
+    "analytical_data": {
+        "analytical_data": "Données analytiques"
+    },
+    "talks_section": {
+        "says": {
+            "_0": "",
+            "_1": " dit"
+        }
+    },
+    "users_voice": {
+        "users_voice": "Les utilisateurs témoignent",
+        "go_to_the_website": "Aller sur le site web"
+    },
+    "users_also_like": {
+        "users_also_like": "Les utilisateurs aiment aussi"
+    }
+}

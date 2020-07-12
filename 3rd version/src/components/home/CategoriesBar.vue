@@ -10,7 +10,12 @@
         :class="{circle_outer:1, active: active===key}"
         @click="changeActiveCategory(key)"
       >
-        <div class="category_option">{{category}}</div>
+        <div class="category_option">
+          <span v-for="(line, index) in category" :key="index">
+            <br />
+            {{line}}
+          </span>
+        </div>
         <div class="circle_inner"></div>
       </div>
     </div>
@@ -76,7 +81,7 @@ export default {
       cursor: pointer;
       .category_option {
         position: absolute;
-        top: -2vmax;
+        bottom: 2.75vmax;
         left: 50%;
         transform: translateX(-50%);
         color: $secondary;
@@ -84,6 +89,7 @@ export default {
         text-transform: capitalize;
         font-size: 0.9vmax;
         white-space: nowrap;
+        text-align: center;
       }
       .circle_inner {
         height: $inner_circle;

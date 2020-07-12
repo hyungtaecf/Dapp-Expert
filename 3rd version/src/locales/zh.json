@@ -1,0 +1,116 @@
+{
+    "message": {
+        "blockchains": "区块链",
+        "categories": "分类目录",
+        "chain": "链",
+        "category": "类别",
+        "balance": "平衡",
+        "users": "使用者",
+        "volume": "体积",
+        "dapp_expert_score": {
+            "_0": "Dapp",
+            "_1": "Expert",
+            "_2": "分数"
+        },
+        "see_more": "查看更多",
+        "blockchains_data_info": "Blockchain的数据信息",
+        "copyright": "版权",
+        "follow_us": "追踪我们",
+        "all": "全部"
+    },
+    "button": {
+        "submit_dapp": "提交Dapp",
+        "_24h": "24小时",
+        "_7d": "7天",
+        "graphic_info": {
+            "volume": "体积",
+            "dau": "DAU",
+            "transactions": "交易次数"
+        }
+    },
+    "placeholder": {
+        "search": "搜寻"
+    },
+    "categories": {
+        "all": [
+            "全部"
+        ],
+        "collectibles": [
+            "收藏品"
+        ],
+        "exchanges": [
+            "交流"
+        ],
+        "gambling": [
+            "收藏品"
+        ],
+        "games": [
+            "游戏"
+        ],
+        "high_risk": [
+            "高风险"
+        ],
+        "marketplaces": [
+            "市场"
+        ],
+        "other": [
+            "其他"
+        ]
+    },
+    "info_item": {
+        "total_dapps": {
+            "_0": "",
+            "_1": "Dapp总数"
+        },
+        "smart_contracts": {
+            "_0": "",
+            "_1": "智能合约"
+        },
+        "_24h_users": {
+            "_0": "",
+            "_1": "24小时用户"
+        },
+        "_24h_transactions": {
+            "_0": "",
+            "_1": "24小时交易"
+        },
+        "_24h_volume": {
+            "_0": "",
+            "_1": "24小时流量"
+        }
+    },
+    "footer_link": {
+        "submit_dapp": "提交Dapp",
+        "privacy_policy": "隐私政策",
+        "terms_of_use": "使用条款",
+        "cookie_policy": "Cookie政策"
+    },
+    "intro_section": {
+        "_24h_users": "24小时用户",
+        "balance": "平衡",
+        "go_to_the_website": "进入网站",
+        "smart_contracts": "智能合约"
+    },
+    "similar_section": {
+        "similar_to": {
+            "_0": "相似",
+            "_1": ""
+        }
+    },
+    "analytical_data": {
+        "analytical_data": "分析数据"
+    },
+    "talks_section": {
+        "says": {
+            "_0": "",
+            "_1": "说"
+        }
+    },
+    "users_voice": {
+        "users_voice": "用户的声音",
+        "go_to_the_website": "进入网站"
+    },
+    "users_also_like": {
+        "users_also_like": "用户也喜欢"
+    }
+}

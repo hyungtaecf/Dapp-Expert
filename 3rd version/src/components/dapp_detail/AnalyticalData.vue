@@ -1,6 +1,6 @@
 <template>
   <section id="analytical_data">
-    <div class="section_title1">Аналитика</div>
+    <div class="section_title1">{{$t('analytical_data.analytical_data')}}</div>
     <div class="graphic_row">
       <div v-show="$mq === 'desktop'" v-for="(_, key) in 3" :key="key" class="graphic">
         <img :src="small_graphic" alt />

@@ -4,15 +4,17 @@
       class="blockchains_container"
       :style="{ 'background': 'url(' + blockchain_background + ')' }"
     >
-      <div class="blockchain_label">{{$t('message.blockchains')}}</div>
+      <div
+        :class="{'blockchain_label':1, 'nowrap': nowrap_languages.includes($i18n.locale)}"
+      >{{$t('message.blockchains')}}</div>
       <div class="blockchain_buttons">
         <div
-          v-for="(blockchain, key) in blockchains"
+          v-for="(blockchain, key, index) in blockchains"
           :key="key"
           :class="{'blockchain_btn': 1, 'active': blockchain.active}"
           :style="{ 'background': 'url(' + [blockchain.active? trapezio_blue_btn : trapezio_grey_btn] + ')' }"
           @click="selectBlockChain(key)"
-        >{{blockchain.acronym}}</div>
+        >{{index === 0? $t('message.all') : blockchain.acronym}}</div>
       </div>
     </div>
   </section>
@@ -35,7 +37,7 @@ export default {
       trapezio_blue_btn: require("../../assets/trapezio_blue_btn.png"),
       trapezio_grey_btn: require("../../assets/trapezio_grey_btn.png"),
       blockchains: {
-        all: { acronym: "all", active: true },
+        all: { active: true },
         eos: { acronym: "eos", active: false },
         eth: { acronym: "eth", active: false },
         iost: { acronym: "iost", active: false },
@@ -43,7 +45,8 @@ export default {
         neo: { acronym: "neo", active: false },
         tron: { acronym: "tron", active: false },
         vechain: { acronym: "vechain", active: false }
-      }
+      },
+      nowrap_languages: ["ja", "ko", "zh", "tw"]
     };
   }
 };
@@ -69,6 +72,9 @@ export default {
       color: $white;
       font-weight: bold;
       text-transform: capitalize;
+      &.nowrap {
+        white-space: nowrap;
+      }
     }
     .blockchain_buttons {
       display: flex;

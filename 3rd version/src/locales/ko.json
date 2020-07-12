@@ -1,0 +1,115 @@
+{
+    "message": {
+        "blockchains": "블록체인",
+        "categories": "카테고리",
+        "chain": "체인",
+        "category": "카테고리",
+        "balance": "발랑스",
+        "users": "사용자",
+        "volume": "볼륨",
+        "dapp_expert_score": {
+            "_0": "Dapp",
+            "_1": "Expert",
+            "_2": "스코아"
+        },
+        "see_more": "더보기",
+        "blockchains_data_info": "블록체인의 데이터 정보",
+        "copyright": "저작권",
+        "all": "전부"
+    },
+    "button": {
+        "submit_dapp": "Dapp 보내기",
+        "_24h": "24시간",
+        "_7d": "7일",
+        "graphic_info": {
+            "volume": "볼륨",
+            "dau": "DAU",
+            "transactions": "거래"
+        }
+    },
+    "placeholder": {
+        "search": "검색"
+    },
+    "categories": {
+        "all": [
+            "전부"
+        ],
+        "collectibles": [
+            "수집품"
+        ],
+        "exchanges": [
+            "교류"
+        ],
+        "gambling": [
+            "도박"
+        ],
+        "games": [
+            "케임"
+        ],
+        "high_risk": [
+            "고위험"
+        ],
+        "marketplaces": [
+            "장터"
+        ],
+        "other": [
+            "기타"
+        ]
+    },
+    "info_item": {
+        "total_dapps": {
+            "_0": "",
+            "_1": "총 Dapp 수"
+        },
+        "smart_contracts": {
+            "_0": "스마트",
+            "_1": "컨트랙트"
+        },
+        "_24h_users": {
+            "_0": "24시간",
+            "_1": "이용자수"
+        },
+        "_24h_transactions": {
+            "_0": "24시간",
+            "_1": "트랜잭션"
+        },
+        "_24h_volume": {
+            "_0": "24시간",
+            "_1": "볼륨"
+        }
+    },
+    "footer_link": {
+        "submit_dapp": "Dapp 보내기",
+        "privacy_policy": "개인정보처리방침",
+        "terms_of_use": "이용약관",
+        "cookie_policy": "쿠키 정책"
+    },
+    "intro_section": {
+        "_24h_users": "24시간 이용자수",
+        "balance": "발랑스",
+        "go_to_the_website": "웹 사이트로 이동",
+        "smart_contracts": "스마트 계약"
+    },
+    "similar_section": {
+        "similar_to": {
+            "_0": "",
+            "_1": "와 비슷한"
+        }
+    },
+    "analytical_data": {
+        "analytical_data": "분석 데이터"
+    },
+    "talks_section": {
+        "says": {
+            "_0": "",
+            "_1": "의 말"
+        }
+    },
+    "users_voice": {
+        "users_voice": "사용자의 목소리",
+        "go_to_the_website": "웹 사이트로 이동"
+    },
+    "users_also_like": {
+        "users_also_like": "사용자도 좋아합니다"
+    }
+}

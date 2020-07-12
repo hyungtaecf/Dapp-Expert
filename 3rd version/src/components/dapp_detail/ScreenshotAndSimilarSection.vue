@@ -24,7 +24,12 @@
             </div>
             <div class="info">
               <div class="name">{{other_dapp.name}}</div>
-              <div class="category capitalize">{{$t('categories.'+[other_dapp.category])}}</div>
+              <div class="category capitalize">
+                <span
+                  v-for="(word, i) in $t('categories.'+[other_dapp.category])"
+                  :key="i"
+                >&nbsp;{{word}}</span>
+              </div>
             </div>
           </router-link>
         </template>

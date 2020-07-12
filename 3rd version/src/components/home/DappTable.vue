@@ -29,45 +29,45 @@
           </th>
           <th>
             <div class="thead_item">
-              <div class="help" title="About">
+              <div class="help" :title="$t('dapp_table.about.balance')">
                 <span>?</span>
               </div>
               <div>{{$t('message.balance')}}</div>
               <div class="sort">
-                <img :src="sort_icon" :alt="$t('message.sort')" />
+                <img :src="sort_icon" :alt="$t('message.sort')" :title="$t('message.sort')" />
               </div>
             </div>
           </th>
           <th>
             <div class="thead_item">
-              <div class="help" title="About">
+              <div class="help" :title="$t('dapp_table.about.users')">
                 <span>?</span>
               </div>
               <div>{{$t('message.users')}}</div>
               <div class="sort">
-                <img :src="sort_icon" :alt="$t('message.sort')" />
+                <img :src="sort_icon" :alt="$t('message.sort')" :title="$t('message.sort')" />
               </div>
             </div>
           </th>
           <th>
             <div class="thead_item">
-              <div class="help" title="About">
+              <div class="help" :title="$t('dapp_table.about.volume')">
                 <span>?</span>
               </div>
               <div>{{$t('message.volume')}}</div>
               <div class="sort">
-                <img :src="sort_icon" :alt="$t('message.sort')" />
+                <img :src="sort_icon" :alt="$t('message.sort')" :title="$t('message.sort')" />
               </div>
             </div>
           </th>
           <th>
             <div class="thead_item">
-              <div class="help" title="About">
+              <div class="help" :title="$t('dapp_table.about.txs')">
                 <span>?</span>
               </div>
               <div>TXS</div>
               <div class="sort">
-                <img :src="sort_icon" :alt="$t('message.sort')" />
+                <img :src="sort_icon" :alt="$t('message.sort')" :title="$t('message.sort')" />
               </div>
             </div>
           </th>

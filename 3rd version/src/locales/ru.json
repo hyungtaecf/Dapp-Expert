@@ -1,6 +1,5 @@
 {
     "message": {
-        "hello": "hello world",
         "blockchains": "Блокчейн",
         "categories": "Категории",
         "chain": "Блокчейн",
@@ -15,11 +14,12 @@
         },
         "see_more": "Показать больше",
         "blockchains_data_info": "Данные блокчейна",
-        "copyright": "Авторское право"
+        "copyright": "Авторское право",
+        "follow_us": "Подписывайтесь на нас",
+        "all": "Все"
     },
     "button": {
         "submit_dapp": "Разместить dapp",
-        "iso639_1": "ru",
         "_24h": "24 часа",
         "_7d": "7 дней",
         "graphic_info": {
@@ -30,6 +30,16 @@
     },
     "placeholder": {
         "search": "Поиск"
+    },
+    "categories": {
+        "all": ["Все"],
+        "collectibles": ["Коллекции"],
+        "exchanges": ["Биржи"],
+        "gambling": ["Казино"],
+        "games": ["Игры"],
+        "high_risk": ["Высокий", "риск"],
+        "marketplaces": ["Торговые", "площадки"],
+        "other": ["Другое"]
     },
     "info_item": {
         "total_dapps": {
@@ -71,6 +81,9 @@
             "_0": "Похожее на ",
             "_1": ""
         }
+    },
+    "analytical_data": {
+        "analytical_data": "Аналитика"
     },
     "talks_section": {
         "says": {
